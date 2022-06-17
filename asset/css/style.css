@@ -70,7 +70,8 @@ body section#four {
     padding-bottom: 80px;
     text-align: center; }
     body section#four div:nth-child(1) h1 {
-      font-size: 60px; }
+      font-size: 60px;
+      margin-bottom: 16px; }
     body section#four div:nth-child(1) p {
       font-size: 20px; }
   body section#four div:nth-child(2) {
