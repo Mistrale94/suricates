@@ -19,13 +19,15 @@ body{
             align-items: center;
             margin-bottom: 64px;
         }
-        div{
+        div:nth-child(2){
             display: flex;
             justify-content: space-around;
+            align-items: center;
             div:nth-child(1){
                 height: 137px;
                 width: 851px;
                 background-color: #D5F5F3;
+                margin: 0;
             }
             div:nth-child(2){
                 height: 180px;

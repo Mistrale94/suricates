@@ -17,14 +17,16 @@ body section#two {
     justify-content: center;
     align-items: center;
     margin-bottom: 64px; }
-  body section#two div {
+  body section#two div:nth-child(2) {
     display: flex;
-    justify-content: space-around; }
-    body section#two div div:nth-child(1) {
+    justify-content: space-around;
+    align-items: center; }
+    body section#two div:nth-child(2) div:nth-child(1) {
       height: 137px;
       width: 851px;
-      background-color: #D5F5F3; }
-    body section#two div div:nth-child(2) {
+      background-color: #D5F5F3;
+      margin: 0; }
+    body section#two div:nth-child(2) div:nth-child(2) {
       height: 180px;
       width: 198px;
       background-color: #D5F5F3; }
