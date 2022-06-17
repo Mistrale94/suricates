@@ -367,28 +367,28 @@ body > img {
   background-color: #D5F5F3;
 }
 
-#avis > h1 {
-  font-size: 60px;
+#avis div:nth-child(1) {
+  padding-bottom: 80px;
   text-align: center;
+}
+
+#avis div:nth-child(1) h1 {
+  font-size: 60px;
   margin-bottom: 16px;
 }
 
-#avis > p {
+#avis div:nth-child(1) p {
   font-size: 20px;
-  text-align: center;
-  width: 500px;
-  margin: 0 auto;
 }
 
-#avis div {
+#avis div:last-child {
   display: flex;
   justify-content: space-between;
   width: 1004px;
   margin: 0 auto;
-  margin-top: 80px;
 }
 
-#avis div article {
+#avis div:last-child article {
   width: 486px;
   height: 184px;
   display: flex;
@@ -397,20 +397,20 @@ body > img {
   padding: 32px;
 }
 
-#avis div article img {
+#avis div:last-child article img {
   width: 64px;
   height: 64px;
 }
 
-#avis div article p:nth-child(2) {
+#avis div:last-child article p:nth-child(2) {
   font-weight: bold;
 }
 
-#avis div article span {
+#avis div:last-child article span {
   font-weight: normal;
 }
 
-#avis div article p:nth-child(3) {
+#avis div:last-child article p:nth-child(3) {
   width: 219px;
 }
 
@@ -479,33 +479,30 @@ body > img {
 
 #faq {
   padding: 80px;
+  margin-top: 50px;
   background-color: #D5F5F3;
 }
 
-#faq > h1 {
-  font-size: 60px;
+#faq div:nth-child(1) {
+  padding-bottom: 80px;
   text-align: center;
+}
+
+#faq div:nth-child(1) h1 {
+  font-size: 60px;
   margin-bottom: 16px;
 }
 
-#faq > p {
+#faq div:nth-child(1) p {
   font-size: 20px;
-  text-align: center;
-  width: 500px;
-  margin: 0 auto;
 }
 
 #faq article {
   background-color: #ffffff;
   width: 800px;
   margin: 0 auto;
-  margin-top: 50px;
   border: 1px solid #E5E7EB;
   border-radius: 6px;
-}
-
-#faq article div p {
-  font-size: 18px;
 }
 
 #faq article .question {
@@ -555,7 +552,7 @@ body > img {
 
 #faq article .answer p {
   color: #6D7280;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 #faq article .answer img {

@@ -354,24 +354,25 @@ body > img{
 #avis{
     padding: 80px;
     background-color: #D5F5F3;
-    &>h1{
-        font-size: 60px;
+
+
+    div:nth-child(1){
+        padding-bottom: 80px;
         text-align: center;
-        margin-bottom: 16px;
-    }
-    &>p{
-        font-size: 20px;
-        text-align: center;
-        width: 500px;
-        margin: 0 auto;
+        h1{
+            font-size: 60px;
+            margin-bottom: 16px;
+        }
+        p{
+            font-size: 20px;
+        }
     }
 
-    div{
+    div:last-child{
         display: flex;
         justify-content: space-between;
         width: 1004px;
         margin: 0 auto;
-        margin-top: 80px;
         article{
             width: 486px;
             height: 184px;
@@ -457,32 +458,27 @@ body > img{
 
 #faq{
     padding: 80px;
+    margin-top: 50px;
     background-color: #D5F5F3;
-
-    &>h1{
-        font-size: 60px;
+    
+    div:nth-child(1){
+        padding-bottom: 80px;
         text-align: center;
-        margin-bottom: 16px;
-    }
-    &>p{
-        font-size: 20px;
-        text-align: center;
-        width: 500px;
-        margin: 0 auto;
+        h1{
+            font-size: 60px;
+            margin-bottom: 16px;
+        }
+        p{
+            font-size: 20px;
+        }
     }
 
     article{
         background-color: #ffffff;
         width: 800px;
         margin: 0 auto;
-        margin-top: 50px;
         border: 1px solid #E5E7EB;
         border-radius: 6px;
-        div{
-            p{
-                font-size: 18px;
-            }
-        }
         .question{
             display: flex;
             justify-content: space-between;
@@ -525,7 +521,7 @@ body > img{
             padding: 20px 30px;
             p{
                 color: #6D7280;
-                font-size: 18px;
+                font-size: 14px;
             }
             img{
                 width: 24px;
