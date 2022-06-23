@@ -11,6 +11,10 @@
 body{
     font-family: 'Circular Std', sans-serif;
 
+    a{
+        text-decoration: none;
+    }
+
     header{
         nav{
             height: 70px;
@@ -35,6 +39,11 @@ body{
                     a{
                         text-decoration: none;
                         color: #1D1D1D;
+                        transition: 300ms;
+                    }
+
+                    a:hover{
+                        color: #1FC78E;
                     }
                 }
             }
@@ -141,8 +150,17 @@ body{
                 padding: 20px 50px;
                 border-radius: 25px;
                 background: #1FC78E;
+                transition: 300ms;
 
             }
+
+            #button:hover{
+
+                background: #093929;
+
+
+            }
+
             &:after{
                 position: absolute;
                 top: 730px;

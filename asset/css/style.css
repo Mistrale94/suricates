@@ -7,6 +7,8 @@
 
 body {
   font-family: 'Circular Std', sans-serif; }
+  body a {
+    text-decoration: none; }
   body header nav {
     height: 70px;
     padding: 0 100px;
@@ -22,7 +24,10 @@ body {
         padding: 0 15px 0 15px; }
         body header nav ul li a {
           text-decoration: none;
-          color: #1D1D1D; }
+          color: #1D1D1D;
+          transition: 300ms; }
+        body header nav ul li a:hover {
+          color: #1FC78E; }
   body header .headmain {
     display: flex;
     justify-content: center;
@@ -99,7 +104,10 @@ body {
       color: white;
       padding: 20px 50px;
       border-radius: 25px;
-      background: #1FC78E; }
+      background: #1FC78E;
+      transition: 300ms; }
+    body header #actions #button:hover {
+      background: #093929; }
     body header #actions:after {
       position: absolute;
       top: 730px;
