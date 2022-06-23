@@ -7,6 +7,7 @@
 }
 
 @import url('http://fonts.cdnfonts.com/css/circular-std');
+@import url('http://fonts.cdnfonts.com/css/uberhand-text-pro');
 
 body{
     font-family: 'Circular Std', sans-serif;
@@ -50,21 +51,21 @@ body{
         }
 
         .headmain{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 95vh;
-
-        #headcontainer{
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            height: 50vh;
+            width: 100%;
+            height: 95vh;
+
+            #headcontainer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                height: 50vh;
+            }
         }
-    }
 
         h1{
             text-align: center;
@@ -97,7 +98,7 @@ body{
                  background-image: url(../image/circle.svg);
                  background-repeat:no-repeat;
                  background-size: contain;
-        }
+            }
         }
 
         p:after{
@@ -173,8 +174,6 @@ body{
                  background-repeat:no-repeat;
                  background-size: contain;
         }
-
-
     }
 }
 
@@ -258,4 +257,100 @@ body{
         }
     }
 
+}
+
+section#portraits{
+    padding: 185px 100px;
+
+    div:first-child{
+        margin-bottom: 84px;
+
+        h1{
+            font-size: 56px;
+        }
+    }
+    div.portraits-article:nth-child(2){
+        display: flex;
+        align-items: center;
+        margin-bottom: 167px;
+
+        div.portraits-container{
+            margin-left: 125px;
+            width: 545px;
+
+            div{
+                margin-bottom: 8px;
+
+                h2{
+                    font-size: 48px;
+                    font-family: 'Uberhand Text Pro', sans-serif;
+                    color: #DF7E07;
+                }
+            }
+            p:nth-child(2){
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 32px;
+            }
+            p:nth-child(3){
+                font-size: 16px;
+                font-weight: lighter;
+                margin-bottom: 35px;
+            }
+            div:last-child{
+                display: flex;
+                align-items: flex-end;
+
+                p{
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-right: 10px;
+                }
+            }
+            
+        }
+    }
+    div.portraits-article:nth-child(3){
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        div.portraits-container{
+            margin-right: 125px;
+            width: 545px;
+
+            div{
+                margin-bottom: 8px;
+
+                h2{
+                    font-size: 48px;
+                    font-family: 'Uberhand Text Pro', sans-serif;
+                    color: #DF7E07;
+                }
+            }
+            div{
+                p:nth-child(2){
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-bottom: 32px;
+                } 
+            }
+            p:nth-child(3){
+                font-size: 16px;
+                font-weight: lighter;
+                margin-bottom: 35px;
+            }
+            div:last-child{
+                display: flex;
+                align-items: flex-end;
+
+                p{
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-right: 10px;
+                }
+            }
+            
+        }
+    }
 }
