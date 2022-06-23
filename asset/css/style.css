@@ -1,4 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/circular-std");
+@import url("http://fonts.cdnfonts.com/css/uberhand-text-pro");
 * {
   margin: 0;
   padding: 0;
@@ -67,6 +68,68 @@ body {
       padding: 20px 50px;
       border-radius: 25px;
       background: #1FC78E; }
+  body #portraits {
+    padding: 185px 100px; }
+    body #portraits div:first-child {
+      margin-bottom: 84px; }
+      body #portraits div:first-child h1 {
+        font-size: 56px; }
+    body #portraits div.portraits-article:nth-child(2) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 167px; }
+      body #portraits div.portraits-article:nth-child(2) div.portraits-container {
+        margin-left: 125px;
+        width: 545px; }
+        body #portraits div.portraits-article:nth-child(2) div.portraits-container div {
+          margin-bottom: 8px; }
+          body #portraits div.portraits-article:nth-child(2) div.portraits-container div h2 {
+            font-size: 48px;
+            font-family: 'Uberhand Text Pro', sans-serif;
+            color: #DF7E07; }
+        body #portraits div.portraits-article:nth-child(2) div.portraits-container p:nth-child(2) {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 32px; }
+        body #portraits div.portraits-article:nth-child(2) div.portraits-container p:nth-child(3) {
+          font-size: 16px;
+          font-weight: lighter;
+          margin-bottom: 35px; }
+        body #portraits div.portraits-article:nth-child(2) div.portraits-container div:last-child {
+          display: flex;
+          align-items: flex-end; }
+          body #portraits div.portraits-article:nth-child(2) div.portraits-container div:last-child p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-right: 10px; }
+    body #portraits div.portraits-article:nth-child(3) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      body #portraits div.portraits-article:nth-child(3) div.portraits-container {
+        margin-right: 125px;
+        width: 545px; }
+        body #portraits div.portraits-article:nth-child(3) div.portraits-container div {
+          margin-bottom: 8px; }
+          body #portraits div.portraits-article:nth-child(3) div.portraits-container div h2 {
+            font-size: 48px;
+            font-family: 'Uberhand Text Pro', sans-serif;
+            color: #DF7E07; }
+        body #portraits div.portraits-article:nth-child(3) div.portraits-container div p:nth-child(2) {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 32px; }
+        body #portraits div.portraits-article:nth-child(3) div.portraits-container p:nth-child(3) {
+          font-size: 16px;
+          font-weight: lighter;
+          margin-bottom: 35px; }
+        body #portraits div.portraits-article:nth-child(3) div.portraits-container div:last-child {
+          display: flex;
+          align-items: flex-end; }
+          body #portraits div.portraits-article:nth-child(3) div.portraits-container div:last-child p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-right: 10px; }
 
 #value {
   background-color: #E9FCF5;
