@@ -7,6 +7,22 @@
 
 body {
   font-family: 'Circular Std', sans-serif; }
+  body header nav {
+    height: 70px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    body header nav div img {
+      height: 47px; }
+    body header nav ul {
+      display: flex;
+      list-style: none; }
+      body header nav ul li {
+        padding: 0 15px 0 15px; }
+        body header nav ul li a {
+          text-decoration: none;
+          color: #1D1D1D; }
   body header .headmain {
     display: flex;
     justify-content: center;
