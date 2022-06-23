@@ -6,8 +6,10 @@
     scroll-behavior: smooth;
 }
 
+@import url('http://fonts.cdnfonts.com/css/circular-std');
 
 body{
+    font-family: 'Circular Std', sans-serif;
     
     #value{
         background-color: #E9FCF5;

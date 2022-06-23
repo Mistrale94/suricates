@@ -1,8 +1,13 @@
+@import url("http://fonts.cdnfonts.com/css/circular-std");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Circular Std', sans-serif;
 }
 
 body #value {
