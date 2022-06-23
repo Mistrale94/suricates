@@ -64,18 +64,45 @@ body{
 
         h1:after{
             position: absolute;
-            top: 10px;
-            right: 36%;
+            top: 200px;
+            right: 0;
             display: block;
             content: "";
             width: 130px;
-            height: 100px;
+            height: 260px;
              background-image: url(../image/illudroite.svg);
          }
 
+         
+
         #headtitle{
             width: 1034px;
+            &:after{
+                position: absolute;
+                top: 283px;
+                right: 605px;
+                display: block;
+                content: "";
+                width: 370px;
+                height: 200px;
+                 background-image: url(../image/circle.svg);
+                 background-repeat:no-repeat;
+                 background-size: contain;
         }
+        }
+
+        p:after{
+            position: absolute;
+            top: 400px;
+            left: 0;
+            display: block;
+            content: "";
+            width: 150px;
+            height: 300px;
+             background-image: url(../image/illugauche.svg);
+             background-size: contain;
+             background-repeat: no-repeat;
+         }
 
         #headsubtitle{
             font-family: "Raleway", sans-serif;
@@ -83,6 +110,19 @@ body{
             width: 80%;
             font-size: 16px;
             padding: 50px;
+            &:after{
+                position: absolute;
+                top: 450px;
+                right: 550px;
+                display: block;
+                content: "";
+                width: 150px;
+                height: 150px;
+                 background-image: url(../image/under.svg);
+                 background-repeat:no-repeat;
+                 background-size: contain;
+        }
+
         }
 
         #actions{
@@ -103,6 +143,17 @@ body{
                 background: #1FC78E;
 
             }
+            &:after{
+                position: absolute;
+                top: 730px;
+                right: 550px;
+                display: block;
+                content: "";
+                width: 120px;
+                height: 400px;
+                 background-image: url(../image/Frame.svg);
+                 background-repeat:no-repeat;
+                 background-size: contain;
         }
 
 
@@ -126,8 +177,8 @@ body{
              }
              h1:after{
                 position: absolute;
-                top: 20px;
-                right: 36%;
+                bottom: -150px;
+                right: 38%;
                 display: block;
                 content: "";
                 width: 130px;
@@ -176,15 +227,17 @@ body{
 
         &:after{
             position: absolute;
-            top: 100px;
-            left: 0;
+            top: 1100px;
+            right: 1850px;
             display: block;
             content: "";
-            width: 80px;
-            height: 250px;
+            width: 120px;
+            height: 400px;
              background-image: url(../image/deco.svg);
              background-repeat:no-repeat;
+             background-size: contain;
 
         }
     }
 
+}
