@@ -264,9 +264,19 @@ section#portraits{
 
     div:first-child{
         margin-bottom: 84px;
+        position: relative;
 
         h1{
             font-size: 56px;
+        }
+        svg:nth-child(3){
+            position: absolute;
+            right: -100px;
+        }
+        svg:nth-child(4){
+            position: absolute;
+            right: -100px;
+            top: 100px;
         }
     }
     div.portraits-article:nth-child(2){

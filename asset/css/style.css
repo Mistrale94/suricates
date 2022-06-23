@@ -185,9 +185,17 @@ body {
 section#portraits {
   padding: 185px 100px; }
   section#portraits div:first-child {
-    margin-bottom: 84px; }
+    margin-bottom: 84px;
+    position: relative; }
     section#portraits div:first-child h1 {
       font-size: 56px; }
+    section#portraits div:first-child svg:nth-child(3) {
+      position: absolute;
+      right: -100px; }
+    section#portraits div:first-child svg:nth-child(4) {
+      position: absolute;
+      right: -100px;
+      top: 100px; }
   section#portraits div.portraits-article:nth-child(2) {
     display: flex;
     align-items: center;
