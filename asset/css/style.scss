@@ -87,18 +87,27 @@ body{
 
         #headtitle{
             width: 1034px;
-            &:after{
-                position: absolute;
-                top: 283px;
-                right: 605px;
-                display: block;
-                content: "";
-                width: 370px;
-                height: 200px;
-                 background-image: url(../image/circle.svg);
-                 background-repeat:no-repeat;
-                 background-size: contain;
+            strong{
+                position: relative;
+                div{
+                    position: absolute;
+                    bottom: -30px;
+                    left: 0;
+                    display: inline-block;
+                }
             }
+            // &:after{
+            //     position: absolute;
+            //     top: 283px;
+            //     right: 605px;
+            //     display: block;
+            //     content: "";
+            //     width: 370px;
+            //     height: 200px;
+            //      background-image: url(../image/circle.svg);
+            //      background-repeat:no-repeat;
+            //      background-size: contain;
+            // }
         }
 
         p:after{
@@ -120,18 +129,18 @@ body{
             width: 80%;
             font-size: 16px;
             padding: 50px;
-            &:after{
-                position: absolute;
-                top: 450px;
-                right: 550px;
-                display: block;
-                content: "";
-                width: 150px;
-                height: 150px;
-                 background-image: url(../image/under.svg);
-                 background-repeat:no-repeat;
-                 background-size: contain;
-        }
+        //     &:after{
+        //         position: absolute;
+        //         top: 450px;
+        //         right: 550px;
+        //         display: block;
+        //         content: "";
+        //         width: 150px;
+        //         height: 150px;
+        //          background-image: url(../image/under.svg);
+        //          background-repeat:no-repeat;
+        //          background-size: contain;
+        // }
 
         }
 
@@ -186,6 +195,15 @@ body{
                 font-size: 56px;
                 font-weight: bold;
                 text-align: center;
+                strong{
+                    position: relative;
+                    div{
+                        position: absolute;
+                        top: 10px;
+                        left: -100px;
+                        display: inline-block;
+                    }
+                }
              }
              p{
                 text-align: center;
@@ -195,17 +213,12 @@ body{
              h1:after{
                 position: absolute;
                 bottom: -150px;
-                right: 38%;
+                right: 36%;
                 display: block;
                 content: "";
                 width: 130px;
                 height: 100px;
                  background-image: url(../image/photo1.svg);
-             }
-             svg{
-                position: absolute;
-                left: 41.5%;
-
              }
         }
         div:last-child{
