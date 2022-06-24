@@ -212,67 +212,23 @@ section#quiz div#resultat {
     margin-bottom: 50px; }
 
 section#portraits {
-  padding: 185px 100px; }
-  section#portraits div:first-child {
-    margin-bottom: 84px; }
-    section#portraits div:first-child h1 {
+  padding: 140px 0; }
+  section#portraits div.title-farmer {
+    margin-left: 100px;
+    margin-bottom: 109px; }
+    section#portraits div.title-farmer h1 {
       font-size: 56px; }
-  section#portraits div.portraits-article:nth-child(2) {
+  section#portraits div.card {
+    width: 440px;
+    background-color: #E9FCF5;
+    padding: 20px 0;
+    border-radius: 16px;
     display: flex;
-    align-items: center;
-    margin-bottom: 167px; }
-    section#portraits div.portraits-article:nth-child(2) div.portraits-container {
-      margin-left: 125px;
-      width: 545px; }
-      section#portraits div.portraits-article:nth-child(2) div.portraits-container div {
-        margin-bottom: 8px; }
-        section#portraits div.portraits-article:nth-child(2) div.portraits-container div h2 {
-          font-size: 48px;
-          font-family: 'Uberhand Text Pro', sans-serif;
-          color: #DF7E07; }
-      section#portraits div.portraits-article:nth-child(2) div.portraits-container p:nth-child(2) {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 32px; }
-      section#portraits div.portraits-article:nth-child(2) div.portraits-container p:nth-child(3) {
-        font-size: 16px;
-        font-weight: lighter;
-        margin-bottom: 35px; }
-      section#portraits div.portraits-article:nth-child(2) div.portraits-container div:last-child {
-        display: flex;
-        align-items: flex-end; }
-        section#portraits div.portraits-article:nth-child(2) div.portraits-container div:last-child p {
-          font-size: 16px;
-          font-weight: bold;
-          margin-right: 10px; }
-  section#portraits div.portraits-article:nth-child(3) {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; }
-    section#portraits div.portraits-article:nth-child(3) div.portraits-container {
-      margin-right: 125px;
-      width: 545px; }
-      section#portraits div.portraits-article:nth-child(3) div.portraits-container div {
-        margin-bottom: 8px; }
-        section#portraits div.portraits-article:nth-child(3) div.portraits-container div h2 {
-          font-size: 48px;
-          font-family: 'Uberhand Text Pro', sans-serif;
-          color: #DF7E07; }
-      section#portraits div.portraits-article:nth-child(3) div.portraits-container div p:nth-child(2) {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 32px; }
-      section#portraits div.portraits-article:nth-child(3) div.portraits-container p:nth-child(3) {
-        font-size: 16px;
-        font-weight: lighter;
-        margin-bottom: 35px; }
-      section#portraits div.portraits-article:nth-child(3) div.portraits-container div:last-child {
-        display: flex;
-        align-items: flex-end; }
-        section#portraits div.portraits-article:nth-child(3) div.portraits-container div:last-child p {
-          font-size: 16px;
-          font-weight: bold;
-          margin-right: 10px; }
+    flex-direction: column;
+    align-items: center; }
+    section#portraits div.card img {
+      border-bottom: 1px solid #64E7BB;
+      margin-bottom: 27px; }
 
 footer {
   background-color: #1FC78E;

@@ -325,98 +325,30 @@ section#quiz{
 }
 
 section#portraits{
-    padding: 185px 100px;
+    padding: 140px 0;
 
-    div:first-child{
-        margin-bottom: 84px;
+    div.title-farmer{
+        margin-left: 100px;
+        margin-bottom: 109px;
 
         h1{
             font-size: 56px;
         }
     }
-    div.portraits-article:nth-child(2){
+    div.card{
+        width: 440px;
+        background-color: #E9FCF5;
+        padding: 20px 0;
+        border-radius: 16px;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        margin-bottom: 167px;
 
-        div.portraits-container{
-            margin-left: 125px;
-            width: 545px;
-
-            div{
-                margin-bottom: 8px;
-
-                h2{
-                    font-size: 48px;
-                    font-family: 'Uberhand Text Pro', sans-serif;
-                    color: #DF7E07;
-                }
-            }
-            p:nth-child(2){
-                font-size: 16px;
-                font-weight: bold;
-                margin-bottom: 32px;
-            }
-            p:nth-child(3){
-                font-size: 16px;
-                font-weight: lighter;
-                margin-bottom: 35px;
-            }
-            div:last-child{
-                display: flex;
-                align-items: flex-end;
-
-                p{
-                    font-size: 16px;
-                    font-weight: bold;
-                    margin-right: 10px;
-                }
-            }
-            
+        img{
+            border-bottom: 1px solid #64E7BB;
+            margin-bottom: 27px;
         }
-    }
-    div.portraits-article:nth-child(3){
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-
-        div.portraits-container{
-            margin-right: 125px;
-            width: 545px;
-
-            div{
-                margin-bottom: 8px;
-
-                h2{
-                    font-size: 48px;
-                    font-family: 'Uberhand Text Pro', sans-serif;
-                    color: #DF7E07;
-                }
-            }
-            div{
-                p:nth-child(2){
-                    font-size: 16px;
-                    font-weight: bold;
-                    margin-bottom: 32px;
-                } 
-            }
-            p:nth-child(3){
-                font-size: 16px;
-                font-weight: lighter;
-                margin-bottom: 35px;
-            }
-            div:last-child{
-                display: flex;
-                align-items: flex-end;
-
-                p{
-                    font-size: 16px;
-                    font-weight: bold;
-                    margin-right: 10px;
-                }
-            }
-            
-        }
+        height: 3px;
     }
 }
 
