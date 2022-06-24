@@ -419,3 +419,61 @@ section#portraits{
         }
     }
 }
+
+footer{
+    background-color: #1FC78E;
+    color: #FFFFFF;
+    padding: 100px;
+    &>p{
+        margin-top: 10px;
+    }
+    div{
+        margin-top: 80px;
+        display: flex;
+        article:nth-child(1){
+            font-weight: bold;
+            margin-right: 200px;
+            h1{
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+            p{
+                font-size: 16px;
+                margin-top:10px;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        article:nth-child(2),article:nth-child(3){
+            margin-left: 200px;
+            h1{
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+            p{
+                margin-top:20px;
+                font-size: 14px;
+            }
+        }
+    }
+    &>p:last-child{
+        text-align: center;
+        margin-top: 150px;
+        font-weight: bold;
+    }
+    &:after{
+        position: absolute;
+        bottom: -3355px;
+        left: 90%;
+        display: block;
+        content: "";
+        width: 27px;
+        height: 75px;
+         background-image: url(../image/back.svg);
+         background-repeat:no-repeat;
+         background-size: contain;
+
+    }
+
+}
