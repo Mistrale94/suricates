@@ -1,5 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/circular-std");
-@import url("http://fonts.cdnfonts.com/css/uberhand-text-pro");
+@import url("https://use.typekit.net/mbc4qah.css");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 * {
   margin: 0;
@@ -236,8 +236,9 @@ section#portraits {
         padding: 24px 39px; }
         section#portraits div.farmer-container div.card-farmer div.card-farmer-text h3 {
           font-size: 36px;
-          font-family: 'Uberhand Pro';
-          font-style: italic;
+          font-family: ff-uberhand-pro, sans-serif;
+          font-weight: 400;
+          font-style: normal;
           color: #F8961E;
           margin-bottom: 8px; }
         section#portraits div.farmer-container div.card-farmer div.card-farmer-text p:nth-child(2) {
