@@ -171,6 +171,46 @@ body {
       background-repeat: no-repeat;
       background-size: contain; }
 
+section#quiz, section#resultat {
+  background-color: #E9FCF5;
+  padding: 185px 100px; }
+
+section#quiz h1 {
+  font-size: 60px;
+  font-weight: bold; }
+section#quiz p {
+  text-align: center;
+  font-size: 32px; }
+section#quiz form {
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between; }
+  section#quiz form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    section#quiz form div input {
+      width: 20px;
+      height: 20px;
+      color: black; }
+    section#quiz form div label {
+      font-size: 20px;
+      margin-top: 10px; }
+section#quiz button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto; }
+section#quiz button#finir {
+  display: none; }
+section#quiz div#resultat {
+  display: none; }
+  section#quiz div#resultat p {
+    margin-bottom: 50px; }
+
 section#portraits {
   padding: 185px 100px; }
   section#portraits div:first-child {
