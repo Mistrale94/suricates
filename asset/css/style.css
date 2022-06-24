@@ -261,4 +261,48 @@ section#portraits {
       right: 0;
       bottom: 30px; }
 
+footer {
+  background-color: #1FC78E;
+  color: #FFFFFF;
+  padding: 100px; }
+  footer > p {
+    margin-top: 10px; }
+  footer div {
+    margin-top: 80px;
+    display: flex; }
+    footer div article:nth-child(1) {
+      font-weight: bold;
+      margin-right: 200px; }
+      footer div article:nth-child(1) h1 {
+        font-size: 20px;
+        margin-bottom: 50px; }
+      footer div article:nth-child(1) p {
+        font-size: 16px;
+        margin-top: 10px; }
+        footer div article:nth-child(1) p img {
+          margin-right: 10px; }
+    footer div article:nth-child(2), footer div article:nth-child(3) {
+      margin-left: 200px; }
+      footer div article:nth-child(2) h1, footer div article:nth-child(3) h1 {
+        font-size: 16px;
+        margin-bottom: 50px; }
+      footer div article:nth-child(2) p, footer div article:nth-child(3) p {
+        margin-top: 20px;
+        font-size: 14px; }
+  footer > p:last-child {
+    text-align: center;
+    margin-top: 150px;
+    font-weight: bold; }
+  footer:after {
+    position: absolute;
+    bottom: -3355px;
+    left: 90%;
+    display: block;
+    content: "";
+    width: 27px;
+    height: 75px;
+    background-image: url(../image/back.svg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+
 /*# sourceMappingURL=style.css.map */
