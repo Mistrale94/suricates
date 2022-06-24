@@ -84,14 +84,18 @@ body {
     font-family: "Raleway", sans-serif;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    width: 35%; }
+    align-items: center; }
     body header #actions #button {
       color: white;
-      padding: 20px 70px;
+      height: 57px;
+      width: 227px;
       border-radius: 25px;
       background: #1FC78E;
-      transition: 300ms; }
+      transition: 300ms;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 32px; }
     body header #actions #button:hover {
       background: #093929; }
     body header #actions:after {

@@ -149,7 +149,6 @@ body{
             display: flex;
             justify-content: space-around;
             align-items: center;
-            width: 35%;
 
             
 
@@ -157,10 +156,15 @@ body{
             #button{
 
                 color: white;
-                padding: 20px 70px;
+                height: 57px;
+                width: 227px;
                 border-radius: 25px;
                 background: #1FC78E;
                 transition: 300ms;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 32px;
 
             }
 
