@@ -7,6 +7,22 @@
   box-sizing: border-box;
   scroll-behavior: smooth; }
 
+body.dark {
+  background-color: #191A19;
+  color: #FFFFFF; }
+  body.dark header nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 300ms; }
+  body.dark header nav ul li a:hover {
+    color: #1FC78E; }
+  body.dark header nav div.btn-toggle {
+    background-color: #CBE6E4; }
+
+body.light {
+  background-color: #FFFFFF;
+  color: #191A19; }
+
 body {
   font-family: 'Century Gothic', sans-serif; }
   body a {
@@ -21,7 +37,8 @@ body {
       height: 27px; }
     body header nav ul {
       display: flex;
-      list-style: none; }
+      list-style: none;
+      align-items: center; }
       body header nav ul li {
         padding: 0 15px 0 15px; }
         body header nav ul li a {
@@ -30,6 +47,18 @@ body {
           transition: 300ms; }
         body header nav ul li a:hover {
           color: #1FC78E; }
+    body header nav div.btn-toggle {
+      width: 40px;
+      height: 40px;
+      background-color: #162D2B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin: 0 15px 0 15px;
+      cursor: pointer; }
+      body header nav div.btn-toggle img#darkmode {
+        height: 20px; }
   body header .headmain {
     display: flex;
     justify-content: center;
@@ -225,7 +254,7 @@ section#travel {
     section#travel div.travel-title svg:first-child {
       position: absolute;
       top: -30px;
-      right: 150px; }
+      right: 169px; }
     section#travel div.travel-title h1 {
       font-size: 56px;
       text-transform: capitalize; }
