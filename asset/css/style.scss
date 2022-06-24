@@ -400,17 +400,17 @@ section#travel{
             p:nth-child(7){
                 margin-bottom: 48px;
             }
-            p:nth-child(8){
-                background: #36706B;
-                border-radius: 32px;
-                width: 279px;
-                height: 56px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            div:nth-child(8){
 
                 a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     color: #FFFFFF;
+                    background: #36706B;
+                    border-radius: 32px;
+                    width: 279px;
+                    height: 56px;
                 }
             }
         }

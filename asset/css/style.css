@@ -270,16 +270,15 @@ section#travel {
         font-size: 16px; }
       section#travel div.travel-container div.travel-text p:nth-child(7) {
         margin-bottom: 48px; }
-      section#travel div.travel-container div.travel-text p:nth-child(8) {
+      section#travel div.travel-container div.travel-text div:nth-child(8) a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
         background: #36706B;
         border-radius: 32px;
         width: 279px;
-        height: 56px;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        section#travel div.travel-container div.travel-text p:nth-child(8) a {
-          color: #FFFFFF; }
+        height: 56px; }
 
 #concept {
   width: 100%;
