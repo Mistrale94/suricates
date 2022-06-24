@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/circular-std");
+@import url("http://fonts.cdnfonts.com/css/century-gothic");
 @import url("https://use.typekit.net/mbc4qah.css");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 * {
@@ -8,7 +8,7 @@
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Circular Std', sans-serif; }
+  font-family: 'Century Gothic', sans-serif; }
   body a {
     text-decoration: none; }
   body header nav {
