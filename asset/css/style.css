@@ -84,7 +84,8 @@ body {
     font-family: "Raleway", sans-serif;
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
     body header #actions #button {
       color: white;
       height: 57px;
@@ -109,6 +110,12 @@ body {
       background-image: url(../image/Frame.svg);
       background-repeat: no-repeat;
       background-size: contain; }
+    body header #actions p:after {
+      display: none; }
+    body header #actions svg {
+      position: absolute;
+      right: -90px;
+      top: 40px; }
   body #value {
     background-color: #E9FCF5;
     padding: 80px; }

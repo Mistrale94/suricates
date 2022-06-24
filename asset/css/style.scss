@@ -121,7 +121,7 @@ body{
              background-image: url(../image/illugauche.svg);
              background-size: contain;
              background-repeat: no-repeat;
-         }
+        }
 
         #headsubtitle{
             font-family: "Raleway", sans-serif;
@@ -149,9 +149,7 @@ body{
             display: flex;
             justify-content: space-around;
             align-items: center;
-
-            
-
+            position: relative;
 
             #button{
 
@@ -186,8 +184,18 @@ body{
                  background-image: url(../image/Frame.svg);
                  background-repeat:no-repeat;
                  background-size: contain;
+            }
+
+            p:after{
+                display: none;
+            }
+
+            svg{
+                position: absolute;
+                right: -90px;
+                top: 40px;
+            }
         }
-    }
 }
 
     
