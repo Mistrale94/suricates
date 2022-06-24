@@ -269,88 +269,90 @@ section#quiz div#resultat {
       #concept #leftconcept #rightconcept #spacer, #concept #rightconcept #rightconcept #spacer {
         width: 100%;
         height: 200px; }
-  #concept section#portraits {
-    padding: 140px 0;
+
+section#portraits {
+  padding: 140px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  section#portraits div.title-farmer {
+    margin-bottom: 64px; }
+    section#portraits div.title-farmer h1 {
+      font-size: 56px; }
+  section#portraits div.farmer-container {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-    #concept section#portraits div.title-farmer {
-      margin-bottom: 64px; }
-      #concept section#portraits div.title-farmer h1 {
-        font-size: 56px; }
-    #concept section#portraits div.farmer-container {
-      display: flex;
-      width: 100%;
-      justify-content: space-evenly;
-      position: relative; }
-      #concept section#portraits div.farmer-container div.card-farmer {
-        width: 440px;
-        background-color: #36706B;
-        border-radius: 32px;
-        color: #FFFFFF;
-        z-index: 1; }
-        #concept section#portraits div.farmer-container div.card-farmer div.card-farmer-text {
-          padding: 24px 39px; }
-          #concept section#portraits div.farmer-container div.card-farmer div.card-farmer-text h3 {
-            font-size: 36px;
-            font-family: ff-uberhand-pro, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: #F8961E;
-            margin-bottom: 8px; }
-          #concept section#portraits div.farmer-container div.card-farmer div.card-farmer-text p:nth-child(2) {
-            font-weight: bold;
-            font-size: 20px;
-            margin-bottom: 18px; }
-          #concept section#portraits div.farmer-container div.card-farmer div.card-farmer-text p:nth-child(3) {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 300;
-            font-size: 16px;
-            margin-bottom: 6px; }
-          #concept section#portraits div.farmer-container div.card-farmer div.card-farmer-text div:last-child a {
-            color: #FFFFFF;
-            margin-right: 8px; }
-      #concept section#portraits div.farmer-container svg.circle-bottom {
-        position: absolute;
-        bottom: -70px;
-        left: 430px; }
-      #concept section#portraits div.farmer-container svg.circle-right {
-        position: absolute;
-        right: 0;
-        bottom: 30px; }
-  #concept footer {
-    background-color: #1FC78E;
-    color: #FFFFFF;
-    padding: 100px; }
-    #concept footer > p {
-      margin-top: 10px; }
-    #concept footer div {
-      margin-top: 80px;
-      display: flex; }
-      #concept footer div article:nth-child(1) {
-        font-weight: bold;
-        margin-right: 200px; }
-        #concept footer div article:nth-child(1) h1 {
+    width: 100%;
+    justify-content: space-evenly;
+    position: relative; }
+    section#portraits div.farmer-container div.card-farmer {
+      width: 440px;
+      background-color: #36706B;
+      border-radius: 32px;
+      color: #FFFFFF;
+      z-index: 1; }
+      section#portraits div.farmer-container div.card-farmer div.card-farmer-text {
+        padding: 24px 39px; }
+        section#portraits div.farmer-container div.card-farmer div.card-farmer-text h3 {
+          font-size: 36px;
+          font-family: ff-uberhand-pro, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          color: #F8961E;
+          margin-bottom: 8px; }
+        section#portraits div.farmer-container div.card-farmer div.card-farmer-text p:nth-child(2) {
+          font-weight: bold;
           font-size: 20px;
-          margin-bottom: 50px; }
-        #concept footer div article:nth-child(1) p {
+          margin-bottom: 18px; }
+        section#portraits div.farmer-container div.card-farmer div.card-farmer-text p:nth-child(3) {
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
           font-size: 16px;
-          margin-top: 10px; }
-          #concept footer div article:nth-child(1) p img {
-            margin-right: 10px; }
-      #concept footer div article:nth-child(2), #concept footer div article:nth-child(3) {
-        margin-left: 200px; }
-        #concept footer div article:nth-child(2) h1, #concept footer div article:nth-child(3) h1 {
-          font-size: 16px;
-          margin-bottom: 50px; }
-        #concept footer div article:nth-child(2) p, #concept footer div article:nth-child(3) p {
-          margin-top: 20px;
-          font-size: 14px; }
-  #concept > p:last-child {
+          margin-bottom: 6px; }
+        section#portraits div.farmer-container div.card-farmer div.card-farmer-text div:last-child a {
+          color: #FFFFFF;
+          margin-right: 8px; }
+    section#portraits div.farmer-container svg.circle-bottom {
+      position: absolute;
+      bottom: -70px;
+      left: 430px; }
+    section#portraits div.farmer-container svg.circle-right {
+      position: absolute;
+      right: 0;
+      bottom: 30px; }
+
+footer {
+  background-color: #1FC78E;
+  color: #FFFFFF;
+  padding: 100px; }
+  footer > p {
+    margin-top: 10px; }
+  footer div {
+    margin-top: 80px;
+    display: flex; }
+    footer div article:nth-child(1) {
+      font-weight: bold;
+      margin-right: 200px; }
+      footer div article:nth-child(1) h1 {
+        font-size: 20px;
+        margin-bottom: 50px; }
+      footer div article:nth-child(1) p {
+        font-size: 16px;
+        margin-top: 10px; }
+        footer div article:nth-child(1) p img {
+          margin-right: 10px; }
+    footer div article:nth-child(2), footer div article:nth-child(3) {
+      margin-left: 200px; }
+      footer div article:nth-child(2) h1, footer div article:nth-child(3) h1 {
+        font-size: 16px;
+        margin-bottom: 50px; }
+      footer div article:nth-child(2) p, footer div article:nth-child(3) p {
+        margin-top: 20px;
+        font-size: 14px; }
+  footer > p:last-child {
     text-align: center;
     margin-top: 150px;
     font-weight: bold; }
-  #concept:after {
+  footer:after {
     position: absolute;
     bottom: -3355px;
     left: 90%;
