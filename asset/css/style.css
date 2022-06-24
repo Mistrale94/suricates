@@ -56,17 +56,13 @@ body {
     background-image: url(../image/illudroite.svg); }
   body header #headtitle {
     width: 1034px; }
-    body header #headtitle:after {
-      position: absolute;
-      top: 283px;
-      right: 605px;
-      display: block;
-      content: "";
-      width: 370px;
-      height: 200px;
-      background-image: url(../image/circle.svg);
-      background-repeat: no-repeat;
-      background-size: contain; }
+    body header #headtitle strong {
+      position: relative; }
+      body header #headtitle strong div {
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        display: inline-block; }
   body header p:after {
     position: absolute;
     top: 400px;
@@ -84,17 +80,6 @@ body {
     width: 80%;
     font-size: 16px;
     padding: 50px; }
-    body header #headsubtitle:after {
-      position: absolute;
-      top: 450px;
-      right: 550px;
-      display: block;
-      content: "";
-      width: 150px;
-      height: 150px;
-      background-image: url(../image/under.svg);
-      background-repeat: no-repeat;
-      background-size: contain; }
   body header #actions {
     font-family: "Raleway", sans-serif;
     display: flex;
@@ -127,6 +112,13 @@ body {
       font-size: 56px;
       font-weight: bold;
       text-align: center; }
+      body #value div:first-child h1 strong {
+        position: relative; }
+        body #value div:first-child h1 strong div {
+          position: absolute;
+          top: 10px;
+          left: -100px;
+          display: inline-block; }
     body #value div:first-child p {
       text-align: center;
       width: 600px;
@@ -134,15 +126,12 @@ body {
     body #value div:first-child h1:after {
       position: absolute;
       bottom: -150px;
-      right: 38%;
+      right: 36%;
       display: block;
       content: "";
       width: 130px;
       height: 100px;
       background-image: url(../image/photo1.svg); }
-    body #value div:first-child svg {
-      position: absolute;
-      left: 41.5%; }
     body #value div:last-child {
       display: flex;
       justify-content: space-between;
