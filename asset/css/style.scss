@@ -8,6 +8,7 @@
 
 @import url('http://fonts.cdnfonts.com/css/circular-std');
 @import url('http://fonts.cdnfonts.com/css/uberhand-text-pro');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 body{
     font-family: 'Circular Std', sans-serif;
@@ -326,28 +327,70 @@ section#quiz{
 
 section#portraits{
     padding: 140px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     div.title-farmer{
-        margin-left: 100px;
-        margin-bottom: 109px;
+        margin-bottom: 64px;
 
         h1{
             font-size: 56px;
         }
     }
-    div.card{
-        width: 440px;
-        background-color: #E9FCF5;
-        padding: 20px 0;
-        border-radius: 16px;
+    div.farmer-container{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+        position: relative;
 
-        img{
-            border-bottom: 1px solid #64E7BB;
-            margin-bottom: 27px;
+        div.card-farmer{
+            width: 440px;
+            background-color: #36706B;
+            border-radius: 32px;
+            color: #FFFFFF;
+            z-index: 1;
+
+            div.card-farmer-text{
+                padding: 24px 39px;
+
+                h3{
+                    font-size: 36px;
+                    font-family: 'Uberhand Pro';
+                    font-style: italic;
+                    color: #F8961E;
+                    margin-bottom: 8px;
+                }
+                p:nth-child(2){
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin-bottom: 18px;
+                }
+                p:nth-child(3){
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 300;
+                    font-size: 16px;
+                    margin-bottom: 6px;
+                }
+                div:last-child{
+                    
+                    a{
+                        color: #FFFFFF;
+                        margin-right: 8px;
+                    }
+                }
+            }
         }
-        height: 3px;
+        
+        svg.circle-bottom{
+            position: absolute;
+            bottom: -70px;
+            left: 430px;
+        }
+        svg.circle-right{
+        position: absolute;
+        right: 0;
+        bottom: 30px;
+        }
     }
 }

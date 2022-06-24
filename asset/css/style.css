@@ -1,5 +1,6 @@
 @import url("http://fonts.cdnfonts.com/css/circular-std");
 @import url("http://fonts.cdnfonts.com/css/uberhand-text-pro");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -212,22 +213,52 @@ section#quiz div#resultat {
     margin-bottom: 50px; }
 
 section#portraits {
-  padding: 140px 0; }
+  padding: 140px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   section#portraits div.title-farmer {
-    margin-left: 100px;
-    margin-bottom: 109px; }
+    margin-bottom: 64px; }
     section#portraits div.title-farmer h1 {
       font-size: 56px; }
-  section#portraits div.card {
-    width: 440px;
-    background-color: #E9FCF5;
-    padding: 20px 0;
-    border-radius: 16px;
+  section#portraits div.farmer-container {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-    section#portraits div.card img {
-      border-bottom: 1px solid #64E7BB;
-      margin-bottom: 27px; }
+    width: 100%;
+    justify-content: space-evenly;
+    position: relative; }
+    section#portraits div.farmer-container div.card-farmer {
+      width: 440px;
+      background-color: #36706B;
+      border-radius: 32px;
+      color: #FFFFFF;
+      z-index: 1; }
+      section#portraits div.farmer-container div.card-farmer div.card-farmer-text {
+        padding: 24px 39px; }
+        section#portraits div.farmer-container div.card-farmer div.card-farmer-text h3 {
+          font-size: 36px;
+          font-family: 'Uberhand Pro';
+          font-style: italic;
+          color: #F8961E;
+          margin-bottom: 8px; }
+        section#portraits div.farmer-container div.card-farmer div.card-farmer-text p:nth-child(2) {
+          font-weight: bold;
+          font-size: 20px;
+          margin-bottom: 18px; }
+        section#portraits div.farmer-container div.card-farmer div.card-farmer-text p:nth-child(3) {
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          font-size: 16px;
+          margin-bottom: 6px; }
+        section#portraits div.farmer-container div.card-farmer div.card-farmer-text div:last-child a {
+          color: #FFFFFF;
+          margin-right: 8px; }
+    section#portraits div.farmer-container svg.circle-bottom {
+      position: absolute;
+      bottom: -70px;
+      left: 430px; }
+    section#portraits div.farmer-container svg.circle-right {
+      position: absolute;
+      right: 0;
+      bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */
