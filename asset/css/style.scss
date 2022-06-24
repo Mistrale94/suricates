@@ -191,6 +191,8 @@ body{
     #value{
         background-color: #E9FCF5;
         padding: 80px;
+        margin-bottom: 112px;
+
         div:first-child{
              h1{
                 font-size: 56px;
@@ -325,7 +327,95 @@ section#quiz{
     }
 }
 
+section#travel{
+    margin-bottom: 112px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
+    div.travel-title{
+        position: relative;
+        margin-bottom: 66px;
+
+        svg:first-child{
+            position: absolute;
+            top: -30px;
+            right: 150px;
+        }
+        h1{
+            font-size: 56px;
+            text-transform: capitalize;
+        }
+    }
+    div.travel-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        div.travel-screen{
+            position: relative;
+
+            div:first-child{
+                width: 684px;
+                height: 459px;
+                border-radius: 25px;
+                background-color: #36706B;
+            }
+            div:last-child{
+                width: 182px;
+                height: 331px;
+                background: #5DB1AA;
+                border-radius: 19px;
+                position: absolute;
+                bottom: -90px;
+                right: -50px;
+            }
+        }
+        div.travel-text{
+            width: 400px;
+            position: relative;
+
+            svg.travel-arrow-top{
+                position: absolute;
+                top: 0;
+                left: -85px;
+            }
+            svg.travel-arrow-bottom{
+                position: absolute;
+                top: 130px;
+                left: -85px;
+            }
+            svg.travel-arrow-right{
+                position: absolute;
+                top: 60px;
+                right: -85px;
+            }
+            p{
+                margin-bottom: 24px;
+                font-family: 'Raleway';
+                font-weight: 300;
+                font-size: 16px;
+            }
+            p:nth-child(7){
+                margin-bottom: 48px;
+            }
+            p:nth-child(8){
+                background: #36706B;
+                border-radius: 32px;
+                width: 279px;
+                height: 56px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a{
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
 
 #concept{
     width: 100%;
