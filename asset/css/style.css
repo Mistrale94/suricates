@@ -10,18 +10,30 @@
 body.dark {
   background-color: #191A19;
   color: #FFFFFF; }
-  body.dark header nav ul li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    transition: 300ms; }
-  body.dark header nav ul li a:hover {
-    color: #1FC78E; }
-  body.dark header nav div.btn-toggle {
-    background-color: #CBE6E4; }
+  body.dark header nav {
+    background-color: #191A19; }
+    body.dark header nav ul li a {
+      text-decoration: none;
+      color: #FFFFFF;
+      transition: 300ms; }
+    body.dark header nav ul li a:hover {
+      color: #1FC78E; }
+    body.dark header nav div.btn-toggle {
+      background-color: #CBE6E4; }
+  body.dark section#value {
+    background-color: #333333; }
+    body.dark section#value div article {
+      background-color: #191A19; }
+  body.dark section#quiz {
+    background-color: #333333; }
+  body.dark footer {
+    background-color: #333333; }
 
 body.light {
   background-color: #FFFFFF;
   color: #191A19; }
+  body.light header nav {
+    background-color: #FFFFFF; }
 
 body {
   font-family: 'Century Gothic', sans-serif; }
@@ -32,7 +44,11 @@ body {
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    position: fixed;
+    position: fixed;
+    width: 100%;
+    z-index: 5; }
     body header nav a img {
       height: 27px; }
     body header nav ul {
@@ -408,6 +424,8 @@ section#portraits {
         section#portraits div.farmer-container div.card-farmer div.card-farmer-text div:last-child a {
           color: #FFFFFF;
           margin-right: 8px; }
+        section#portraits div.farmer-container div.card-farmer div.card-farmer-text div:last-child a:hover {
+          color: #F8961E; }
     section#portraits div.farmer-container svg.circle-bottom {
       position: absolute;
       bottom: -70px;

@@ -17,6 +17,7 @@ body.dark{
     header{
 
         nav{
+            background-color: #191A19;
             ul{
                 li{
                     a{
@@ -36,11 +37,31 @@ body.dark{
         }
         
     }
-    
+    section#value{
+        background-color: #333333;
+
+        div{
+            article{
+                background-color: #191A19;
+            }
+        }
+    }
+    section#quiz{
+        background-color: #333333;
+    }
+    footer{
+        background-color: #333333;
+    }
 }
 body.light{
     background-color: #FFFFFF;
     color:  #191A19;
+    
+    header{
+        nav{
+            background-color: #FFFFFF;
+        }
+    }
 }
 
 body{
@@ -57,6 +78,9 @@ body{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: fixed;    position: fixed;
+            width: 100%;
+            z-index: 5;
 
             a{
                 img{
@@ -601,6 +625,9 @@ section#portraits{
                     a{
                         color: #FFFFFF;
                         margin-right: 8px;
+                    }
+                    a:hover{
+                        color: #F8961E;
                     }
                 }
             }
