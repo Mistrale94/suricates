@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    body header nav div img {
+    body header nav a img {
       height: 27px; }
     body header nav ul {
       display: flex;
