@@ -195,7 +195,7 @@ body{
              background-image: url(../image/illugauche.svg);
              background-size: contain;
              background-repeat: no-repeat;
-         }
+        }
 
         #headsubtitle{
             font-family: "Raleway", sans-serif;
@@ -223,18 +223,20 @@ body{
             display: flex;
             justify-content: space-around;
             align-items: center;
-            width: 35%;
-
-            
-
+            position: relative;
 
             #button{
 
                 color: white;
-                padding: 20px 70px;
+                height: 57px;
+                width: 227px;
                 border-radius: 25px;
                 background: #36706B;
                 transition: 300ms;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 32px;
 
             }
 
@@ -256,8 +258,18 @@ body{
                  background-image: url(../image/Frame.svg);
                  background-repeat:no-repeat;
                  background-size: contain;
+            }
+
+            p:after{
+                display: none;
+            }
+
+            svg{
+                position: absolute;
+                right: -90px;
+                top: 40px;
+            }
         }
-    }
 }
 
     
@@ -578,11 +590,21 @@ section#portraits{
     flex-direction: column;
     align-items: center;
 
-    div.title-farmer{
-        margin-bottom: 64px;
+    div:first-child{
+        margin-bottom: 84px;
+        position: relative;
 
         h1{
             font-size: 56px;
+        }
+        svg:nth-child(3){
+            position: absolute;
+            right: -100px;
+        }
+        svg:nth-child(4){
+            position: absolute;
+            right: -100px;
+            top: 100px;
         }
     }
     div.farmer-container{
