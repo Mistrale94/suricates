@@ -183,8 +183,8 @@ body {
       margin: 40px auto; }
     body #value div:first-child h1:after {
       position: absolute;
-      bottom: -150px;
-      right: 36%;
+      bottom: -90px;
+      right: 37%;
       display: block;
       content: "";
       width: 130px;
