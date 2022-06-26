@@ -105,7 +105,7 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #CBE6E4;
+  color: #191A19;
   transition: 300ms;
 }
 
@@ -763,40 +763,44 @@ footer > p {
   margin-top: 10px;
 }
 
-footer div {
+footer div.footer-container {
   margin-top: 80px;
   display: flex;
 }
 
-footer div article:nth-child(1) {
+footer div.footer-container div {
+  display: flex;
+}
+
+footer div.footer-container article:nth-child(1) {
   font-weight: bold;
   margin-right: 200px;
 }
 
-footer div article:nth-child(1) h1 {
+footer div.footer-container article:nth-child(1) h1 {
   font-size: 20px;
   margin-bottom: 50px;
 }
 
-footer div article:nth-child(1) p {
+footer div.footer-container article:nth-child(1) p {
   font-size: 16px;
   margin-top: 10px;
 }
 
-footer div article:nth-child(1) p img {
+footer div.footer-container article:nth-child(1) p img {
   margin-right: 10px;
 }
 
-footer div article:nth-child(2), footer div article:nth-child(3) {
+footer div.footer-container article:nth-child(2), footer div.footer-container article:nth-child(3) {
   margin-left: 200px;
 }
 
-footer div article:nth-child(2) h1, footer div article:nth-child(3) h1 {
+footer div.footer-container article:nth-child(2) h1, footer div.footer-container article:nth-child(3) h1 {
   font-size: 16px;
   margin-bottom: 50px;
 }
 
-footer div article:nth-child(2) p, footer div article:nth-child(3) p {
+footer div.footer-container article:nth-child(2) p, footer div.footer-container article:nth-child(3) p {
   margin-top: 20px;
   font-size: 14px;
 }
@@ -828,10 +832,10 @@ footer:after {
     display: block !important;
   }
   header nav div.mobile-nav ul.mobile_link-group {
-    display: flex;
     flex-direction: column;
     align-items: flex-end;
     border-radius: 0px 0px 40px 40px;
+    display: none;
   }
   header nav .desktop_nav {
     display: none;
@@ -858,6 +862,16 @@ footer:after {
   }
   header div#headcontainer {
     width: 80%;
+  }
+  section#value div:last-child {
+    flex-direction: column;
+    align-items: center;
+  }
+  section#value div:last-child article {
+    margin-bottom: 48px;
+  }
+  section#value div:last-child article:last-child {
+    margin-bottom: 0;
   }
   section#travel div.travel-container {
     flex-direction: column;
@@ -895,6 +909,27 @@ footer:after {
   section#concept div#leftconcept article, section#concept div#rightconcept article, section#concept div#splitconcept article {
     margin-bottom: 32px;
   }
+  section#quiz {
+    align-items: center;
+    padding: 185px 0;
+  }
+  section#quiz div#quizdeco {
+    display: none;
+  }
+  section#quiz strong div {
+    display: none;
+  }
+  section#quiz div#button {
+    align-items: center;
+    flex-direction: column;
+  }
+  section#quiz div#button button#last {
+    margin-left: 0;
+    margin-bottom: 48px;
+  }
+  section#quiz div#button button#next {
+    margin-left: 0;
+  }
   section#portraits {
     padding: 112px 0 64px 0;
   }
@@ -919,16 +954,35 @@ footer:after {
   }
   section#quiz #button #next, section#quiz #button #finir {
     text-align: center;
-    margin: 0 auto;
-    margin-left: none;
   }
   section#quiz #button #last {
-    margin: 0 auto;
-    margin-left: none;
+    text-align: center;
     display: none;
     margin-bottom: 50px;
   }
   section#quiz svg {
+    display: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer div.footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  footer div.footer-container div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+  }
+  footer div.footer-container div article:nth-child(1) {
+    margin-right: 0;
+  }
+  footer div.footer-container div article:nth-child(2) {
+    margin-left: 0;
+  }
+  footer::after {
     display: none;
   }
 }
