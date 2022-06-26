@@ -6,7 +6,7 @@ const btnToggle = document.querySelector('.btn-toggle');
 
 btnToggle.addEventListener('click', () => {
     const body = document.body;
-    var image = document.getElementById('darkmode');
+    var image = document.getElementsByClassName('darkmode');
     var logo = document.getElementById('logo');
 
     if(body.classList.contains('dark')){
@@ -21,3 +21,13 @@ btnToggle.addEventListener('click', () => {
         logo.src = "asset/image/logo-white.png";
     }
 })
+
+function menu() {
+    if (document.getElementById('burger').classList.contains('open')) {
+        document.getElementsByClassName('mobile_link-group')[0].style.display = 'none';
+        document.getElementById('burger').classList.remove('open');
+    } else {
+        document.getElementsByClassName('mobile_link-group')[0].style.display = 'flex';
+        document.getElementById('burger').classList.add('open');
+    }
+}

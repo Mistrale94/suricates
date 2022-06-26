@@ -13,7 +13,7 @@
             <a href="">
                 <img src="asset/image/logo.png" alt="Logo" id="logo">
             </a>
-            <ul>
+            <ul class="desktop_nav">
                 <li>
                     <a href="#value">Nos valeurs</a>
                 </li>
@@ -30,9 +30,34 @@
                     <a href="#contact">Contact</a>
                 </li>
                 <div class="btn-toggle">
-                    <img src="asset/image/akar-icons_moon-fill.png" alt="" id="darkmode">
+                    <img src="asset/image/akar-icons_moon-fill.png" alt="" class="darkmode">
                 </div>
             </ul>
+            <div class="mobile-nav">
+                <a id="burger" onClick="menu();"><img src="asset/image/Menu.png" alt=""></a>
+
+                <ul class="mobile_link-group">
+                    <li class="mobile_link">
+                        <a href="#value">Nos valeurs</a>
+                    </li>
+                    <li class="mobile_link">
+                        <a href="#travel">Notre concept</a>
+                    </li>
+                    <li class="mobile_link">
+                        <a href="#quiz">Quizz</a>
+                    </li>
+                    <li class="mobile_link">
+                        <a href="#portraits">Portraits</a>
+                    </li>
+                    <li class="mobile_link">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <div class="btn-toggle">
+                        <img src="asset/image/akar-icons_moon-fill.png" alt="" class="darkmode">
+                    </div>
+                </ul>
+                
+            </div>
         </nav>
 
         <div class="headmain">
@@ -380,5 +405,5 @@
     </footer>
 </body>
 <script src="asset/js/quiz.js"></script>
-<script src="asset/js/dark.js"></script>
+<script src="asset/js/script.js"></script>
 </html>
