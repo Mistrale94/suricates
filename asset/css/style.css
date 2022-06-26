@@ -4,274 +4,465 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-bg-color: #CBE6E4;
+  --main-color-primer: #33706B;
+  --main-color-vert100: #162D2B;
+  --main-color-vert75: #264F4C;
+  --main-color-vert50: #36706B;
+  --main-color-vert25: #5DB1AA;
+  --main-color-vert00: #CBE6E4;
+}
 
 body {
-  font-family: 'Circular Std', sans-serif; }
-  body a {
-    text-decoration: none; }
-  body header nav {
-    height: 70px;
-    padding: 0 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    body header nav div img {
-      height: 47px; }
-    body header nav ul {
-      display: flex;
-      list-style: none; }
-      body header nav ul li {
-        padding: 0 15px 0 15px; }
-        body header nav ul li a {
-          text-decoration: none;
-          color: #1D1D1D;
-          transition: 300ms; }
-        body header nav ul li a:hover {
-          color: #1FC78E; }
-  body header .headmain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 95vh; }
-    body header .headmain #headcontainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      height: 50vh; }
-  body header h1 {
-    text-align: center;
-    font-size: 64px; }
-  body header h1:after {
-    position: absolute;
-    top: 200px;
-    right: 0;
-    display: block;
-    content: "";
-    width: 130px;
-    height: 260px;
-    background-image: url(../image/illudroite.svg); }
-  body header #headtitle {
-    width: 1034px; }
-    body header #headtitle strong {
-      position: relative; }
-      body header #headtitle strong div {
-        position: absolute;
-        bottom: -30px;
-        left: 0;
-        display: inline-block; }
-  body header p:after {
-    position: absolute;
-    top: 400px;
-    left: 0;
-    display: block;
-    content: "";
-    width: 150px;
-    height: 300px;
-    background-image: url(../image/illugauche.svg);
-    background-size: contain;
-    background-repeat: no-repeat; }
-  body header #headsubtitle {
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    width: 80%;
-    font-size: 16px;
-    padding: 50px; }
-  body header #actions {
-    font-family: "Raleway", sans-serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 35%; }
-    body header #actions #button {
-      color: white;
-      padding: 20px 70px;
-      border-radius: 25px;
-      background: #1FC78E;
-      transition: 300ms; }
-    body header #actions #button:hover {
-      background: #093929; }
-    body header #actions:after {
-      position: absolute;
-      top: 730px;
-      right: 550px;
-      display: block;
-      content: "";
-      width: 120px;
-      height: 400px;
-      background-image: url(../image/Frame.svg);
-      background-repeat: no-repeat;
-      background-size: contain; }
-  body #value {
-    background-color: #E9FCF5;
-    padding: 80px; }
-    body #value div:first-child h1 {
-      font-size: 56px;
-      font-weight: bold;
-      text-align: center; }
-      body #value div:first-child h1 strong {
-        position: relative; }
-        body #value div:first-child h1 strong div {
-          position: absolute;
-          top: 10px;
-          left: -100px;
-          display: inline-block; }
-    body #value div:first-child p {
-      text-align: center;
-      width: 600px;
-      margin: 40px auto; }
-    body #value div:first-child h1:after {
-      position: absolute;
-      bottom: -150px;
-      right: 36%;
-      display: block;
-      content: "";
-      width: 130px;
-      height: 100px;
-      background-image: url(../image/photo1.svg); }
-    body #value div:last-child {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 100px; }
-      body #value div:last-child article {
-        width: 354px;
-        height: 394px;
-        background: #FFFFFF;
-        border-radius: 40px;
-        padding: 61px 30px; }
-        body #value div:last-child article div {
-          width: 68px;
-          height: 68px;
-          background: #1FC78E;
-          border-radius: 50%;
-          margin: 0 auto;
-          margin-bottom: 56px; }
-        body #value div:last-child article h1 {
-          text-align: center;
-          margin-bottom: 24px;
-          font-size: 22px;
-          font-weight: bold;
-          color: #1FC78E; }
-        body #value div:last-child article p {
-          text-align: center;
-          font-size: 16px;
-          line-height: 20px; }
-    body #value:after {
-      position: absolute;
-      top: 1100px;
-      right: 1850px;
-      display: block;
-      content: "";
-      width: 120px;
-      height: 400px;
-      background-image: url(../image/deco.svg);
-      background-repeat: no-repeat;
-      background-size: contain; }
+  font-family: 'Circular Std', sans-serif;
+}
 
-section#quiz, section#resultat {
+body a {
+  text-decoration: none;
+}
+
+body header nav {
+  height: 70px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body header nav div img {
+  height: 47px;
+}
+
+body header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+body header nav ul li {
+  padding: 0 15px 0 15px;
+}
+
+body header nav ul li a {
+  text-decoration: none;
+  color: #1D1D1D;
+  transition: 300ms;
+}
+
+body header nav ul li a:hover {
+  color: #1FC78E;
+}
+
+body header .headmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 95vh;
+}
+
+body header .headmain #headcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50vh;
+}
+
+body header h1 {
+  text-align: center;
+  font-size: 64px;
+}
+
+body header h1:after {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  display: block;
+  content: "";
+  width: 130px;
+  height: 260px;
+  background-image: url(../image/illudroite.svg);
+}
+
+body header #headtitle {
+  width: 1034px;
+}
+
+body header #headtitle strong {
+  position: relative;
+}
+
+body header #headtitle strong div {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  display: inline-block;
+}
+
+body header p:after {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  display: block;
+  content: "";
+  width: 150px;
+  height: 300px;
+  background-image: url(../image/illugauche.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body header #headsubtitle {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  width: 80%;
+  font-size: 16px;
+  padding: 50px;
+}
+
+body header #actions {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+}
+
+body header #actions #button {
+  color: white;
+  padding: 20px 70px;
+  border-radius: 25px;
+  background: #1FC78E;
+  transition: 300ms;
+}
+
+body header #actions #button:hover {
+  background: #093929;
+}
+
+body header #actions:after {
+  position: absolute;
+  top: 730px;
+  right: 550px;
+  display: block;
+  content: "";
+  width: 120px;
+  height: 400px;
+  background-image: url(../image/Frame.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body #value {
   background-color: #E9FCF5;
-  padding: 185px 100px; }
+  padding: 80px;
+}
+
+body #value div:first-child h1 {
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+}
+
+body #value div:first-child h1 strong {
+  position: relative;
+}
+
+body #value div:first-child h1 strong div {
+  position: absolute;
+  top: 10px;
+  left: -100px;
+  display: inline-block;
+}
+
+body #value div:first-child p {
+  text-align: center;
+  width: 600px;
+  margin: 40px auto;
+}
+
+body #value div:first-child h1:after {
+  position: absolute;
+  bottom: -150px;
+  right: 36%;
+  display: block;
+  content: "";
+  width: 130px;
+  height: 100px;
+  background-image: url(../image/photo1.svg);
+}
+
+body #value div:last-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+body #value div:last-child article {
+  width: 354px;
+  height: 394px;
+  background: #FFFFFF;
+  border-radius: 40px;
+  padding: 61px 30px;
+}
+
+body #value div:last-child article div {
+  width: 68px;
+  height: 68px;
+  background: #1FC78E;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+
+body #value div:last-child article h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1FC78E;
+}
+
+body #value div:last-child article p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+body #value:after {
+  position: absolute;
+  top: 1100px;
+  right: 1850px;
+  display: block;
+  content: "";
+  width: 120px;
+  height: 400px;
+  background-image: url(../image/deco.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+section#quiz {
+  background-color: #CBE6E4;
+  padding: 185px 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
 section#quiz h1 {
   font-size: 60px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+section#quiz h1 strong {
+  position: relative;
+}
+
+section#quiz h1 strong div {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  display: inline-block;
+}
+
 section#quiz p {
-  text-align: center;
-  font-size: 32px; }
+  font-size: 16px;
+}
+
 section#quiz form {
-  padding: 40px 100px;
   display: flex;
-  justify-content: space-between; }
-  section#quiz form div {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    section#quiz form div input {
-      width: 20px;
-      height: 20px;
-      color: black; }
-    section#quiz form div label {
-      font-size: 20px;
-      margin-top: 10px; }
-section#quiz button {
-  background-color: black;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+section#quiz form div {
+  display: flex;
+  align-items: center;
+  color: #093929;
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+section#quiz form div input {
+  width: 20px;
+  height: 20px;
+  background-color: #093929;
+}
+
+section#quiz form div span {
+  margin-left: 10px;
+}
+
+section#quiz form div #radio {
+  accent-color: #093929;
+}
+
+section#quiz #button {
+  display: flex;
+  flex-direction: row;
+}
+
+section#quiz #button #next, section#quiz #button #finir {
+  background-color: #33706B;
   color: white;
-  padding: 10px;
-  border-radius: 20px;
-  text-align: center;
+  padding: 20px 40px;
+  border-radius: 30px;
   display: block;
-  margin: 0 auto; }
-section#quiz button#finir {
-  display: none; }
+  border: none;
+  margin-left: auto;
+}
+
+section#quiz #button #finir {
+  display: none;
+}
+
+section#quiz #button #last {
+  color: #162D2B;
+  border: none;
+  margin-left: auto;
+  background-color: #CBE6E4;
+  display: none;
+}
+
+section#quiz strong {
+  position: relative;
+}
+
+section#quiz strong div {
+  right: -102px;
+  bottom: 20px;
+  position: absolute;
+  display: inline-block;
+}
+
 section#quiz div#resultat {
-  display: none; }
-  section#quiz div#resultat p {
-    margin-bottom: 50px; }
+  display: none;
+}
+
+section#quiz div#resultat p {
+  margin-bottom: 50px;
+}
+
+section#quiz div#resultat #refaire {
+  background-color: #33706B;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 30px;
+  display: block;
+  border: none;
+  margin-left: auto;
+}
+
+section#quiz #quizdeco {
+  position: absolute;
+  top: 400px;
+  right: 0;
+}
 
 section#portraits {
-  padding: 140px 0; }
-  section#portraits div.title-farmer {
-    margin-left: 100px;
-    margin-bottom: 109px; }
-    section#portraits div.title-farmer h1 {
-      font-size: 56px; }
-  section#portraits div.card {
-    width: 440px;
-    background-color: #E9FCF5;
-    padding: 20px 0;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    section#portraits div.card img {
-      border-bottom: 1px solid #64E7BB;
-      margin-bottom: 27px; }
+  padding: 140px 0;
+}
+
+section#portraits div.title-farmer {
+  margin-left: 100px;
+  margin-bottom: 109px;
+}
+
+section#portraits div.title-farmer h1 {
+  font-size: 56px;
+}
+
+section#portraits div.card {
+  width: 440px;
+  background-color: #E9FCF5;
+  padding: 20px 0;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 3px;
+}
+
+section#portraits div.card img {
+  border-bottom: 1px solid #64E7BB;
+  margin-bottom: 27px;
+}
 
 footer {
   background-color: #1FC78E;
   color: #FFFFFF;
-  padding: 100px; }
-  footer > p {
-    margin-top: 10px; }
-  footer div {
-    margin-top: 80px;
-    display: flex; }
-    footer div article:nth-child(1) {
-      font-weight: bold;
-      margin-right: 200px; }
-      footer div article:nth-child(1) h1 {
-        font-size: 20px;
-        margin-bottom: 50px; }
-      footer div article:nth-child(1) p {
-        font-size: 16px;
-        margin-top: 10px; }
-        footer div article:nth-child(1) p img {
-          margin-right: 10px; }
-    footer div article:nth-child(2), footer div article:nth-child(3) {
-      margin-left: 200px; }
-      footer div article:nth-child(2) h1, footer div article:nth-child(3) h1 {
-        font-size: 16px;
-        margin-bottom: 50px; }
-      footer div article:nth-child(2) p, footer div article:nth-child(3) p {
-        margin-top: 20px;
-        font-size: 14px; }
-  footer > p:last-child {
-    text-align: center;
-    margin-top: 150px;
-    font-weight: bold; }
-  footer:after {
-    position: absolute;
-    bottom: -3355px;
-    left: 90%;
-    display: block;
-    content: "";
-    width: 27px;
-    height: 75px;
-    background-image: url(../image/back.svg);
-    background-repeat: no-repeat;
-    background-size: contain; }
+  padding: 100px;
+}
 
-/*# sourceMappingURL=style.css.map */
+footer > p {
+  margin-top: 10px;
+}
+
+footer div {
+  margin-top: 80px;
+  display: flex;
+}
+
+footer div article:nth-child(1) {
+  font-weight: bold;
+  margin-right: 200px;
+}
+
+footer div article:nth-child(1) h1 {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+footer div article:nth-child(1) p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+footer div article:nth-child(1) p img {
+  margin-right: 10px;
+}
+
+footer div article:nth-child(2), footer div article:nth-child(3) {
+  margin-left: 200px;
+}
+
+footer div article:nth-child(2) h1, footer div article:nth-child(3) h1 {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+footer div article:nth-child(2) p, footer div article:nth-child(3) p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+footer > p:last-child {
+  text-align: center;
+  margin-top: 150px;
+  font-weight: bold;
+}
+
+footer:after {
+  position: absolute;
+  bottom: -3355px;
+  left: 90%;
+  display: block;
+  content: "";
+  width: 27px;
+  height: 75px;
+  background-image: url(../image/back.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
