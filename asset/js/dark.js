@@ -8,16 +8,25 @@ btnToggle.addEventListener('click', () => {
     const body = document.body;
     var image = document.getElementById('darkmode');
     var logo = document.getElementById('logo');
+    var picto = document.getElementById('picto');
+    var picto2 = document.getElementById('picto2');
+    var picto3 = document.getElementById('picto3');
 
     if(body.classList.contains('dark')){
         body.classList.add('light')
         body.classList.remove('dark')
         image.src = "asset/image/akar-icons_moon-fill.png";
         logo.src = "asset/image/logo.png";
+        picto.src = "asset/image/Illu Valeur.png";
+        picto2.src = "asset/image/Illu Valeur (1).png";
+        picto3.src = "asset/image/Illu Valeur (2).png";
     }else if (body.classList.contains('light')){
         body.classList.add('dark')
         body.classList.remove('light')
         image.src = "asset/image/akar-icons_sun-fill.png";
         logo.src = "asset/image/logo-white.png";
+        picto.src = "asset/image/Illu Valeur (3).png";
+        picto2.src = "asset/image/Illu Valeur (4).png";
+        picto3.src = "asset/image/Illu Valeur (5).png";
     }
 })

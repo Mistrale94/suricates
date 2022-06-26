@@ -45,6 +45,13 @@ body.dark{
                 background-color: #191A19;
             }
         }
+        div:last-child{
+            article{
+                h1{
+                    color: #FFFFFF;
+                }
+            }
+        }
     }
     section#quiz{
         background-color: #333333;
@@ -273,7 +280,7 @@ body{
 
     
     #value{
-        background-color: #E9FCF5;
+        background-color: #CBE6E4;
         padding: 80px;
         margin-bottom: 112px;
 
@@ -321,8 +328,6 @@ body{
                 div{
                     width: 68px;
                     height: 68px;
-                    background: #1FC78E;
-                    border-radius: 50%;
                     margin: 0 auto;
                     margin-bottom: 56px;
                 }
@@ -331,7 +336,7 @@ body{
                     margin-bottom: 24px;
                     font-size: 22px;
                     font-weight: bold;
-                    color: #1FC78E;
+                    color: #264F4C;
 
                 }
                 p{
@@ -666,7 +671,8 @@ section#portraits{
             background-color: #36706B;
             border-radius: 32px;
             color: #FFFFFF;
-            z-index: 1;
+            z-index: 2;
+            position: relative;
 
             div.card-farmer-text{
                 padding: 24px 39px;
@@ -705,8 +711,9 @@ section#portraits{
         
         svg.circle-bottom{
             position: absolute;
-            bottom: -70px;
-            left: 430px;
+            bottom: -60px;
+            right: 20px;
+            z-index: -1 !important;
         }
         svg.circle-right{
         position: absolute;
@@ -717,7 +724,7 @@ section#portraits{
 }
 
 footer{
-    background-color: #1FC78E;
+    background-color: #36706B;
     color: #FFFFFF;
     padding: 100px;
     &>p{
