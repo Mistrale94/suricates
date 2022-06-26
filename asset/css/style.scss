@@ -939,7 +939,37 @@ footer{
                 display: none;
             }
         }
-    } 
+    }
+
+
+
+
+    section#quiz{
+        padding: 185px 100px;
+        #question,#resultat{
+            text-align: center;
+        }
+        #button{
+            flex-direction: column;
+    
+            #next,#finir{
+                text-align: center;
+                 margin: 0 auto;
+                 margin-left: none;
+            }
+            #last{
+                margin: 0 auto;
+                margin-left: none;
+                display: none;
+                margin-bottom: 50px;
+            }
+        
+        }
+        svg{
+            display: none;
+        }
+
+    }
 }
 
 @media (max-width: 600px){
