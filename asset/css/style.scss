@@ -988,17 +988,29 @@ footer{
         align-items: center;
         flex-wrap: nowrap;
         margin: 112px 0;
+        height: 3000px;
 
         div#leftconcept, div#rightconcept, div#splitconcept{
             display: flex;
             flex-wrap: nowrap;
             align-items: center;
 
+            #splitconcept{
+                display: none !important;
+            }
+            
             article{
                 margin-bottom: 32px;
             }
+
+            #spacer{
+                display: none;
+            }
         }
+
+        
     }
+    
     section#quiz{
         align-items: center;
         padding: 185px 0;
