@@ -53,8 +53,22 @@ body.dark{
             }
         }
     }
+    section#concept{
+        div#leftconcept, div#rightconcept{
+            article{
+                background-color: #333333;
+            }
+        }
+    }
     section#quiz{
         background-color: #333333;
+    }
+    section#portraits{
+        div.farmer-container{
+            div.card-farmer{
+                background-color: #333333;
+            }
+        }
     }
     footer{
         background-color: #333333;
@@ -168,7 +182,15 @@ header{
         .mobile_link-group .social {
             cursor: auto;
         }
-
+        div.mobile-nav{
+            ul.mobile_link-group{
+                li.mobile_link{
+                    a{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
     }
 
     .headmain{
@@ -824,7 +846,7 @@ section#portraits{
         svg.circle-bottom{
             position: absolute;
             bottom: -60px;
-            right: 20px;
+            right: 60%;
             z-index: -1 !important;
         }
         svg.circle-right{

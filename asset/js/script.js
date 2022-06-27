@@ -6,7 +6,7 @@ const btnToggle = document.querySelector('.btn-toggle');
 
 btnToggle.addEventListener('click', () => {
     const body = document.body;
-    var image = document.getElementsByClassName('darkmode');
+    var image = document.getElementById('darkmode');
     var logo = document.getElementById('logo');
     var picto = document.getElementById('picto');
     var picto2 = document.getElementById('picto2');
