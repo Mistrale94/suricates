@@ -688,13 +688,18 @@ footer {
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
-    margin: 112px 0; }
+    margin: 112px 0;
+    height: 3000px; }
     section#concept div#leftconcept, section#concept div#rightconcept, section#concept div#splitconcept {
       display: flex;
       flex-wrap: nowrap;
       align-items: center; }
+      section#concept div#leftconcept #splitconcept, section#concept div#rightconcept #splitconcept, section#concept div#splitconcept #splitconcept {
+        display: none !important; }
       section#concept div#leftconcept article, section#concept div#rightconcept article, section#concept div#splitconcept article {
         margin-bottom: 32px; }
+      section#concept div#leftconcept #spacer, section#concept div#rightconcept #spacer, section#concept div#splitconcept #spacer {
+        display: none; }
 
   section#quiz {
     align-items: center;
