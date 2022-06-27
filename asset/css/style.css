@@ -677,23 +677,39 @@ footer {
       section#travel div.travel-container div.travel-text svg {
         display: none; }
 
+  #ccm {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 80px; }
+
   section#concept {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
-    margin: 112px 0;
-    height: 3000px; }
-    section#concept div#leftconcept, section#concept div#rightconcept, section#concept div#splitconcept {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 2600px; }
+    section#concept svg {
+      top: -240px;
+      right: 250px; }
+    section#concept div#leftconcept, section#concept div#rightconcept {
       display: flex;
       flex-wrap: nowrap;
-      align-items: center; }
-      section#concept div#leftconcept #splitconcept, section#concept div#rightconcept #splitconcept, section#concept div#splitconcept #splitconcept {
-        display: none !important; }
-      section#concept div#leftconcept article, section#concept div#rightconcept article, section#concept div#splitconcept article {
+      align-items: center;
+      height: 1200px;
+      width: 100%; }
+      section#concept div#leftconcept #under, section#concept div#rightconcept #under {
+        top: -150px;
+        right: 400px; }
+      section#concept div#leftconcept article, section#concept div#rightconcept article {
         margin-bottom: 32px; }
-      section#concept div#leftconcept #spacer, section#concept div#rightconcept #spacer, section#concept div#splitconcept #spacer {
+      section#concept div#leftconcept #spacer, section#concept div#rightconcept #spacer {
         display: none; }
+    section#concept #splitconcept {
+      display: none; }
 
   section#quiz {
     align-items: center;
@@ -798,10 +814,41 @@ footer {
     padding-top: 0;
     font-weight: 400;
     font-size: 29px;
-    margin-bottom: 4px; }
+    margin-bottom: 4px;
+    text-align: center;
+    padding-bottom: 20px; }
 
   section#concept {
-    margin: 0; }
+    height: 2150px;
+    margin: 0;
+    margin-bottom: 100px;
+    padding: 0;
+    width: 100%; }
+    section#concept svg {
+      top: -90px;
+      right: 180px; }
+    section#concept #leftconcept, section#concept #rightconcept {
+      width: 100%; }
+      section#concept #leftconcept #spacer, section#concept #rightconcept #spacer {
+        display: none; }
+      section#concept #leftconcept #under, section#concept #rightconcept #under {
+        top: 0;
+        right: -30px; }
+      section#concept #leftconcept article, section#concept #rightconcept article {
+        padding: 25px;
+        width: 90%;
+        height: 500px;
+        display: flex;
+        justify-content: none;
+        align-items: center; }
+        section#concept #leftconcept article #imgleft, section#concept #rightconcept article #imgleft {
+          height: 200px;
+          padding: 0;
+          margin: 0; }
+        section#concept #leftconcept article h2, section#concept #rightconcept article h2 {
+          font-size: 24px; }
+    section#concept #splitconcept {
+      display: none; }
 
   section#quiz h1 {
     font-weight: 400;

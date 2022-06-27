@@ -987,23 +987,40 @@ footer{
             }
         }
     }
+    #ccm{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 80px;
+    }
     section#concept{
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
-        margin: 112px 0;
-        height: 3000px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 2600px;
 
-        div#leftconcept, div#rightconcept, div#splitconcept{
+        svg{
+            top: -240px;
+            right: 250px;
+        }
+
+
+        div#leftconcept, div#rightconcept{
             display: flex;
             flex-wrap: nowrap;
             align-items: center;
+            height: 1200px;
+            width: 100%;
 
-            #splitconcept{
-                display: none !important;
+            #under{
+                top: -150px;
+                right: 400px;
             }
-            
+
             article{
                 margin-bottom: 32px;
             }
@@ -1013,7 +1030,10 @@ footer{
             }
         }
 
-        
+        #splitconcept{
+            display: none;
+        }
+
     }
     
     section#quiz{
@@ -1188,9 +1208,59 @@ footer{
         font-weight: 400;
         font-size: 29px;
         margin-bottom: 4px;
+        text-align: center;
+        padding-bottom: 20px;
     }
     section#concept{
+        height: 2150px;
         margin: 0;
+        margin-bottom: 100px;
+        padding: 0;
+        width: 100%;
+
+        svg{
+            top: -90px;
+            right: 180px;
+        }
+
+       #leftconcept, #rightconcept{
+        width: 100%;
+
+        #spacer{
+            display: none;
+        }
+
+        #under{
+            top: 0;
+            right: -30px;
+        }
+        
+
+        article{
+            padding: 25px;
+            width: 90%;
+            height: 500px;
+            display: flex;
+            justify-content: none;
+            align-items: center;
+
+            #imgleft{
+                height: 200px;
+                padding: 0;
+                margin: 0;
+            }
+
+            h2{
+                font-size: 24px;
+            }
+            
+        }
+       }
+
+       #splitconcept{
+        display: none;
+
+    }
     }
     section#quiz{
         h1{
