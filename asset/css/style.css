@@ -98,11 +98,14 @@ header nav {
     position: absolute;
     z-index: 4;
     right: 0;
-    top: 80px;
+    top: 0px;
     background: #36706b;
     width: 320px;
     height: 700px;
     display: block; }
+    header nav .mobile_link-group > a {
+      padding: 73px 32px 95px 15px;
+      cursor: pointer; }
   header nav .mobile_link-group li {
     text-align: right;
     padding: 25px 20px;
