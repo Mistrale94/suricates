@@ -795,7 +795,7 @@ footer {
       section#value div:first-child h1 strong div {
         margin-top: 4px; }
     section#value div:first-child h1:after {
-      bottom: -350px;
+      bottom: -330px;
       right: 15%; }
     section#value div:first-child p {
       width: 350px; }
