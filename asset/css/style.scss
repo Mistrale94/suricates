@@ -920,6 +920,7 @@ footer{
 @media (max-width: 929px){
     
     header{
+        margin-bottom: 200px;
         nav{
             position: initial;
             padding: 0 30px;
@@ -960,7 +961,8 @@ footer{
                 margin-top: 24px;
             }
             svg{
-                display: none;
+                right: -8%;
+                top: 110px;
             }
         }
         div#headcontainer{
@@ -1139,8 +1141,6 @@ footer{
 @media (max-width: 414px){
     header{
         div.headmain{
-            margin-bottom: 112px;
-
             div#headcontainer{
                div#headtitle{
                     margin-bottom: 56px;
