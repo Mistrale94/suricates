@@ -486,7 +486,7 @@ section#quiz{
         display: flex;
         flex-direction: row;
 
-        #next,#finir{
+        #next,#finir,#partage{
             background-color: #33706B;
             color: white;
             padding: 20px 40px;
@@ -504,6 +504,14 @@ section#quiz{
             margin-left: auto;
             background-color: #CBE6E4;
             display: none;
+
+        }
+        #newsletter{
+            color: #162D2B;
+            border: none;
+            margin-left: auto;
+            background-color: #CBE6E4;
+
         }
 
     }
@@ -521,6 +529,7 @@ section#quiz{
         display : none;
         p{
             margin-bottom: 50px;
+            text-align: center;
         }
         #refaire{
             background-color: #33706B;
@@ -537,6 +546,100 @@ section#quiz{
         top: 400px;
         right: 0;
     }
+
+    #popup{
+        //position:absolute;
+        display: none;
+        position: fixed;
+        //display: flex;
+        align-items:center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 41, 52, 0.75);
+        z-index: 999;
+
+        strong{
+            position: relative;
+            div{
+                position: absolute;
+                top: -55px;
+                left: 165px;
+                display: inline-block;
+            }
+        }
+
+        #popup_partager,#popup_newsletter{
+
+             display: none;
+             position:relative;
+             //display: flex;
+             align-items:center;
+             flex-direction: column;
+             background-color: white;
+             opacity: 1;
+             width: 802px;
+             height: 527px;
+             border-radius: 20px;
+             margin: 0 auto;
+             padding: 100px 190px;
+
+             h1{
+                font-size: 32px;
+             }
+             .lien{
+                padding: 0 60px;
+             }
+             
+             #close{
+                position:absolute;
+                top: 40px;
+                right: 40px;
+                border: none;
+            }
+            #copie{
+                margin-top: 40px;
+                padding: 5px;
+                border-radius: 8px;
+                background-color: var(--main-color-vert00);
+                width: 400px;
+                display: flex;
+                p{
+                    text-align: center;
+                    color: var(--main-color-vert50);
+                    padding: 15px;
+                }
+            }
+            
+        }
+
+        #popup_newsletter{
+            p{
+                text-align: center;
+            }
+            input{
+                margin-top: 20px;
+                padding: 20px 15px;
+                width: 100%;
+                box-sizing: border-box;
+                border: 1px solid var(--main-color-vert50);
+                border-radius: 8px;
+                color: #8C8D8C;
+            }
+            #envoyer{
+                margin-top: 20px;
+                background-color: #33706B;
+                color: white;
+                padding: 20px 40px;
+                border-radius: 30px;
+                display: block;
+                border: none;
+                margin-left: auto;
+            }
+        }
+     }
+     
 }
 
 section#travel{
@@ -920,6 +1023,7 @@ footer{
 @media (max-width: 929px){
     
     header{
+        margin-bottom: 200px;
         nav{
             position: initial;
             padding: 0 30px;
@@ -960,7 +1064,8 @@ footer{
                 margin-top: 24px;
             }
             svg{
-                display: none;
+                right: -8%;
+                top: 110px;
             }
         }
         div#headcontainer{
@@ -1109,6 +1214,35 @@ footer{
             }
         }
     }
+
+
+    section#quiz{
+        padding: 185px 100px;
+        #question,#resultat{
+            text-align: center;
+        }
+        #button{
+            flex-direction: column;
+    
+            #next,#finir{
+                text-align: center;
+                 //margin: 0 auto;
+                 //margin-left: none;
+            }
+            #last{
+                text-align: center;
+                //margin: 0 auto;
+                //margin-left: none;
+                display: none;
+                margin-bottom: 50px;
+            }
+        
+        }
+        svg{
+            display: none;
+        }
+    }
+
     footer{
         display: flex;
         flex-direction: column;
@@ -1188,8 +1322,8 @@ footer{
                 }
             }
             h1:after{
-                bottom: -150px;
-                right: 15%;
+                bottom: -420px;
+                right: 13%;
             }
             p{
                 width: 350px;
@@ -1222,6 +1356,7 @@ footer{
             }
             div.travel-text{
                 padding: 0 32px;
+                width: 100%;
             }
         }
     }

@@ -43,11 +43,26 @@ dateList = [{
 }
 
 ];
-var reponsesFinales =[
-"éleveur d’abeilles sur rooftop Parisien",
-"Conchyliculteur (moules, huitres, st jacques) en Bretagne",
-"horticulteur en Nouvelle Aquitaine",
-"producteur de fromage en Auvergne"
+// var reponsesFinales =[
+// "éleveur d’abeilles sur rooftop Parisien",
+// "Conchyliculteur (moules, huitres, st jacques) en Bretagne",
+// "horticulteur en Nouvelle Aquitaine",
+// "producteur de fromage en Auvergne"
+// ];
+
+var reponsesFinales =[{
+  "title" : "éleveur d’abeilles sur rooftop Parisien",
+  "image" : "Conchyliculteur.png",
+},{
+  "title" : "Conchyliculteur (moules, huitres, st jacques) en Bretagne",
+  "image" : "Conchyliculteur.png",
+},{
+  "title" : "horticulteur en Nouvelle Aquitaine",
+  "image" : "Conchyliculteur.png",
+},{
+  "title" : "producteur de fromage en Auvergne",
+  "image" : "producteurdefromage.png",
+}
 ];
 
 
@@ -135,7 +150,8 @@ function finir(){
           //console.log("a=",a,"b=",b);
           if(a>b)
              res = reponseList[i];
-             document.querySelector('#resultat p').innerHTML = ` vous êtes un ${reponsesFinales[res-1]}`;
+             inputResulta(res-1);
+             //document.querySelector('#resultat p').innerHTML = `${reponsesFinales[res-1].title}`;
           return;
         }
         if(num > resN){
@@ -144,7 +160,8 @@ function finir(){
         }
         if(num == 3){
            res = reponseList[i];
-           document.querySelector('#resultat p').innerHTML = `vous êtes un ${reponsesFinales[res-1]}`;
+           inputResulta(res-1);
+           //document.querySelector('#resultat p').innerHTML = `${reponsesFinales[res-1].title}`;
            return;
         }
       }
@@ -152,8 +169,18 @@ function finir(){
         num = 1;
       }
     }
-  document.querySelector('#resultat p').innerHTML = `vous êtes un ${reponsesFinales[res-1]}`;
+    inputResulta(res-1);
+  //document.querySelector('#resultat p').innerHTML = `${reponsesFinales[res-1].title}`;
+
   }
+
+}
+function inputResulta(num){
+
+  document.querySelector('#resultat p').innerHTML = `${reponsesFinales[num].title}`;
+  document.querySelector('#resultat img').src= `asset/image/${reponsesFinales[num].image}`;
+  document.querySelector('#resultat img').alt= `${reponsesFinales[num].image}`;
+
 
 }
 
@@ -209,5 +236,21 @@ function inputQuiz(j){
   }
   document.getElementById("option").innerHTML = h;
 
+}
+function partage(){
+  document.getElementById("popup").style= "display : flex";
+  document.getElementById("popup_partager").style= "display : flex";
+}
+
+function quiz_close(){
+
+  document.getElementById("popup").style= "display : none";
+  document.getElementById("popup_partager").style= "display : none";
+  document.getElementById("popup_newsletter").style= "display : none";
+  
+}
+function newsletter(){
+  document.getElementById("popup").style= "display : flex";
+  document.getElementById("popup_newsletter").style= "display : flex";
 
 }

@@ -311,7 +311,7 @@ section#quiz {
   section#quiz #button {
     display: flex;
     flex-direction: row; }
-    section#quiz #button #next, section#quiz #button #finir {
+    section#quiz #button #next, section#quiz #button #finir, section#quiz #button #partage {
       background-color: #33706B;
       color: white;
       padding: 20px 40px;
@@ -327,6 +327,11 @@ section#quiz {
       margin-left: auto;
       background-color: #CBE6E4;
       display: none; }
+    section#quiz #button #newsletter {
+      color: #162D2B;
+      border: none;
+      margin-left: auto;
+      background-color: #CBE6E4; }
   section#quiz strong {
     position: relative; }
     section#quiz strong div {
@@ -337,7 +342,8 @@ section#quiz {
   section#quiz div#resultat {
     display: none; }
     section#quiz div#resultat p {
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      text-align: center; }
     section#quiz div#resultat #refaire {
       background-color: #33706B;
       color: white;
@@ -350,6 +356,74 @@ section#quiz {
     position: absolute;
     top: 400px;
     right: 0; }
+  section#quiz #popup {
+    display: none;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 41, 52, 0.75);
+    z-index: 999; }
+    section#quiz #popup strong {
+      position: relative; }
+      section#quiz #popup strong div {
+        position: absolute;
+        top: -55px;
+        left: 165px;
+        display: inline-block; }
+    section#quiz #popup #popup_partager, section#quiz #popup #popup_newsletter {
+      display: none;
+      position: relative;
+      align-items: center;
+      flex-direction: column;
+      background-color: white;
+      opacity: 1;
+      width: 802px;
+      height: 527px;
+      border-radius: 20px;
+      margin: 0 auto;
+      padding: 100px 190px; }
+      section#quiz #popup #popup_partager h1, section#quiz #popup #popup_newsletter h1 {
+        font-size: 32px; }
+      section#quiz #popup #popup_partager .lien, section#quiz #popup #popup_newsletter .lien {
+        padding: 0 60px; }
+      section#quiz #popup #popup_partager #close, section#quiz #popup #popup_newsletter #close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        border: none; }
+      section#quiz #popup #popup_partager #copie, section#quiz #popup #popup_newsletter #copie {
+        margin-top: 40px;
+        padding: 5px;
+        border-radius: 8px;
+        background-color: var(--main-color-vert00);
+        width: 400px;
+        display: flex; }
+        section#quiz #popup #popup_partager #copie p, section#quiz #popup #popup_newsletter #copie p {
+          text-align: center;
+          color: var(--main-color-vert50);
+          padding: 15px; }
+    section#quiz #popup #popup_newsletter p {
+      text-align: center; }
+    section#quiz #popup #popup_newsletter input {
+      margin-top: 20px;
+      padding: 20px 15px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid var(--main-color-vert50);
+      border-radius: 8px;
+      color: #8C8D8C; }
+    section#quiz #popup #popup_newsletter #envoyer {
+      margin-top: 20px;
+      background-color: #33706B;
+      color: white;
+      padding: 20px 40px;
+      border-radius: 30px;
+      display: block;
+      border: none;
+      margin-left: auto; }
 
 section#travel {
   margin-bottom: 112px;
@@ -629,34 +703,37 @@ footer {
     background-size: contain; }
 
 @media (max-width: 929px) {
-  header nav {
-    position: initial;
-    padding: 0 30px; }
-    header nav div.mobile-nav, header nav #burger {
-      display: block !important; }
-    header nav div.mobile-nav ul.mobile_link-group {
-      flex-direction: column;
-      align-items: flex-end;
-      border-radius: 0px 0px 40px 40px;
+  header {
+    margin-bottom: 200px; }
+    header nav {
+      position: initial;
+      padding: 0 30px; }
+      header nav div.mobile-nav, header nav #burger {
+        display: block !important; }
+      header nav div.mobile-nav ul.mobile_link-group {
+        flex-direction: column;
+        align-items: flex-end;
+        border-radius: 0px 0px 40px 40px;
+        display: none; }
+      header nav .desktop_nav {
+        display: none; }
+    header h1 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px; }
+      header h1 div svg {
+        display: none; }
+    header p:after, header h1:after {
       display: none; }
-    header nav .desktop_nav {
-      display: none; }
-  header h1 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px; }
-    header h1 div svg {
-      display: none; }
-  header p:after, header h1:after {
-    display: none; }
-  header div#actions {
-    flex-direction: column; }
-    header div#actions a {
-      margin-top: 24px; }
-    header div#actions svg {
-      display: none; }
-  header div#headcontainer {
-    width: 80%; }
+    header div#actions {
+      flex-direction: column; }
+      header div#actions a {
+        margin-top: 24px; }
+      header div#actions svg {
+        right: -8%;
+        top: 110px; }
+    header div#headcontainer {
+      width: 80%; }
 
   section#value div:last-child {
     flex-direction: column;
@@ -748,6 +825,21 @@ footer {
         section#portraits div.farmer-container div.card-farmer div.card-farmer-text div svg {
           display: block; }
 
+  section#quiz {
+    padding: 185px 100px; }
+    section#quiz #question, section#quiz #resultat {
+      text-align: center; }
+    section#quiz #button {
+      flex-direction: column; }
+      section#quiz #button #next, section#quiz #button #finir {
+        text-align: center; }
+      section#quiz #button #last {
+        text-align: center;
+        display: none;
+        margin-bottom: 50px; }
+    section#quiz svg {
+      display: none; }
+
   footer {
     display: flex;
     flex-direction: column; }
@@ -793,8 +885,8 @@ footer {
       section#value div:first-child h1 strong div {
         margin-top: 4px; }
     section#value div:first-child h1:after {
-      bottom: -150px;
-      right: 15%; }
+      bottom: -420px;
+      right: 13%; }
     section#value div:first-child p {
       width: 350px; }
 
@@ -814,7 +906,8 @@ footer {
       bottom: -66px;
       right: -5%; }
     section#travel div.travel-container div.travel-text {
-      padding: 0 32px; }
+      padding: 0 32px;
+      width: 100%; }
 
   h1#ccm {
     padding-top: 0;
