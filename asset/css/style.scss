@@ -166,11 +166,16 @@ header{
             position: absolute;
             z-index: 4;
             right: 0;
-            top: 80px;
+            top: 0px;
             background: rgb(54, 112, 107);
             width: 320px;
             height: 700px;
             display: block;
+
+            > a{
+                padding: 73px 32px 95px 15px;
+                cursor: pointer;
+            }
         }
 
         .mobile_link-group li {

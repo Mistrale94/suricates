@@ -1,9 +1,9 @@
 
 const btnToggle = document.querySelector('.btn-toggle');
 
-btnToggle.addEventListener('click touchstart', () => {
+btnToggle.addEventListener('click', () => {
     const body = document.body;
-    var image = document.getElementById('darkmode darkmode-mobile');
+    var image = document.getElementById('darkmode');
     var logo = document.getElementById('logo');
     var burger = document.getElementById('img-burger');
     var picto = document.getElementById('picto');
