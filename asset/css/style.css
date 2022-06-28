@@ -430,7 +430,7 @@ section#quiz #button {
   flex-direction: row;
 }
 
-section#quiz #button #next, section#quiz #button #finir {
+section#quiz #button #next, section#quiz #button #finir, section#quiz #button #partage {
   background-color: #33706B;
   color: white;
   padding: 20px 40px;
@@ -452,6 +452,13 @@ section#quiz #button #last {
   display: none;
 }
 
+section#quiz #button #newsletter {
+  color: #162D2B;
+  border: none;
+  margin-left: auto;
+  background-color: #CBE6E4;
+}
+
 section#quiz strong {
   position: relative;
 }
@@ -469,6 +476,7 @@ section#quiz div#resultat {
 
 section#quiz div#resultat p {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 section#quiz div#resultat #refaire {
@@ -485,6 +493,98 @@ section#quiz #quizdeco {
   position: absolute;
   top: 400px;
   right: 0;
+}
+
+section#quiz #popup {
+  display: none;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 41, 52, 0.75);
+  z-index: 999;
+}
+
+section#quiz #popup strong {
+  position: relative;
+}
+
+section#quiz #popup strong div {
+  position: absolute;
+  top: -55px;
+  left: 165px;
+  display: inline-block;
+}
+
+section#quiz #popup #popup_partager, section#quiz #popup #popup_newsletter {
+  display: none;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  opacity: 1;
+  width: 802px;
+  height: 527px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 100px 190px;
+}
+
+section#quiz #popup #popup_partager h1, section#quiz #popup #popup_newsletter h1 {
+  font-size: 32px;
+}
+
+section#quiz #popup #popup_partager .lien, section#quiz #popup #popup_newsletter .lien {
+  padding: 0 60px;
+}
+
+section#quiz #popup #popup_partager #close, section#quiz #popup #popup_newsletter #close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  border: none;
+}
+
+section#quiz #popup #popup_partager #copie, section#quiz #popup #popup_newsletter #copie {
+  margin-top: 40px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: var(--main-color-vert00);
+  width: 400px;
+  display: flex;
+}
+
+section#quiz #popup #popup_partager #copie p, section#quiz #popup #popup_newsletter #copie p {
+  text-align: center;
+  color: var(--main-color-vert50);
+  padding: 15px;
+}
+
+section#quiz #popup #popup_newsletter p {
+  text-align: center;
+}
+
+section#quiz #popup #popup_newsletter input {
+  margin-top: 20px;
+  padding: 20px 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--main-color-vert50);
+  border-radius: 8px;
+  color: #8C8D8C;
+}
+
+section#quiz #popup #popup_newsletter #envoyer {
+  margin-top: 20px;
+  background-color: #33706B;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 30px;
+  display: block;
+  border: none;
+  margin-left: auto;
 }
 
 section#travel {
