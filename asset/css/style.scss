@@ -1139,6 +1139,8 @@ footer{
 @media (max-width: 414px){
     header{
         div.headmain{
+            margin-bottom: 112px;
+
             div#headcontainer{
                div#headtitle{
                     margin-bottom: 56px;
@@ -1188,7 +1190,7 @@ footer{
                 }
             }
             h1:after{
-                bottom: -150px;
+                bottom: -265px;
                 right: 15%;
             }
             p{
@@ -1222,6 +1224,7 @@ footer{
             }
             div.travel-text{
                 padding: 0 32px;
+                width: 100%;
             }
         }
     }

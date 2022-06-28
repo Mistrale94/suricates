@@ -766,24 +766,26 @@ footer {
   footer::after {
     display: none; } }
 @media (max-width: 414px) {
-  header div.headmain div#headcontainer div#headtitle {
-    margin-bottom: 56px; }
-    header div.headmain div#headcontainer div#headtitle h1 {
-      font-weight: 400;
-      font-size: 36px; }
-  header div.headmain div#headcontainer div#headsubtitle {
-    padding: 0;
-    width: 349px;
-    margin-bottom: 56px; }
-    header div.headmain div#headcontainer div#headsubtitle p {
+  header div.headmain {
+    margin-bottom: 112px; }
+    header div.headmain div#headcontainer div#headtitle {
+      margin-bottom: 56px; }
+      header div.headmain div#headcontainer div#headtitle h1 {
+        font-weight: 400;
+        font-size: 36px; }
+    header div.headmain div#headcontainer div#headsubtitle {
+      padding: 0;
+      width: 349px;
+      margin-bottom: 56px; }
+      header div.headmain div#headcontainer div#headsubtitle p {
+        font-weight: 300;
+        font-size: 16px; }
+    header div.headmain div#headcontainer div#actions {
       font-weight: 300;
       font-size: 16px; }
-  header div.headmain div#headcontainer div#actions {
-    font-weight: 300;
-    font-size: 16px; }
-    header div.headmain div#headcontainer div#actions a p#button {
-      margin: 0;
-      width: 223px; }
+      header div.headmain div#headcontainer div#actions a p#button {
+        margin: 0;
+        width: 223px; }
 
   section#value {
     padding: 80px 0; }
@@ -793,7 +795,7 @@ footer {
       section#value div:first-child h1 strong div {
         margin-top: 4px; }
     section#value div:first-child h1:after {
-      bottom: -150px;
+      bottom: -265px;
       right: 15%; }
     section#value div:first-child p {
       width: 350px; }
@@ -814,7 +816,8 @@ footer {
       bottom: -66px;
       right: -5%; }
     section#travel div.travel-container div.travel-text {
-      padding: 0 32px; }
+      padding: 0 32px;
+      width: 100%; }
 
   h1#ccm {
     padding-top: 0;
