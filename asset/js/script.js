@@ -40,10 +40,3 @@ function menu() {
         document.getElementById('burger').classList.add('open');
     }
 }
-
-void 0 === window._axcb && (window._axcb = []);
-window._axcb.push(function(axeptio) {
-  axeptio.on("cookies:complete", function(choices) {
-    
-  })
-})
