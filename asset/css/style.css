@@ -915,7 +915,7 @@ footer {
     font-size: 29px;
     margin-bottom: 4px;
     text-align: center;
-    padding-bottom: 20px; }
+    padding-bottom: 70px; }
 
   section#concept {
     height: 2150px;
@@ -924,7 +924,7 @@ footer {
     padding: 0;
     width: 100%; }
     section#concept svg {
-      top: -90px;
+      top: -140px;
       right: 180px; }
     section#concept #leftconcept, section#concept #rightconcept {
       width: 100%; }
@@ -932,7 +932,7 @@ footer {
         display: none; }
       section#concept #leftconcept #under, section#concept #rightconcept #under {
         top: 0;
-        right: -30px; }
+        right: 0; }
       section#concept #leftconcept article, section#concept #rightconcept article {
         padding: 25px;
         width: 90%;
