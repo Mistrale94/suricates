@@ -181,7 +181,7 @@ function inputResulta(num){
   document.querySelector('#resultat img').src= `asset/image/${reponsesFinales[num].image}.svg`;
   document.querySelector('#resultat img').alt= `${reponsesFinales[num].image}`;
 
-  document.querySelector('.lien p #pinterest').href =`https://pinterest.com/pin/create/button/?url=https://suricate.vercel.app/&media=https://zhuoxing.go.yj.fr/asset/image/${reponsesFinales[num].image}.png`;
+  document.querySelector('.lien p #pinterest').href =`https://pinterest.com/pin/create/button/?url=https://suricate.vercel.app/&media=https://suricate.vercel.app/asset/image/${reponsesFinales[num].image}.png`;
 
 }
 
