@@ -15,6 +15,16 @@
     <!-- css  -->
     <link rel="stylesheet" href="asset/css/style.css">
     <title>Loca</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7L1XYYT28"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-J7L1XYYT28');
+    </script>
 </head>
 <body class="dark">
     <header>
@@ -44,12 +54,12 @@
             </ul>
             <div class="mobile-nav">
                 <a id="burger" onClick="menu();">
-                    <svg width="36" height="27" viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 2H34M2 13.5004H24.8571M2 25H15.7143" stroke="#191A19" stroke-width="3.5" stroke-linecap="round"/>
-                    </svg>
+                   <img src="asset/image/Menu (1).png" alt="" id="img-burger">
                 </a>
 
                 <ul class="mobile_link-group">
+                    <a onclick="menu()">
+                    <img src="asset/image/Group 2017.png" alt=""></a>
                     <li class="mobile_link">
                         <a href="#value">Nos valeurs</a>
                     </li>
@@ -603,6 +613,18 @@
         <p>Loca Inc 2022. Tous droits réservés</p>
     </footer>
 </body>
+<script>
+    window.axeptioSettings = {
+      clientId: "62bb6b868b246578a061aacc",
+      cookiesVersion: "suricate-fr",
+    };
+     
+    (function(d, s) {
+      var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+      e.async = true; e.src = "//static.axept.io/sdk.js";
+      t.parentNode.insertBefore(e, t);
+    })(document, "script");
+</script>
 <script src="asset/js/quiz.js"></script>
 <script src="asset/js/script.js"></script>
 </html>

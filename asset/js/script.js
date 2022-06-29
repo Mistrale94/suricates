@@ -1,6 +1,3 @@
-// if(window.matchMedia && window.matchMedia('prefers-color-scheme: dark').matches){
-//     alert('WoW le dark')
-// }
 
 const btnToggle = document.querySelector('.btn-toggle');
 
@@ -8,6 +5,7 @@ btnToggle.addEventListener('click', () => {
     const body = document.body;
     var image = document.getElementById('darkmode');
     var logo = document.getElementById('logo');
+    var burger = document.getElementById('img-burger');
     var picto = document.getElementById('picto');
     var picto2 = document.getElementById('picto2');
     var picto3 = document.getElementById('picto3');
@@ -17,6 +15,7 @@ btnToggle.addEventListener('click', () => {
         body.classList.remove('dark')
         image.src = "asset/image/akar-icons_moon-fill.png";
         logo.src = "asset/image/logo.png";
+        burger.src = "asset/image/Menu.png";
         picto.src = "asset/image/Illu Valeur.png";
         picto2.src = "asset/image/Illu Valeur (1).png";
         picto3.src = "asset/image/Illu Valeur (2).png";
@@ -25,6 +24,7 @@ btnToggle.addEventListener('click', () => {
         body.classList.remove('light')
         image.src = "asset/image/akar-icons_sun-fill.png";
         logo.src = "asset/image/logo-white.png";
+        burger.src = "asset/image/Menu (1).png";
         picto.src = "asset/image/Illu Valeur (3).png";
         picto2.src = "asset/image/Illu Valeur (4).png";
         picto3.src = "asset/image/Illu Valeur (5).png";
