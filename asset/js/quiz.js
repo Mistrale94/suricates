@@ -52,16 +52,16 @@ dateList = [{
 
 var reponsesFinales =[{
   "title" : "éleveur d’abeilles sur rooftop Parisien",
-  "image" : "Conchyliculteur.png",
+  "image" : "Eleveur_abeilles",
 },{
   "title" : "Conchyliculteur (moules, huitres, st jacques) en Bretagne",
-  "image" : "Conchyliculteur.png",
+  "image" : "Conchyliculteur",
 },{
   "title" : "horticulteur en Nouvelle Aquitaine",
-  "image" : "Conchyliculteur.png",
+  "image" : "horticulteur",
 },{
   "title" : "producteur de fromage en Auvergne",
-  "image" : "producteurdefromage.png",
+  "image" : "producteurdefromage",
 }
 ];
 
@@ -178,9 +178,10 @@ function finir(){
 function inputResulta(num){
 
   document.querySelector('#resultat p').innerHTML = `${reponsesFinales[num].title}`;
-  document.querySelector('#resultat img').src= `asset/image/${reponsesFinales[num].image}`;
+  document.querySelector('#resultat img').src= `asset/image/${reponsesFinales[num].image}.svg`;
   document.querySelector('#resultat img').alt= `${reponsesFinales[num].image}`;
 
+  document.querySelector('.lien p #pinterest').href =`https://pinterest.com/pin/create/button/?url=https://suricate.vercel.app/&media=https://zhuoxing.go.yj.fr/asset/image/${reponsesFinales[num].image}.png`;
 
 }
 
@@ -217,8 +218,6 @@ function inputQuiz(j){
   let h = []; 
   for(let i=0;i<4; i++)
   {
-    console.log("123=",reponseList[j]);
-
     if(dateList[alea[j]].value[i] == reponseList[j]){
       h+=`<div>
       <input type="radio" name="option" id="radio" checked value="${dateList[alea[j]].value[i]}"> 
@@ -240,6 +239,9 @@ function inputQuiz(j){
 function partage(){
   document.getElementById("popup").style= "display : flex";
   document.getElementById("popup_partager").style= "display : flex";
+  console.log()
+
+
 }
 
 function quiz_close(){
@@ -253,4 +255,11 @@ function newsletter(){
   document.getElementById("popup").style= "display : flex";
   document.getElementById("popup_newsletter").style= "display : flex";
 
+}
+function copy(){
+
+  var obj = document.getElementById("textAreas");
+
+  obj.select();
+  document.execCommand("copy");
 }
