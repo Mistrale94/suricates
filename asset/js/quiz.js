@@ -215,6 +215,8 @@ function last(){
 function inputQuiz(j){
 
   document.querySelector('#question p').innerHTML = dateList[alea[j]].title;
+  document.querySelector('#progresscontainer #progress').style.width = (j+1)*20+"%";
+
   let h = []; 
   for(let i=0;i<4; i++)
   {
@@ -236,6 +238,7 @@ function inputQuiz(j){
   document.getElementById("option").innerHTML = h;
 
 }
+
 function partage(){
   document.getElementById("popup").style= "display : flex";
   document.getElementById("popup_partager").style= "display : flex";

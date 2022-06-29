@@ -293,6 +293,21 @@ section#quiz {
         display: inline-block; }
   section#quiz p {
     font-size: 16px; }
+  section#quiz article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    section#quiz article #progresscontainer {
+      margin: 50px;
+      width: 191px;
+      height: 6px;
+      background-color: #B2B3B2;
+      border-radius: 21px; }
+      section#quiz article #progresscontainer #progress {
+        width: 20%;
+        height: 100%;
+        background-color: var(--main-color-vert50);
+        border-radius: 21px; }
   section#quiz form {
     display: flex;
     justify-content: space-between;
@@ -830,11 +845,13 @@ footer {
     section#quiz div#button {
       align-items: center;
       flex-direction: column; }
-      section#quiz div#button button#last {
+      section#quiz div#button button#last, section#quiz div#button #finir, section#quiz div#button #newsletter {
         margin-left: 0;
         margin-bottom: 48px; }
-      section#quiz div#button button#next {
+      section#quiz div#button button#next, section#quiz div#button #partage {
         margin-left: 0; }
+    section#quiz article {
+      flex-direction: column; }
     section#quiz #popup #popup_partager, section#quiz #popup #popup_newsletter {
       width: 500px;
       height: 527px;
@@ -844,6 +861,8 @@ footer {
         font-size: 20px; }
       section#quiz #popup #popup_partager .lien, section#quiz #popup #popup_newsletter .lien {
         padding: 0 60px; }
+        section#quiz #popup #popup_partager .lien a, section#quiz #popup #popup_newsletter .lien a {
+          color: black; }
       section#quiz #popup #popup_partager #close, section#quiz #popup #popup_newsletter #close {
         position: absolute;
         top: 40px;
