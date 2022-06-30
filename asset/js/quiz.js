@@ -221,18 +221,31 @@ function inputQuiz(j){
   for(let i=0;i<4; i++)
   {
     if(dateList[alea[j]].value[i] == reponseList[j]){
-      h+=`<div>
-      <input type="radio" name="option" id="radio" checked value="${dateList[alea[j]].value[i]}"> 
-      <label for="radio"></label>
+
+      h+=`
+      <label for="radio${i}">
+      <div>
+      <input type="radio" name="option" id="radio${i}" checked value="${dateList[alea[j]].value[i]}"> 
       <span>${dateList[alea[j]].option[i]}</span>
-      </div>`;
+      </div>
+      </label>
+      `;
+
+      
     }
     else{
-      h+=`<div>
-      <input type="radio" name="option" id="radio" value="${dateList[alea[j]].value[i]}"> 
-      <label for="radio"></label>
+
+      h+=`
+      <label for="radio${i}">
+      <div>
+      <input type="radio" name="option" id="radio${i}" value="${dateList[alea[j]].value[i]}"> 
       <span>${dateList[alea[j]].option[i]}</span>
-      </div>`;
+      </div>
+      </label>
+      `;
+
+
+
     }
   }
   document.getElementById("option").innerHTML = h;

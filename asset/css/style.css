@@ -471,7 +471,7 @@ section#quiz form div span {
   margin-left: 10px;
 }
 
-section#quiz form div #radio {
+section#quiz form div input {
   accent-color: #093929;
 }
 
