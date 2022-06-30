@@ -371,8 +371,8 @@ header{
                     position: relative;
                     div{
                         position: absolute;
-                        top: 10px;
-                        left: -100px;
+                        top: 16px;
+                        left: 0;
                         display: inline-block;
                     }
                 }
@@ -393,10 +393,9 @@ header{
                  background-image: url(../image/photo1.svg);
              }
         }
-        div:last-child{
+        div:nth-child(2){
             display: flex;
             justify-content: space-between;
-            padding: 0 100px;
             article{
                 width: 354px;
                 height: 394px;
@@ -803,7 +802,13 @@ section#travel{
 .container-title-concept{
     display: flex;
     justify-content: center;
+    position: relative;
 
+    svg:first-child{
+        position: absolute;
+        left: 38.5%;
+        bottom: 80px;
+    }
     div{
         width: fit-content;
     }
@@ -818,12 +823,6 @@ section#travel{
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
-
-    svg{
-        position: absolute;
-        top: -95px;
-        right: 1050px;
-    }
     
     #splitconcept{
         width: 20%;
@@ -1119,6 +1118,28 @@ footer{
     }
 }
 
+@media (max-width: 1440px){
+    header{
+        p:after{
+            top: 200px;
+        }
+    }
+    section#travel{
+        padding: 0;
+    }
+    section#concept{
+        padding: 100px 0;
+        flex-wrap: nowrap;
+
+        div#leftconcept{
+            margin-left: 50px;
+        }
+        div#rightconcept{
+            margin-right: 50px;
+        }
+    }
+}
+
 @media (max-width: 929px){
     
     header{
@@ -1226,6 +1247,13 @@ footer{
         padding: 10px;
         padding-bottom: 80px;
     }
+
+    div.container-title-concept{
+        svg:first-child{
+            display: none;
+        }
+    }
+
     section#concept{
         display: flex;
         flex-direction: column;
@@ -1235,11 +1263,6 @@ footer{
         margin: 0;
         padding: 0;
         height: 2600px;
-
-        > svg{
-            display: none;
-        }
-
 
         div#leftconcept, div#rightconcept{
             display: flex;
