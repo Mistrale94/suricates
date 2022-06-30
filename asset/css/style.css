@@ -229,8 +229,8 @@ header #actions {
     margin: 40px auto; }
   #value div:first-child h1:after {
     position: absolute;
-    bottom: -125px;
-    right: 34%;
+    bottom: -105px;
+    right: 37.5%;
     display: block;
     content: "";
     width: 130px;
@@ -999,8 +999,8 @@ footer {
       section#value div:first-child h1 strong div {
         margin-top: 4px; }
     section#value div:first-child h1:after {
-      bottom: -420px;
-      right: 13%; }
+      bottom: -390px;
+      right: 11%; }
     section#value div:first-child p {
       width: 350px; }
 
@@ -1010,7 +1010,7 @@ footer {
       font-weight: 400;
       font-size: 29px; }
     section#travel div.travel-title svg:first-child {
-      right: 62px; }
+      right: 55px; }
     section#travel div.travel-container div.travel-screen div:first-child {
       width: 334px;
       height: 224px; }
