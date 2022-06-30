@@ -6,8 +6,9 @@
     scroll-behavior: smooth;
 }
 
-@import url('http://fonts.cdnfonts.com/css/century-gothic');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 @import url("https://use.typekit.net/mbc4qah.css");
+@import url("https://db.onlinewebfonts.com/c/6660ce4d9b0f78b0bf960b5abf9336cd?family=UberhandTextPro");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 body.dark{
@@ -49,6 +50,9 @@ body.dark{
             article{
                 h1{
                     color: #FFFFFF;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
                 }
             }
         }
@@ -106,7 +110,7 @@ body.light{
 }
 
 body{
-    font-family: 'Century Gothic', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 
     a{
         text-decoration: none;
@@ -227,6 +231,8 @@ header{
     h1{
         text-align: center;
         font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
     }
 
     h1:after{
@@ -285,6 +291,7 @@ header{
         text-align: center;
         width: 80%;
         font-size: 16px;
+        font-weight: 300;
         padding: 50px;
     //     &:after{
     //         position: absolute;
@@ -307,6 +314,8 @@ header{
         justify-content: space-around;
         align-items: center;
         position: relative;
+        font-weight: 300;
+        font-size: 16px;
 
         #button{
 
@@ -364,8 +373,9 @@ header{
              h1{
                 display: flex;
                 justify-content: center;
+                font-style: normal;
+                font-weight: 400;
                 font-size: 56px;
-                font-weight: bold;
                 text-align: center;
                 strong{
                     position: relative;
@@ -381,6 +391,8 @@ header{
                 text-align: center;
                 width: 600px;
                 margin: 40px auto;
+                font-weight: 300;
+                font-size: 16px;
              }
              h1:after{
                 position: absolute;
@@ -421,6 +433,8 @@ header{
                     text-align: center;
                     font-size: 16px;
                     line-height: 20px;
+                    font-style: normal;
+                    font-weight: 300;
                 }
             }
         }
@@ -449,8 +463,9 @@ section#quiz{
     flex-direction: column;
     position: relative;
     h1{
-        font-size: 60px;
-        font-weight: bold;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 400;
         text-align: center;
         margin-bottom: 64px;
         strong{
@@ -463,6 +478,14 @@ section#quiz{
             }
         }
 
+    }
+    div#question{
+        article{
+            p{
+                font-style: normal;
+                font-weight: 300;
+            }
+        }
     }
     p{
         font-size: 16px;
@@ -717,10 +740,12 @@ section#travel{
         svg:first-child{
             position: absolute;
             top: -30px;
-            right: 169px;
+            right: 140px;
         }
         h1{
             font-size: 56px;
+            font-style: normal;
+            font-weight: 400;
             text-transform: capitalize;
         }
     }
@@ -797,7 +822,8 @@ section#travel{
     padding-top: 150px;
     text-align: center;
     font-size: 56px;
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .container-title-concept{
@@ -807,7 +833,7 @@ section#travel{
 
     svg:first-child{
         position: absolute;
-        left: 38.5%;
+        left: 42%;
         bottom: 80px;
     }
     div{
@@ -878,7 +904,14 @@ section#travel{
 
             h2{
                 font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
                 width: 100%;
+            }
+            p{
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
             }
                       
                 strong{
@@ -954,6 +987,8 @@ section#portraits{
 
         h1{
             font-size: 56px;
+            font-style: normal;
+            font-weight: 400;
         }
         svg:nth-child(3){
             position: absolute;
@@ -987,14 +1022,15 @@ section#portraits{
 
                 h3{
                     font-size: 36px;
-                    font-family: ff-uberhand-pro, sans-serif;
+                    font-family: '';
                     font-weight: 400;
                     font-style: normal;
                     color: #F8961E;
                     margin-bottom: 8px;
                 }
                 p:nth-child(2){
-                    font-weight: bold;
+                    font-style: normal;
+                    font-weight: 400;
                     font-size: 20px;
                     margin-bottom: 18px;
                 }
@@ -1035,8 +1071,18 @@ footer{
     background-color: #36706B;
     color: #FFFFFF;
     padding: 100px;
+
+    h1{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+    }
     &>p{
         margin-top: 10px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
     }
     div.footer-container{
         margin-top: 80px;
@@ -1059,6 +1105,9 @@ footer{
                 margin-bottom: 50px;
             }
             a{
+                font-family: "UberhandTextPro";
+                font-style: normal;
+                font-weight: 450;
                 font-size: 16px;
                 margin-top:16px;
                 color: #FFFFFF;
@@ -1085,7 +1134,10 @@ footer{
                 }
                 p{
                     margin-top:16px;
-                    font-size: 14px;
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
                 }
             }
             article:nth-child(2){
@@ -1096,7 +1148,10 @@ footer{
                 }
                 p{
                     margin-top:16px;
-                    font-size: 14px;
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
                 }
             }
         }
@@ -1105,7 +1160,10 @@ footer{
     &>p:last-child{
         text-align: center;
         margin-top: 150px;
-        font-weight: bold;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
     }
     // &:after{
     //     position: absolute;
@@ -1540,7 +1598,7 @@ footer{
                 font-size: 29px;
             }
             svg:first-child{
-                right: 55px;
+                right: 50px;
             }
         }
         div.travel-container{
