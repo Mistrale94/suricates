@@ -229,13 +229,14 @@ header #actions {
     margin: 40px auto; }
   #value div:first-child h1:after {
     position: absolute;
-    bottom: -90px;
-    right: 35%;
+    bottom: -125px;
+    right: 34%;
     display: block;
     content: "";
     width: 130px;
     height: 100px;
-    background-image: url(../image/photo1.svg); }
+    background-image: url(../image/nosValeurs.svg);
+    background-repeat: no-repeat; }
   #value div:nth-child(2) {
     display: flex;
     justify-content: space-between; }
@@ -731,14 +732,22 @@ footer {
         align-items: flex-end; }
         footer div.footer-container > article a img {
           margin-right: 10px; }
-    footer div.footer-container article:nth-child(1) h1 {
+      footer div.footer-container > article a:hover {
+        color: #F8961E; }
+    footer div.footer-container > article > img {
       margin-bottom: 50px; }
-    footer div.footer-container article:nth-child(2), footer div.footer-container article:nth-child(3) {
+    footer div.footer-container div article:nth-child(1) h1 {
+      font-size: 20px;
+      margin-bottom: 50px; }
+    footer div.footer-container div article:nth-child(1) p {
+      margin-top: 16px;
+      font-size: 14px; }
+    footer div.footer-container div article:nth-child(2) {
       margin-left: 184px; }
-      footer div.footer-container article:nth-child(2) h1, footer div.footer-container article:nth-child(3) h1 {
+      footer div.footer-container div article:nth-child(2) h1 {
         font-size: 20px;
         margin-bottom: 50px; }
-      footer div.footer-container article:nth-child(2) p, footer div.footer-container article:nth-child(3) p {
+      footer div.footer-container div article:nth-child(2) p {
         margin-top: 16px;
         font-size: 14px; }
   footer > p:last-child {
