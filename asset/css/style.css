@@ -538,6 +538,12 @@ section#travel {
   font-size: 56px;
   font-weight: bold; }
 
+.container-title-concept {
+  display: flex;
+  justify-content: center; }
+  .container-title-concept div {
+    width: fit-content; }
+
 #concept {
   width: 100%;
   height: 2000px;
@@ -709,24 +715,31 @@ footer {
     display: flex; }
     footer div.footer-container div {
       display: flex; }
-    footer div.footer-container article:nth-child(1) {
+      footer div.footer-container div article p {
+        margin-top: 16px; }
+    footer div.footer-container > article {
       font-weight: bold;
-      margin-right: 200px; }
-      footer div.footer-container article:nth-child(1) h1 {
+      margin-right: 400px; }
+      footer div.footer-container > article h1 {
         font-size: 20px;
         margin-bottom: 50px; }
-      footer div.footer-container article:nth-child(1) p {
+      footer div.footer-container > article a {
         font-size: 16px;
-        margin-top: 10px; }
-        footer div.footer-container article:nth-child(1) p img {
+        margin-top: 16px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: flex-end; }
+        footer div.footer-container > article a img {
           margin-right: 10px; }
+    footer div.footer-container article:nth-child(1) h1 {
+      margin-bottom: 50px; }
     footer div.footer-container article:nth-child(2), footer div.footer-container article:nth-child(3) {
-      margin-left: 200px; }
+      margin-left: 184px; }
       footer div.footer-container article:nth-child(2) h1, footer div.footer-container article:nth-child(3) h1 {
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 50px; }
       footer div.footer-container article:nth-child(2) p, footer div.footer-container article:nth-child(3) p {
-        margin-top: 20px;
+        margin-top: 16px;
         font-size: 14px; }
   footer > p:last-child {
     text-align: center;
