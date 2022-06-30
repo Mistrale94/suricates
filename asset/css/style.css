@@ -1054,7 +1054,7 @@ footer > p:last-child {
   font-weight: bold;
 }
 
-footer:after {
+footer #back_top {
   position: absolute;
   bottom: -6200px;
   left: 90%;
@@ -1062,7 +1062,6 @@ footer:after {
   content: "";
   width: 27px;
   height: 75px;
-  background-image: url(../image/back.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1286,6 +1285,7 @@ footer:after {
   footer {
     display: flex;
     flex-direction: column;
+    padding: 100px 50px;
   }
   footer div.footer-container {
     display: flex;
@@ -1301,6 +1301,9 @@ footer:after {
   }
   footer div.footer-container div article:nth-child(2) {
     margin-left: 0;
+  }
+  footer #back_top {
+    display: none;
   }
   footer::after {
     display: none;
