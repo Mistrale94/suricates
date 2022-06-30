@@ -151,11 +151,18 @@ header h1:after {
   background-image: url(../image/illudroite.svg); }
 header #headtitle {
   width: 1034px; }
-  header #headtitle strong {
+  header #headtitle strong:first-child {
     position: relative; }
-    header #headtitle strong div {
+    header #headtitle strong:first-child div {
       position: absolute;
-      bottom: -30px;
+      bottom: -35px;
+      left: -15px;
+      display: inline-block; }
+  header #headtitle strong:last-child {
+    position: relative; }
+    header #headtitle strong:last-child div {
+      position: absolute;
+      bottom: -15px;
       left: 0;
       display: inline-block; }
 header p:after {

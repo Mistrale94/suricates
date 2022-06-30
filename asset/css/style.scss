@@ -250,27 +250,25 @@ header{
 
     #headtitle{
         width: 1034px;
-        strong{
+        strong:first-child{
             position: relative;
             div{
                 position: absolute;
-                bottom: -30px;
+                bottom: -35px;
+                left: -15px;
+                display: inline-block;
+            }
+        }
+        strong:last-child{
+            position: relative;
+            div{
+                position: absolute;
+                bottom: -15px;
                 left: 0;
                 display: inline-block;
             }
         }
-        // &:after{
-        //     position: absolute;
-        //     top: 283px;
-        //     right: 605px;
-        //     display: block;
-        //     content: "";
-        //     width: 370px;
-        //     height: 200px;
-        //      background-image: url(../image/circle.svg);
-        //      background-repeat:no-repeat;
-        //      background-size: contain;
-        // }
+
     }
 
     p:after{
@@ -293,18 +291,7 @@ header{
         font-size: 16px;
         font-weight: 300;
         padding: 50px;
-    //     &:after{
-    //         position: absolute;
-    //         top: 450px;
-    //         right: 550px;
-    //         display: block;
-    //         content: "";
-    //         width: 150px;
-    //         height: 150px;
-    //          background-image: url(../image/under.svg);
-    //          background-repeat:no-repeat;
-    //          background-size: contain;
-    // }
+
 
     }
 
