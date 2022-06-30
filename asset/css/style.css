@@ -545,7 +545,8 @@ section#travel {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   #concept svg {
     position: absolute;
     top: -95px;
@@ -612,7 +613,7 @@ section#travel {
       #concept #leftconcept #spacer svg:nth-child(1), #concept #rightconcept #spacer svg:nth-child(1) {
         position: absolute;
         top: 450px;
-        right: -1100px;
+        right: -976px;
         width: 200px;
         height: 400px; }
       #concept #leftconcept #spacer svg:nth-child(2), #concept #rightconcept #spacer svg:nth-child(2) {
@@ -776,6 +777,8 @@ footer {
     header div#headcontainer {
       width: 80%; }
 
+  section#value div:first-child p {
+    width: 300px; }
   section#value div:last-child {
     flex-direction: column;
     align-items: center; }
@@ -792,7 +795,8 @@ footer {
       height: 324px; }
     section#travel div.travel-container div.travel-screen div:last-child {
       width: 150px;
-      height: 262px; }
+      height: 262px;
+      right: -20px; }
     section#travel div.travel-container div.travel-text {
       margin-top: 130px;
       display: flex;
