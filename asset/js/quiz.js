@@ -51,16 +51,16 @@ dateList = [{
 // ];
 
 var reponsesFinales =[{
-  "title" : "éleveur d’abeilles sur rooftop Parisien",
+  "title" : "Eleveur d’abeilles sur rooftop Parisien",
   "image" : "Eleveur_abeilles",
 },{
-  "title" : "Conchyliculteur (moules, huitres, st jacques) en Bretagne",
+  "title" : "Conchyliculteur en Bretagne",
   "image" : "Conchyliculteur",
 },{
-  "title" : "horticulteur en Nouvelle Aquitaine",
+  "title" : "Horticulteur en Nouvelle Aquitaine",
   "image" : "horticulteur",
 },{
-  "title" : "producteur de fromage en Auvergne",
+  "title" : "Producteur de fromage en Auvergne",
   "image" : "producteurdefromage",
 }
 ];

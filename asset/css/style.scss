@@ -1192,9 +1192,8 @@ footer{
         padding: 0;
         height: 2600px;
 
-        svg{
-            top: -240px;
-            right: 250px;
+        > svg{
+            display: none;
         }
 
 
@@ -1206,8 +1205,8 @@ footer{
             width: 100%;
 
             #under{
-                top: -150px;
-                right: 400px;
+                top: -80px;
+                left: 14%;
             }
 
             article{
@@ -1549,6 +1548,13 @@ footer{
         div#question{
             width: 350px;
             text-align: center;
+        }
+        div#resultat{
+            figure{
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
     section#portraits{

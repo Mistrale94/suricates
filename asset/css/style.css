@@ -816,9 +816,8 @@ footer {
     margin: 0;
     padding: 0;
     height: 2600px; }
-    section#concept svg {
-      top: -240px;
-      right: 250px; }
+    section#concept > svg {
+      display: none; }
     section#concept div#leftconcept, section#concept div#rightconcept {
       display: flex;
       flex-wrap: nowrap;
@@ -826,8 +825,8 @@ footer {
       height: 1200px;
       width: 100%; }
       section#concept div#leftconcept #under, section#concept div#rightconcept #under {
-        top: -150px;
-        right: 400px; }
+        top: -80px;
+        left: 14%; }
       section#concept div#leftconcept article, section#concept div#rightconcept article {
         margin-bottom: 32px; }
       section#concept div#leftconcept #spacer, section#concept div#rightconcept #spacer {
@@ -1027,6 +1026,8 @@ footer {
   section#quiz div#question {
     width: 350px;
     text-align: center; }
+  section#quiz div#resultat figure img {
+    width: 100%; }
 
   section#portraits div.title-farmer h1 {
     font-weight: 400;
