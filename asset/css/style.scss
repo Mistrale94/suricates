@@ -293,6 +293,8 @@ header{
             position: absolute;
             top: -17px;
             right: 17%;
+            width: 351px;
+            height: 102px;
             display: inline-block;
         }
         svg:nth-child(2){
@@ -1126,7 +1128,7 @@ section#portraits{
         
         svg.circle-bottom{
             position: absolute;
-            bottom: -60px;
+            bottom: -40px;
             right: 60%;
             z-index: -1 !important;
         }
@@ -1324,17 +1326,15 @@ footer{
         #headtitle{
             width: 500px;
             h1{
-                div{
-                    svg:first-child{
-                        width: 200px;
-                        bottom: 12px;
-                        right:53px;
-                    }
-                    svg:last-child{
-                        width: 80px;
-                        bottom: 0;
-                        right:26px;
-                    }
+                svg:first-child{
+                    top: -32px;
+                    right: 11%;
+                    width: 200px;
+                }
+                svg:last-child{
+                    width: 80px;
+                    bottom: -5;
+                    right:26px;
                 }
             }
 
@@ -1588,9 +1588,6 @@ footer{
             }
         
         }
-        svg{
-            display: none;
-        }
 
     }
 
@@ -1627,14 +1624,15 @@ footer{
 @media (max-width: 620px){
 
     header{
+        #headcontainer:after{
+            display: none !important;
+        }
         #headtitle{
             width: 300px;
             h1{
-                div{
-                    svg:first-child{
-                        bottom: 54px;
-                        right: 75px;
-                    }
+                svg:first-child{
+                    top: 10px;
+                    right: 25%;
                 }
             }
         }

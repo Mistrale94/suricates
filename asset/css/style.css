@@ -186,6 +186,8 @@ header #headtitle {
     position: absolute;
     top: -17px;
     right: 17%;
+    width: 351px;
+    height: 102px;
     display: inline-block; }
   header #headtitle svg:nth-child(2) {
     position: absolute;
@@ -795,7 +797,7 @@ section#portraits {
           color: #F8961E; }
     section#portraits div.farmer-container svg.circle-bottom {
       position: absolute;
-      bottom: -60px;
+      bottom: -40px;
       right: 60%;
       z-index: -1 !important; }
     section#portraits div.farmer-container svg.circle-right {
@@ -921,13 +923,13 @@ footer {
       font-size: 36px; }
     header #headtitle {
       width: 500px; }
-      header #headtitle h1 div svg:first-child {
-        width: 200px;
-        bottom: 12px;
-        right: 53px; }
-      header #headtitle h1 div svg:last-child {
+      header #headtitle h1 svg:first-child {
+        top: -32px;
+        right: 11%;
+        width: 200px; }
+      header #headtitle h1 svg:last-child {
         width: 80px;
-        bottom: 0;
+        bottom: -5;
         right: 26px; }
     header p:after, header h1:after {
       display: none; }
@@ -1079,8 +1081,6 @@ footer {
         text-align: center;
         display: none;
         margin-bottom: 50px; }
-    section#quiz svg {
-      display: none; }
 
   footer {
     display: flex;
@@ -1103,11 +1103,13 @@ footer {
   footer::after {
     display: none; } }
 @media (max-width: 620px) {
+  header #headcontainer:after {
+    display: none !important; }
   header #headtitle {
     width: 300px; }
-    header #headtitle h1 div svg:first-child {
-      bottom: 54px;
-      right: 75px; } }
+    header #headtitle h1 svg:first-child {
+      top: 10px;
+      right: 25%; } }
 @media (max-width: 414px) {
   header div.headmain div#headcontainer div#headtitle {
     width: 200px;
