@@ -330,12 +330,12 @@ section#quiz {
         height: 100%;
         background-color: var(--main-color-vert50);
         border-radius: 21px; }
-  section#quiz > form {
+  section#quiz form#option {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 50px 0; }
-    section#quiz > form div {
+    section#quiz form#option div {
       display: flex;
       align-items: center;
       color: #093929;
@@ -344,14 +344,12 @@ section#quiz {
       margin-bottom: 20px;
       border-radius: 10px;
       position: relative; }
-      section#quiz > form div input {
+      section#quiz form#option div input {
         width: 20px;
         height: 20px;
-        background-color: #093929; }
-      section#quiz > form div span {
-        margin-left: 10px; }
-      section#quiz > form div #radio {
         accent-color: #093929; }
+      section#quiz form#option div span {
+        margin-left: 10px; }
   section#quiz #button {
     display: flex;
     flex-direction: row; }

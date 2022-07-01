@@ -498,7 +498,7 @@ section#quiz{
 
     }
     
-    &>form{
+    form#option{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -515,14 +515,10 @@ section#quiz{
             input{
                 width: 20px;
                 height: 20px;
-                background-color: #093929;
+                accent-color:#093929;
             }
             span{
                 margin-left: 10px;
-            }
-            #radio{
-                accent-color:#093929;
-
             }
         }
     }
