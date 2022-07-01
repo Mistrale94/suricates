@@ -7,9 +7,13 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
-@import url("https://use.typekit.net/mbc4qah.css");
 @import url("https://db.onlinewebfonts.com/c/6660ce4d9b0f78b0bf960b5abf9336cd?family=UberhandTextPro");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: "Amithen";
+    src: url("../font/Amithen.otf") format("otf");
+   }
 
 body.dark{
     background-color: #191A19;
@@ -25,10 +29,6 @@ body.dark{
                         text-decoration: none;
                         color: #FFFFFF;
                         transition: 300ms;
-                    }
-
-                    a:hover{
-                        color: #1FC78E;
                     }
                 }
             }
@@ -146,9 +146,19 @@ header{
                     color: #191A19;
                     transition: 300ms;
                 }
-
-                a:hover{
-                    color: #1FC78E;
+                a:hover::after{
+                    width: 50%;
+                    background: #36706B;
+                }
+                a::after{
+                    content: '';
+                    display: block;
+                    margin: auto;
+                    margin-top: 2px;
+                    height: 1px;
+                    width: 0;
+                    background: transparent;
+                    transition: width .5s ease, background-color .5s ease;
                 }
             }
         }
@@ -850,7 +860,7 @@ section#travel{
 
     svg:first-child{
         position: absolute;
-        left: 42%;
+        left: 40%;
         bottom: 80px;
     }
     div{
@@ -1039,7 +1049,7 @@ section#portraits{
 
                 h3{
                     font-size: 36px;
-                    font-family: '';
+                    font-family: 'Amithen';
                     font-weight: 400;
                     font-style: normal;
                     color: #F8961E;
@@ -1214,6 +1224,11 @@ footer{
     header{
         p:after{
             top: 200px;
+        }
+    }
+    div.container-title-concept{
+        svg:first-child{
+            left: 39%;
         }
     }
     section#travel{

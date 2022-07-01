@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
-@import url("https://use.typekit.net/mbc4qah.css");
 @import url("https://db.onlinewebfonts.com/c/6660ce4d9b0f78b0bf960b5abf9336cd?family=UberhandTextPro");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 * {
@@ -8,6 +7,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth; }
 
+@font-face {
+  font-family: "Amithen";
+  src: url("../font/Amithen.otf") format("otf"); }
 body.dark {
   background-color: #191A19;
   color: #FFFFFF; }
@@ -17,8 +19,6 @@ body.dark {
       text-decoration: none;
       color: #FFFFFF;
       transition: 300ms; }
-    body.dark header nav ul.desktop_nav li a:hover {
-      color: #1FC78E; }
     body.dark header nav div.btn-toggle {
       background-color: #CBE6E4; }
   body.dark section#value {
@@ -84,8 +84,18 @@ header nav {
         text-decoration: none;
         color: #191A19;
         transition: 300ms; }
-      header nav ul li a:hover {
-        color: #1FC78E; }
+      header nav ul li a:hover::after {
+        width: 50%;
+        background: #36706B; }
+      header nav ul li a::after {
+        content: '';
+        display: block;
+        margin: auto;
+        margin-top: 2px;
+        height: 1px;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease; }
   header nav div.btn-toggle {
     width: 40px;
     height: 40px;
@@ -587,7 +597,7 @@ section#travel {
   position: relative; }
   .container-title-concept svg:first-child {
     position: absolute;
-    left: 42%;
+    left: 40%;
     bottom: 80px; }
   .container-title-concept div {
     width: fit-content; }
@@ -727,7 +737,7 @@ section#portraits {
         padding: 24px 39px; }
         section#portraits div.farmer-container div.card-farmer div.card-farmer-text h3 {
           font-size: 36px;
-          font-family: '';
+          font-family: 'Amithen';
           font-weight: 400;
           font-style: normal;
           color: #F8961E;
@@ -840,6 +850,9 @@ footer {
 @media (max-width: 1440px) {
   header p:after {
     top: 200px; }
+
+  div.container-title-concept svg:first-child {
+    left: 39%; }
 
   section#travel {
     padding: 0; }
