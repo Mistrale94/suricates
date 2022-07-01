@@ -132,20 +132,6 @@ header{
                 height: 27px;
             }
         }
-        a:hover::after{
-            width: 50%;
-            background: #36706B;
-        }
-        a::after{
-            content: '';
-            display: block;
-            margin: auto;
-            margin-top: 2px;
-            height: 1px;
-            width: 0;
-            background: transparent;
-            transition: width .5s ease, background-color .5s ease;
-        }
 
         ul{
             display: flex;
@@ -160,9 +146,19 @@ header{
                     color: #191A19;
                     transition: 300ms;
                 }
-
-                a:hover{
-                    color: #1FC78E;
+                a:hover::after{
+                    width: 50%;
+                    background: #36706B;
+                }
+                a::after{
+                    content: '';
+                    display: block;
+                    margin: auto;
+                    margin-top: 2px;
+                    height: 1px;
+                    width: 0;
+                    background: transparent;
+                    transition: width .5s ease, background-color .5s ease;
                 }
             }
         }
