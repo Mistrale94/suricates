@@ -12,7 +12,15 @@
 @font-face {
     font-family: "Amithen";
     src: url("../font/Amithen.otf") format("otf");
-   }
+}
+
+.bepVfn svg path {
+    fill: #33706B;
+}
+.gTyPIa.gTyPIa.gTyPIa.gTyPIa.gTyPIa.gTyPIa:hover {
+    color: #33706B !important;
+    background-color: rgb(255, 255, 255) !important;
+}
 
 body.dark{
     background-color: #191A19;
@@ -40,6 +48,21 @@ body.dark{
     section#value{
         background-color: #333333;
 
+        div.value-title-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div.value-title{
+                position: relative;
+
+                svg:first-child{
+                    position: absolute;
+                    right: -20%;
+                    top: -35px;
+                }
+            }
+        }
         div{
             article{
                 background-color: #191A19;
@@ -244,7 +267,7 @@ header{
         font-weight: 400;
     }
 
-    h1:after{
+    div#headcontainer:after{
         position: absolute;
         top: 200px;
         right: 0;
@@ -252,32 +275,32 @@ header{
         content: "";
         width: 130px;
         height: 260px;
-            background-image: url(../image/illuDroite.svg);
-        }
+        background-image: url(../image/illuDroite.svg);
+    }
 
         
 
     #headtitle{
         width: 1034px;
-        strong:first-child{
-            position: relative;
-            div{
-                position: absolute;
-                bottom: -35px;
-                left: -15px;
-                display: inline-block;
-            }
-        }
-        strong:last-child{
-            position: relative;
-            div{
-                position: absolute;
-                bottom: -15px;
-                left: 0;
-                display: inline-block;
-            }
-        }
+        position: relative;
 
+        div{
+            position: absolute;
+            bottom: -35px;
+            left: -15px;
+            display: inline-block;
+        }
+        svg:nth-child(1){
+            position: absolute;
+            top: -17px;
+            right: 17%;
+            display: inline-block;
+        }
+        svg:nth-child(2){
+            position: absolute;
+            bottom: -5px;
+            right: 12%;
+        }
     }
 
     p:after{
@@ -485,6 +508,20 @@ section#quiz{
     }
     p{
         font-size: 16px;
+    }
+    p:hover::after{
+        width: 50%;
+        background: #36706B;
+    }
+    p::after{
+        content: '';
+        display: block;
+        margin: auto;
+        margin-top: 2px;
+        height: 2px;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
     }
     article{
         display: flex;
@@ -832,6 +869,7 @@ section#travel{
                 margin-bottom: 48px;
             }
             div:nth-child(8){
+                text-align: -webkit-right;
 
                 a{
                     display: flex;

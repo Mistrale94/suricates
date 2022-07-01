@@ -9,6 +9,13 @@
 @font-face {
   font-family: "Amithen";
   src: url("../font/Amithen.otf") format("otf"); }
+.bepVfn svg path {
+  fill: #33706B; }
+
+.gTyPIa.gTyPIa.gTyPIa.gTyPIa.gTyPIa.gTyPIa:hover {
+  color: #33706B !important;
+  background-color: white !important; }
+
 body.dark {
   background-color: #191A19;
   color: #FFFFFF; }
@@ -22,6 +29,16 @@ body.dark {
       background-color: #CBE6E4; }
   body.dark section#value {
     background-color: #333333; }
+    body.dark section#value div.value-title-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body.dark section#value div.value-title-container div.value-title {
+        position: relative; }
+        body.dark section#value div.value-title-container div.value-title svg:first-child {
+          position: absolute;
+          right: -20%;
+          top: -35px; }
     body.dark section#value div article {
       background-color: #191A19; }
     body.dark section#value div:last-child article h1 {
@@ -149,7 +166,7 @@ header h1 {
   font-size: 64px;
   font-style: normal;
   font-weight: 400; }
-header h1:after {
+header div#headcontainer:after {
   position: absolute;
   top: 200px;
   right: 0;
@@ -159,21 +176,22 @@ header h1:after {
   height: 260px;
   background-image: url(../image/illuDroite.svg); }
 header #headtitle {
-  width: 1034px; }
-  header #headtitle strong:first-child {
-    position: relative; }
-    header #headtitle strong:first-child div {
-      position: absolute;
-      bottom: -35px;
-      left: -15px;
-      display: inline-block; }
-  header #headtitle strong:last-child {
-    position: relative; }
-    header #headtitle strong:last-child div {
-      position: absolute;
-      bottom: -15px;
-      left: 0;
-      display: inline-block; }
+  width: 1034px;
+  position: relative; }
+  header #headtitle div {
+    position: absolute;
+    bottom: -35px;
+    left: -15px;
+    display: inline-block; }
+  header #headtitle svg:nth-child(1) {
+    position: absolute;
+    top: -17px;
+    right: 17%;
+    display: inline-block; }
+  header #headtitle svg:nth-child(2) {
+    position: absolute;
+    bottom: -5px;
+    right: 12%; }
 header p:after {
   position: absolute;
   top: 400px;
@@ -324,6 +342,18 @@ section#quiz {
     font-weight: 300; }
   section#quiz p {
     font-size: 16px; }
+  section#quiz p:hover::after {
+    width: 50%;
+    background: #36706B; }
+  section#quiz p::after {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease; }
   section#quiz article {
     display: flex;
     justify-content: space-between;
@@ -576,18 +606,20 @@ section#travel {
         font-size: 16px; }
       section#travel div.travel-container div.travel-text p:nth-child(7) {
         margin-bottom: 48px; }
-      section#travel div.travel-container div.travel-text div:nth-child(8) a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF;
-        background: #36706B;
-        border-radius: 32px;
-        width: 279px;
-        height: 56px; }
-      section#travel div.travel-container div.travel-text div:nth-child(8) a:hover {
-        background: #093929;
-        transition: 300ms; }
+      section#travel div.travel-container div.travel-text div:nth-child(8) {
+        text-align: -webkit-right; }
+        section#travel div.travel-container div.travel-text div:nth-child(8) a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #FFFFFF;
+          background: #36706B;
+          border-radius: 32px;
+          width: 279px;
+          height: 56px; }
+        section#travel div.travel-container div.travel-text div:nth-child(8) a:hover {
+          background: #093929;
+          transition: 300ms; }
 
 #ccm {
   padding-top: 150px;
