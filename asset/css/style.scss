@@ -382,7 +382,7 @@ header{
         }
     }
 
-}    
+}
     #value{
         background-color: #CBE6E4;
         padding: 100px;
@@ -1320,12 +1320,27 @@ footer{
             font-weight: 400;
             font-size: 36px;
 
-            div{
-                svg{
-                    display: none;
+        }
+
+        #headtitle{
+            width: 500px;
+            h1{
+                div{
+                    svg:first-child{
+                        width: 200px;
+                        bottom: 12px;
+                        right:53px;
+                    }
+                    svg:last-child{
+                        width: 80px;
+                        bottom: 0;
+                        right:26px;
+                    }
                 }
             }
+
         }
+
         p:after, h1:after{
             display: none;
         }
@@ -1362,6 +1377,9 @@ footer{
             article:last-child{
                 margin-bottom: 0;
             }
+        }
+        &:after{
+            display: none;
         }
     }
     section#travel{
@@ -1607,11 +1625,31 @@ footer{
     }
 }
 
+@media (max-width: 620px){
+
+    header{
+        #headtitle{
+            width: 300px;
+            h1{
+                div{
+                    svg:first-child{
+                        bottom: 54px;
+                        right: 75px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
 @media (max-width: 414px){
     header{
         div.headmain{
             div#headcontainer{
                div#headtitle{
+                width: 200px;
                     margin-bottom: 56px;
                     h1{
                         font-weight: 400;

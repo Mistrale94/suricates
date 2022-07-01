@@ -920,8 +920,16 @@ footer {
       font-style: normal;
       font-weight: 400;
       font-size: 36px; }
-      header h1 div svg {
-        display: none; }
+    header #headtitle {
+      width: 500px; }
+      header #headtitle h1 div svg:first-child {
+        width: 200px;
+        bottom: 12px;
+        right: 53px; }
+      header #headtitle h1 div svg:last-child {
+        width: 80px;
+        bottom: 0;
+        right: 26px; }
     header p:after, header h1:after {
       display: none; }
     header div#actions {
@@ -943,6 +951,8 @@ footer {
       margin-bottom: 48px; }
     section#value div:last-child article:last-child {
       margin-bottom: 0; }
+  section#value:after {
+    display: none; }
 
   section#travel div.travel-container {
     flex-direction: column;
@@ -1093,8 +1103,15 @@ footer {
 
   footer::after {
     display: none; } }
+@media (max-width: 620px) {
+  header #headtitle {
+    width: 300px; }
+    header #headtitle h1 div svg:first-child {
+      bottom: 54px;
+      right: 75px; } }
 @media (max-width: 414px) {
   header div.headmain div#headcontainer div#headtitle {
+    width: 200px;
     margin-bottom: 56px; }
     header div.headmain div#headcontainer div#headtitle h1 {
       font-weight: 400;
