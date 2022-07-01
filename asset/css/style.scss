@@ -549,6 +549,10 @@ section#quiz{
         button:hover{
             cursor: pointer;
         }
+        button#next:hover{
+            background: #093929;
+            transition: 300ms;
+        }
         #finir{
             display : none;
         }
@@ -828,6 +832,10 @@ section#travel{
                     border-radius: 32px;
                     width: 279px;
                     height: 56px;
+                }
+                a:hover{
+                    background: #093929;
+                    transition: 300ms;
                 }
             }
         }

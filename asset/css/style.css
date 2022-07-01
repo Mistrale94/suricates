@@ -373,6 +373,9 @@ section#quiz {
       margin-left: auto; }
     section#quiz #button button:hover {
       cursor: pointer; }
+    section#quiz #button button#next:hover {
+      background: #093929;
+      transition: 300ms; }
     section#quiz #button #finir {
       display: none; }
     section#quiz #button #last {
@@ -578,6 +581,9 @@ section#travel {
         border-radius: 32px;
         width: 279px;
         height: 56px; }
+      section#travel div.travel-container div.travel-text div:nth-child(8) a:hover {
+        background: #093929;
+        transition: 300ms; }
 
 #ccm {
   padding-top: 150px;
