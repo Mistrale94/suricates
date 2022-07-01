@@ -19,18 +19,6 @@ body.dark {
       text-decoration: none;
       color: #FFFFFF;
       transition: 300ms; }
-    body.dark header nav ul.desktop_nav li a:hover::after {
-      width: 50%;
-      background: #36706B; }
-    body.dark header nav ul.desktop_nav li a::after {
-      content: '';
-      display: block;
-      margin: auto;
-      margin-top: 2px;
-      height: 1px;
-      width: 0;
-      background: transparent;
-      transition: width .5s ease, background-color .5s ease; }
     body.dark header nav div.btn-toggle {
       background-color: #CBE6E4; }
   body.dark section#value {
@@ -86,6 +74,18 @@ header nav {
   z-index: 5; }
   header nav a img {
     height: 27px; }
+  header nav a:hover::after {
+    width: 50%;
+    background: #36706B; }
+  header nav a::after {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease; }
   header nav ul {
     display: flex;
     list-style: none;
