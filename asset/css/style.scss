@@ -589,8 +589,8 @@ section#quiz{
     #popup{
         //position:absolute;
         display: none;
-        //position: fixed;
-        display: flex;
+        position: fixed;
+        //display: flex;
         align-items:center;
         top: 0;
         left: 0;
@@ -611,9 +611,9 @@ section#quiz{
 
         #popup_partager,#popup_newsletter{
 
-             //display: none;
+             display: none;
              position:relative;
-             display: flex;
+             //display: flex;
              align-items:center;
              flex-direction: column;
              background-color: white;
@@ -678,9 +678,6 @@ section#quiz{
                 }
             }
             
-        }
-        #popup_partager{
-            display: none;
         }
         #popup_newsletter{
             //display: none;
