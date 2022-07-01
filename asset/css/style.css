@@ -445,6 +445,20 @@ section#quiz {
           font-size: 16px; }
         section#quiz #popup #popup_partager #copie input:focus, section#quiz #popup #popup_newsletter #copie input:focus {
           outline: none; }
+    section#quiz #popup #popup_newsletter #mc_embed_signup #mc_embed_signup_scroll {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      section#quiz #popup #popup_newsletter #mc_embed_signup #mc_embed_signup_scroll div.mc-field-group input {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid var(--main-color-vert50);
+        border-radius: 8px;
+        color: #8C8D8C; }
     section#quiz #popup #popup_newsletter p {
       text-align: center; }
     section#quiz #popup #popup_newsletter input {
