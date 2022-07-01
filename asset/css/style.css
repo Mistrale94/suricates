@@ -410,8 +410,8 @@ section#quiz {
       position: relative; }
       section#quiz #popup strong div {
         position: absolute;
-        top: -55px;
-        left: 165px;
+        top: -35px;
+        left: 40px;
         display: inline-block; }
     section#quiz #popup #popup_partager, section#quiz #popup #popup_newsletter {
       display: none;
@@ -466,30 +466,35 @@ section#quiz {
         section#quiz #popup #popup_partager #copie input:focus, section#quiz #popup #popup_newsletter #copie input:focus {
           outline: none; }
     section#quiz #popup #popup_newsletter #mc_embed_signup {
-      border: 1px solid red; }
+      width: 100%; }
       section#quiz #popup #popup_newsletter #mc_embed_signup #mc_embed_signup_scroll {
-        border: 1px solid blue;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         flex-direction: column;
         flex-wrap: wrap; }
-        section#quiz #popup #popup_newsletter #mc_embed_signup #mc_embed_signup_scroll div.mc-field-group input {
-          width: 100%;
-          box-sizing: border-box;
-          border: 1px solid var(--main-color-vert50);
-          border-radius: 8px;
-          color: #8C8D8C; }
+        section#quiz #popup #popup_newsletter #mc_embed_signup #mc_embed_signup_scroll .mc-field-group {
+          width: 100%; }
+          section#quiz #popup #popup_newsletter #mc_embed_signup #mc_embed_signup_scroll .mc-field-group #mce-EMAIL {
+            width: 100%; }
     section#quiz #popup #popup_newsletter p {
       text-align: center; }
     section#quiz #popup #popup_newsletter input {
+      font-family: "Raleway", sans-serif;
       margin-top: 20px;
       padding: 20px 15px;
       width: 100%;
       box-sizing: border-box;
       border: 1px solid var(--main-color-vert50);
       border-radius: 8px;
-      color: #8C8D8C; }
+      color: #8C8D8C;
+      font-size: 16px; }
+    section#quiz #popup #popup_newsletter #mc-embedded-subscribe {
+      background: #33706B;
+      color: white;
+      padding: 20px 60px;
+      border-radius: 30px;
+      font-weight: 600; }
     section#quiz #popup #popup_newsletter #envoyer {
       margin-top: 20px;
       background-color: #33706B;
