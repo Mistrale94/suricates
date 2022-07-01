@@ -342,12 +342,12 @@ section#quiz {
         height: 100%;
         background-color: var(--main-color-vert50);
         border-radius: 21px; }
-  section#quiz form {
+  section#quiz form#option {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 50px 0; }
-    section#quiz form div {
+    section#quiz form#option div {
       display: flex;
       align-items: center;
       color: #093929;
@@ -356,14 +356,12 @@ section#quiz {
       margin-bottom: 20px;
       border-radius: 10px;
       position: relative; }
-      section#quiz form div input {
+      section#quiz form#option div input {
         width: 20px;
         height: 20px;
-        background-color: #093929; }
-      section#quiz form div span {
-        margin-left: 10px; }
-      section#quiz form div #radio {
         accent-color: #093929; }
+      section#quiz form#option div span {
+        margin-left: 10px; }
   section#quiz #button {
     display: flex;
     flex-direction: row; }
@@ -479,20 +477,21 @@ section#quiz {
           font-size: 16px; }
         section#quiz #popup #popup_partager #copie input:focus, section#quiz #popup #popup_newsletter #copie input:focus {
           outline: none; }
-    section#quiz #popup #popup_newsletter #mc_embed_signup #mc_embed_signup_scroll {
-      width: 100%;
-      height: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      flex-wrap: wrap; }
-      section#quiz #popup #popup_newsletter #mc_embed_signup #mc_embed_signup_scroll div.mc-field-group input {
-        width: 100%;
-        box-sizing: border-box;
-        border: 1px solid var(--main-color-vert50);
-        border-radius: 8px;
-        color: #8C8D8C; }
+    section#quiz #popup #popup_newsletter #mc_embed_signup {
+      border: 1px solid red; }
+      section#quiz #popup #popup_newsletter #mc_embed_signup #mc_embed_signup_scroll {
+        border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap; }
+        section#quiz #popup #popup_newsletter #mc_embed_signup #mc_embed_signup_scroll div.mc-field-group input {
+          width: 100%;
+          box-sizing: border-box;
+          border: 1px solid var(--main-color-vert50);
+          border-radius: 8px;
+          color: #8C8D8C; }
     section#quiz #popup #popup_newsletter p {
       text-align: center; }
     section#quiz #popup #popup_newsletter input {

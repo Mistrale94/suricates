@@ -512,7 +512,7 @@ section#quiz{
 
     }
     
-    form{
+    form#option{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -529,14 +529,10 @@ section#quiz{
             input{
                 width: 20px;
                 height: 20px;
-                background-color: #093929;
+                accent-color:#093929;
             }
             span{
                 margin-left: 10px;
-            }
-            #radio{
-                accent-color:#093929;
-
             }
         }
     }
@@ -697,19 +693,20 @@ section#quiz{
             }
             
         }
-
         #popup_newsletter{
             //display: none;
             #mc_embed_signup{
+            border: 1px solid red;
 
                 #mc_embed_signup_scroll{
-                width: 100%;
-                height: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                flex-wrap: wrap;
+                    border: 1px solid blue;
+                    // width: 100%;
+                    // height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                   flex-direction: column;
+                   flex-wrap: wrap;
 
                 div.mc-field-group input{
                     width: 100%;
