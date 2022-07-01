@@ -167,7 +167,7 @@ header h1 {
   font-weight: 400; }
 header div#headcontainer:after {
   position: absolute;
-  top: 200px;
+  top: 150px;
   right: 0;
   display: block;
   content: "";
@@ -193,7 +193,7 @@ header #headtitle {
     right: 12%; }
 header p:after {
   position: absolute;
-  top: 400px;
+  top: 270px;
   left: 0;
   display: block;
   content: "";
@@ -229,7 +229,7 @@ header #actions {
     align-items: center;
     margin-left: 32px; }
   header #actions #button:hover {
-    background: #093929; }
+    background: #F8961E; }
   header #actions:after {
     position: absolute;
     top: 730px;
@@ -402,7 +402,7 @@ section#quiz {
     section#quiz #button button:hover {
       cursor: pointer; }
     section#quiz #button button#next:hover {
-      background: #093929;
+      background: #F8961E;
       transition: 300ms; }
     section#quiz #button #finir {
       display: none; }
@@ -617,7 +617,7 @@ section#travel {
           width: 279px;
           height: 56px; }
         section#travel div.travel-container div.travel-text div:nth-child(8) a:hover {
-          background: #093929;
+          background: #F8961E;
           transition: 300ms; }
 
 #ccm {
@@ -634,7 +634,7 @@ section#travel {
   .container-title-concept svg:first-child {
     position: absolute;
     left: 40%;
-    bottom: 80px; }
+    bottom: 70px; }
   .container-title-concept div {
     width: fit-content; }
 
@@ -781,13 +781,13 @@ section#portraits {
         section#portraits div.farmer-container div.card-farmer div.card-farmer-text p:nth-child(2) {
           font-style: normal;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 19px;
           margin-bottom: 18px; }
         section#portraits div.farmer-container div.card-farmer div.card-farmer-text p:nth-child(3) {
           font-family: 'Raleway', sans-serif;
           font-weight: 300;
           font-size: 16px;
-          margin-bottom: 6px; }
+          margin-bottom: 26px; }
         section#portraits div.farmer-container div.card-farmer div.card-farmer-text div:last-child a {
           color: #FFFFFF;
           margin-right: 8px; }
@@ -831,9 +831,9 @@ footer {
         font-size: 20px;
         margin-bottom: 50px; }
       footer div.footer-container > article a {
-        font-family: "Amithen";
+        font-family: 'Raleway';
         font-style: normal;
-        font-weight: 450;
+        font-weight: 700;
         font-size: 16px;
         margin-top: 16px;
         color: #FFFFFF;

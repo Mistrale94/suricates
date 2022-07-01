@@ -268,7 +268,7 @@ header{
 
     div#headcontainer:after{
         position: absolute;
-        top: 200px;
+        top: 150px;
         right: 0;
         display: block;
         content: "";
@@ -304,7 +304,7 @@ header{
 
     p:after{
         position: absolute;
-        top: 400px;
+        top: 270px;
         left: 0;
         display: block;
         content: "";
@@ -352,7 +352,7 @@ header{
 
         #button:hover{
 
-            background: #093929;
+            background: #F8961E;
 
 
         }
@@ -585,7 +585,7 @@ section#quiz{
             cursor: pointer;
         }
         button#next:hover{
-            background: #093929;
+            background: #F8961E;
             transition: 300ms;
         }
         #finir{
@@ -881,7 +881,7 @@ section#travel{
                     height: 56px;
                 }
                 a:hover{
-                    background: #093929;
+                    background: #F8961E;
                     transition: 300ms;
                 }
             }
@@ -905,7 +905,7 @@ section#travel{
     svg:first-child{
         position: absolute;
         left: 40%;
-        bottom: 80px;
+        bottom: 70px;
     }
     div{
         width: fit-content;
@@ -1102,14 +1102,14 @@ section#portraits{
                 p:nth-child(2){
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 20px;
+                    font-size: 19px;
                     margin-bottom: 18px;
                 }
                 p:nth-child(3){
                     font-family: 'Raleway', sans-serif;
                     font-weight: 300;
                     font-size: 16px;
-                    margin-bottom: 6px;
+                    margin-bottom: 26px;
                 }
                 div:last-child{
                     
@@ -1176,9 +1176,9 @@ footer{
                 margin-bottom: 50px;
             }
             a{
-                font-family: "Amithen";
+                font-family: 'Raleway';
                 font-style: normal;
-                font-weight: 450;
+                font-weight: 700;
                 font-size: 16px;
                 margin-top:16px;
                 color: #FFFFFF;
