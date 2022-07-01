@@ -498,7 +498,7 @@ section#quiz{
 
     }
     
-    form{
+    &>form{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -593,8 +593,8 @@ section#quiz{
     #popup{
         //position:absolute;
         display: none;
-        position: fixed;
-        //display: flex;
+        //position: fixed;
+        display: flex;
         align-items:center;
         top: 0;
         left: 0;
@@ -615,9 +615,9 @@ section#quiz{
 
         #popup_partager,#popup_newsletter{
 
-             display: none;
+             //display: none;
              position:relative;
-             //display: flex;
+             display: flex;
              align-items:center;
              flex-direction: column;
              background-color: white;
@@ -683,19 +683,23 @@ section#quiz{
             }
             
         }
-
+        #popup_partager{
+            display: none;
+        }
         #popup_newsletter{
             //display: none;
             #mc_embed_signup{
+            border: 1px solid red;
 
                 #mc_embed_signup_scroll{
-                width: 100%;
-                height: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                flex-wrap: wrap;
+                    border: 1px solid blue;
+                    // width: 100%;
+                    // height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                   flex-direction: column;
+                   flex-wrap: wrap;
 
                 div.mc-field-group input{
                     width: 100%;
