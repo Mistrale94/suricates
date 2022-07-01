@@ -260,22 +260,22 @@ header{
 
     #headtitle{
         width: 1034px;
-        strong:first-child{
-            position: relative;
+        h1{
+            //position: relative;
             div{
-                position: absolute;
-                bottom: -35px;
-                left: -15px;
-                display: inline-block;
-            }
-        }
-        strong:last-child{
-            position: relative;
-            div{
-                position: absolute;
-                bottom: -15px;
-                left: 0;
-                display: inline-block;
+                position: relative;
+                svg:first-child{
+                    position: absolute;
+                    bottom: 61px;
+                    right:173px;
+                    display: inline-block;
+                }
+                svg:last-child{
+                    position: absolute;
+                    bottom: 0;
+                    right:127px;
+                    display: inline-block;
+                }
             }
         }
 
@@ -1264,12 +1264,27 @@ footer{
             font-weight: 400;
             font-size: 36px;
 
-            div{
-                svg{
-                    display: none;
+        }
+
+        #headtitle{
+            width: 500px;
+            h1{
+                div{
+                    svg:first-child{
+                        width: 200px;
+                        bottom: 12px;
+                        right:53px;
+                    }
+                    svg:last-child{
+                        width: 80px;
+                        bottom: 0;
+                        right:26px;
+                    }
                 }
             }
+
         }
+
         p:after, h1:after{
             display: none;
         }
@@ -1306,6 +1321,9 @@ footer{
             article:last-child{
                 margin-bottom: 0;
             }
+        }
+        &:after{
+            display: none;
         }
     }
     section#travel{
@@ -1551,11 +1569,31 @@ footer{
     }
 }
 
+@media (max-width: 620px){
+
+    header{
+        #headtitle{
+            width: 300px;
+            h1{
+                div{
+                    svg:first-child{
+                        bottom: 54px;
+                        right: 75px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
 @media (max-width: 414px){
     header{
         div.headmain{
             div#headcontainer{
                div#headtitle{
+                width: 200px;
                     margin-bottom: 56px;
                     h1{
                         font-weight: 400;
