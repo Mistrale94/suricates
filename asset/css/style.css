@@ -409,11 +409,12 @@ section#quiz {
     section#quiz #button #finir {
       display: none; }
     section#quiz #button #last {
-      color: #162D2B;
-      border: none;
+      color: #33706B;
       margin-left: auto;
       background-color: transparent;
       display: none; }
+      section#quiz #button #last p {
+        border-bottom: 2px solid #33706B; }
     section#quiz #button #newsletter {
       color: #162D2B;
       border: none;

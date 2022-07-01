@@ -594,12 +594,15 @@ section#quiz{
             display : none;
         }
         #last{
-            color: #162D2B;
-            border: none;
+            
+            color: #33706B;
             margin-left: auto;
             background-color: transparent;
             display: none;
 
+            p{
+                border-bottom: 2px solid #33706B;
+            }
         }
         #newsletter{
             color: #162D2B;
