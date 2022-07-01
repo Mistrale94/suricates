@@ -14,12 +14,11 @@
     src: url("../font/Amithen.otf") format("otf");
 }
 
-.bepVfn svg path {
-    fill: #33706B;
+.bepVfn svg path{
+    fill: #33706B !important;
 }
-.gTyPIa.gTyPIa.gTyPIa.gTyPIa.gTyPIa.gTyPIa:hover {
-    color: #33706B !important;
-    background-color: rgb(255, 255, 255) !important;
+.bepVfn svg path:last-child {
+    fill: rgb(255, 255, 255) !important;
 }
 
 body.dark{

@@ -10,11 +10,10 @@
   font-family: "Amithen";
   src: url("../font/Amithen.otf") format("otf"); }
 .bepVfn svg path {
-  fill: #33706B; }
+  fill: #33706B !important; }
 
-.gTyPIa.gTyPIa.gTyPIa.gTyPIa.gTyPIa.gTyPIa:hover {
-  color: #33706B !important;
-  background-color: white !important; }
+.bepVfn svg path:last-child {
+  fill: white !important; }
 
 body.dark {
   background-color: #191A19;
