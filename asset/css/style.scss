@@ -7,7 +7,6 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
-@import url("https://db.onlinewebfonts.com/c/6660ce4d9b0f78b0bf960b5abf9336cd?family=UberhandTextPro");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 @font-face {
@@ -253,7 +252,7 @@ header{
         content: "";
         width: 130px;
         height: 260px;
-            background-image: url(../image/illudroite.svg);
+            background-image: url(../image/illuDroite.svg);
         }
 
         
@@ -289,7 +288,7 @@ header{
         content: "";
         width: 150px;
         height: 300px;
-            background-image: url(../image/illugauche.svg);
+            background-image: url(../image/illuGauche.svg);
             background-size: contain;
             background-repeat: no-repeat;
     }
@@ -549,6 +548,10 @@ section#quiz{
         button:hover{
             cursor: pointer;
         }
+        button#next:hover{
+            background: #093929;
+            transition: 300ms;
+        }
         #finir{
             display : none;
         }
@@ -613,8 +616,8 @@ section#quiz{
             position: relative;
             div{
                 position: absolute;
-                top: -55px;
-                left: 165px;
+                top: -35px;
+                left: 40px;
                 display: inline-block;
             }
         }
@@ -692,25 +695,24 @@ section#quiz{
         #popup_newsletter{
             //display: none;
             #mc_embed_signup{
-            border: 1px solid red;
+            width: 100%;
 
                 #mc_embed_signup_scroll{
-                    border: 1px solid blue;
                     // width: 100%;
                     // height: 100px;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                   flex-direction: column;
-                   flex-wrap: wrap;
+                    align-items: flex-end;
+                    flex-direction: column;
+                    flex-wrap: wrap;
 
-                div.mc-field-group input{
+                   .mc-field-group{
                     width: 100%;
-                    box-sizing: border-box;
-                    border: 1px solid var(--main-color-vert50);
-                    border-radius: 8px;
-                    color: #8C8D8C;
-                }
+                    #mce-EMAIL{
+                        width: 100%;
+                    }
+                   }
+               
                 }
             }
                 
@@ -719,6 +721,7 @@ section#quiz{
                 text-align: center;
             }
             input{
+                font-family: "Raleway", sans-serif;
                 margin-top: 20px;
                 padding: 20px 15px;
                 width: 100%;
@@ -726,6 +729,17 @@ section#quiz{
                 border: 1px solid var(--main-color-vert50);
                 border-radius: 8px;
                 color: #8C8D8C;
+                font-size: 16px;
+            }
+
+            #mc-embedded-subscribe{
+                background: #33706B;
+                color: white;
+                padding: 20px 60px;
+                border-radius: 30px;
+                font-weight: 600;
+
+
             }
             #envoyer{
                 margin-top: 20px;
@@ -828,6 +842,10 @@ section#travel{
                     border-radius: 32px;
                     width: 279px;
                     height: 56px;
+                }
+                a:hover{
+                    background: #093929;
+                    transition: 300ms;
                 }
             }
         }
@@ -1121,7 +1139,7 @@ footer{
                 margin-bottom: 50px;
             }
             a{
-                font-family: "UberhandTextPro";
+                font-family: "Amithen";
                 font-style: normal;
                 font-weight: 450;
                 font-size: 16px;
