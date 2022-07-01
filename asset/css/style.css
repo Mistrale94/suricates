@@ -573,7 +573,7 @@ section#quiz #quizdeco {
 
 section#quiz #popup {
   display: none;
-  display: flex;
+  position: fixed;
   align-items: center;
   top: 0;
   left: 0;
@@ -595,8 +595,8 @@ section#quiz #popup strong div {
 }
 
 section#quiz #popup #popup_partager, section#quiz #popup #popup_newsletter {
+  display: none;
   position: relative;
-  display: flex;
   align-items: center;
   flex-direction: column;
   background-color: white;
@@ -666,10 +666,6 @@ section#quiz #popup #popup_partager #copie input, section#quiz #popup #popup_new
 
 section#quiz #popup #popup_partager #copie input:focus, section#quiz #popup #popup_newsletter #copie input:focus {
   outline: none;
-}
-
-section#quiz #popup #popup_partager {
-  display: none;
 }
 
 section#quiz #popup #popup_newsletter #mc_embed_signup {
