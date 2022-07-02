@@ -822,11 +822,14 @@ footer {
     font-size: 16px; }
   footer div.footer-container {
     margin-top: 80px;
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     footer div.footer-container div {
       display: flex; }
-      footer div.footer-container div article p {
-        margin-top: 16px; }
+      footer div.footer-container div article {
+        margin-top: 30px; }
+        footer div.footer-container div article p {
+          margin-top: 16px; }
     footer div.footer-container > article {
       font-weight: bold;
       margin-right: 400px; }
@@ -1123,6 +1126,8 @@ footer {
     footer div.footer-container {
       display: flex;
       flex-direction: column; }
+      footer div.footer-container #footnews {
+        display: none; }
       footer div.footer-container div {
         display: flex;
         justify-content: space-between;
