@@ -7,13 +7,19 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
-@import url("https://db.onlinewebfonts.com/c/6660ce4d9b0f78b0bf960b5abf9336cd?family=UberhandTextPro");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 @font-face {
     font-family: "Amithen";
     src: url("../font/Amithen.otf") format("otf");
-   }
+}
+
+.bepVfn svg path{
+    fill: #33706B !important;
+}
+.bepVfn svg path:last-child {
+    fill: rgb(255, 255, 255) !important;
+}
 
 body.dark{
     background-color: #191A19;
@@ -41,6 +47,21 @@ body.dark{
     section#value{
         background-color: #333333;
 
+        div.value-title-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div.value-title{
+                position: relative;
+
+                svg:first-child{
+                    position: absolute;
+                    right: -20%;
+                    top: -35px;
+                }
+            }
+        }
         div{
             article{
                 background-color: #191A19;
@@ -245,51 +266,53 @@ header{
         font-weight: 400;
     }
 
-    h1:after{
+    div#headcontainer:after{
         position: absolute;
-        top: 200px;
+        top: 150px;
         right: 0;
         display: block;
         content: "";
         width: 130px;
         height: 260px;
-            background-image: url(../image/illudroite.svg);
-        }
+        background-image: url(../image/illuDroite.svg);
+    }
 
         
 
     #headtitle{
         width: 1034px;
-        strong:first-child{
-            position: relative;
-            div{
-                position: absolute;
-                bottom: -35px;
-                left: -15px;
-                display: inline-block;
-            }
-        }
-        strong:last-child{
-            position: relative;
-            div{
-                position: absolute;
-                bottom: -15px;
-                left: 0;
-                display: inline-block;
-            }
-        }
+        position: relative;
 
+        div{
+            position: absolute;
+            bottom: -35px;
+            left: -15px;
+            display: inline-block;
+        }
+        svg:nth-child(1){
+            position: absolute;
+            top: -17px;
+            right: 17%;
+            width: 351px;
+            height: 102px;
+            display: inline-block;
+        }
+        svg:nth-child(2){
+            position: absolute;
+            bottom: -5px;
+            right: 12%;
+        }
     }
 
     p:after{
         position: absolute;
-        top: 400px;
+        top: 270px;
         left: 0;
         display: block;
         content: "";
         width: 150px;
         height: 300px;
-            background-image: url(../image/illugauche.svg);
+            background-image: url(../image/illuGauche.svg);
             background-size: contain;
             background-repeat: no-repeat;
     }
@@ -331,7 +354,7 @@ header{
 
         #button:hover{
 
-            background: #093929;
+            background: #F8961E;
 
 
         }
@@ -360,7 +383,7 @@ header{
         }
     }
 
-}    
+}
     #value{
         background-color: #CBE6E4;
         padding: 100px;
@@ -455,7 +478,7 @@ header{
 
 section#quiz{
     background-color: #CBE6E4;
-    padding: 185px 400px;
+    padding: 112px 400px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -486,6 +509,20 @@ section#quiz{
     }
     p{
         font-size: 16px;
+    }
+    p:hover::after{
+        width: 50%;
+        background: #36706B;
+    }
+    p::after{
+        content: '';
+        display: block;
+        margin: auto;
+        margin-top: 2px;
+        height: 2px;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
     }
     article{
         display: flex;
@@ -550,19 +587,22 @@ section#quiz{
             cursor: pointer;
         }
         button#next:hover{
-            background: #093929;
+            background: #F8961E;
             transition: 300ms;
         }
         #finir{
             display : none;
         }
         #last{
-            color: #162D2B;
-            border: none;
+            
+            color: #33706B;
             margin-left: auto;
             background-color: transparent;
             display: none;
 
+            p{
+                border-bottom: 2px solid #33706B;
+            }
         }
         #newsletter{
             color: #162D2B;
@@ -833,6 +873,7 @@ section#travel{
                 margin-bottom: 48px;
             }
             div:nth-child(8){
+                text-align: -webkit-right;
 
                 a{
                     display: flex;
@@ -845,7 +886,7 @@ section#travel{
                     height: 56px;
                 }
                 a:hover{
-                    background: #093929;
+                    background: #F8961E;
                     transition: 300ms;
                 }
             }
@@ -869,7 +910,7 @@ section#travel{
     svg:first-child{
         position: absolute;
         left: 40%;
-        bottom: 80px;
+        bottom: 70px;
     }
     div{
         width: fit-content;
@@ -1066,14 +1107,14 @@ section#portraits{
                 p:nth-child(2){
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 20px;
+                    font-size: 19px;
                     margin-bottom: 18px;
                 }
                 p:nth-child(3){
                     font-family: 'Raleway', sans-serif;
                     font-weight: 300;
                     font-size: 16px;
-                    margin-bottom: 6px;
+                    margin-bottom: 26px;
                 }
                 div:last-child{
                     
@@ -1090,7 +1131,7 @@ section#portraits{
         
         svg.circle-bottom{
             position: absolute;
-            bottom: -60px;
+            bottom: -40px;
             right: 60%;
             z-index: -1 !important;
         }
@@ -1140,9 +1181,9 @@ footer{
                 margin-bottom: 50px;
             }
             a{
-                font-family: "UberhandTextPro";
+                font-family: 'Raleway';
                 font-style: normal;
-                font-weight: 450;
+                font-weight: 700;
                 font-size: 16px;
                 margin-top:16px;
                 color: #FFFFFF;
@@ -1331,12 +1372,25 @@ footer{
             font-weight: 400;
             font-size: 36px;
 
-            div{
-                svg{
-                    display: none;
+        }
+
+        #headtitle{
+            width: 500px;
+            h1{
+                svg:first-child{
+                    top: -32px;
+                    right: 11%;
+                    width: 200px;
+                }
+                svg:last-child{
+                    width: 80px;
+                    bottom: -5;
+                    right:26px;
                 }
             }
+
         }
+
         p:after, h1:after{
             display: none;
         }
@@ -1373,6 +1427,9 @@ footer{
             article:last-child{
                 margin-bottom: 0;
             }
+        }
+        &:after{
+            display: none;
         }
     }
     section#travel{
@@ -1582,9 +1639,6 @@ footer{
             }
         
         }
-        svg{
-            display: none;
-        }
 
     }
 
@@ -1618,11 +1672,32 @@ footer{
     }
 }
 
+@media (max-width: 620px){
+
+    header{
+        #headcontainer:after{
+            display: none !important;
+        }
+        #headtitle{
+            width: 300px;
+            h1{
+                svg:first-child{
+                    top: 10px;
+                    right: 25%;
+                }
+            }
+        }
+    }
+    
+}
+
+
 @media (max-width: 414px){
     header{
         div.headmain{
             div#headcontainer{
                div#headtitle{
+                width: 200px;
                     margin-bottom: 56px;
                     h1{
                         font-weight: 400;

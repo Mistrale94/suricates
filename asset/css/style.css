@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
-@import url("https://db.onlinewebfonts.com/c/6660ce4d9b0f78b0bf960b5abf9336cd?family=UberhandTextPro");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 * {
   margin: 0;
@@ -10,6 +9,12 @@
 @font-face {
   font-family: "Amithen";
   src: url("../font/Amithen.otf") format("otf"); }
+.bepVfn svg path {
+  fill: #33706B !important; }
+
+.bepVfn svg path:last-child {
+  fill: white !important; }
+
 body.dark {
   background-color: #191A19;
   color: #FFFFFF; }
@@ -23,6 +28,16 @@ body.dark {
       background-color: #CBE6E4; }
   body.dark section#value {
     background-color: #333333; }
+    body.dark section#value div.value-title-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body.dark section#value div.value-title-container div.value-title {
+        position: relative; }
+        body.dark section#value div.value-title-container div.value-title svg:first-child {
+          position: absolute;
+          right: -20%;
+          top: -35px; }
     body.dark section#value div article {
       background-color: #191A19; }
     body.dark section#value div:last-child article h1 {
@@ -150,40 +165,43 @@ header h1 {
   font-size: 64px;
   font-style: normal;
   font-weight: 400; }
-header h1:after {
+header div#headcontainer:after {
   position: absolute;
-  top: 200px;
+  top: 150px;
   right: 0;
   display: block;
   content: "";
   width: 130px;
   height: 260px;
-  background-image: url(../image/illudroite.svg); }
+  background-image: url(../image/illuDroite.svg); }
 header #headtitle {
-  width: 1034px; }
-  header #headtitle strong:first-child {
-    position: relative; }
-    header #headtitle strong:first-child div {
-      position: absolute;
-      bottom: -35px;
-      left: -15px;
-      display: inline-block; }
-  header #headtitle strong:last-child {
-    position: relative; }
-    header #headtitle strong:last-child div {
-      position: absolute;
-      bottom: -15px;
-      left: 0;
-      display: inline-block; }
+  width: 1034px;
+  position: relative; }
+  header #headtitle div {
+    position: absolute;
+    bottom: -35px;
+    left: -15px;
+    display: inline-block; }
+  header #headtitle svg:nth-child(1) {
+    position: absolute;
+    top: -17px;
+    right: 17%;
+    width: 351px;
+    height: 102px;
+    display: inline-block; }
+  header #headtitle svg:nth-child(2) {
+    position: absolute;
+    bottom: -5px;
+    right: 12%; }
 header p:after {
   position: absolute;
-  top: 400px;
+  top: 270px;
   left: 0;
   display: block;
   content: "";
   width: 150px;
   height: 300px;
-  background-image: url(../image/illugauche.svg);
+  background-image: url(../image/illuGauche.svg);
   background-size: contain;
   background-repeat: no-repeat; }
 header #headsubtitle {
@@ -213,7 +231,7 @@ header #actions {
     align-items: center;
     margin-left: 32px; }
   header #actions #button:hover {
-    background: #093929; }
+    background: #F8961E; }
   header #actions:after {
     position: absolute;
     top: 730px;
@@ -303,7 +321,7 @@ header #actions {
 
 section#quiz {
   background-color: #CBE6E4;
-  padding: 185px 400px;
+  padding: 112px 400px;
   display: flex;
   flex-direction: column;
   position: relative; }
@@ -325,6 +343,18 @@ section#quiz {
     font-weight: 300; }
   section#quiz p {
     font-size: 16px; }
+  section#quiz p:hover::after {
+    width: 50%;
+    background: #36706B; }
+  section#quiz p::after {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease; }
   section#quiz article {
     display: flex;
     justify-content: space-between;
@@ -374,16 +404,17 @@ section#quiz {
     section#quiz #button button:hover {
       cursor: pointer; }
     section#quiz #button button#next:hover {
-      background: #093929;
+      background: #F8961E;
       transition: 300ms; }
     section#quiz #button #finir {
       display: none; }
     section#quiz #button #last {
-      color: #162D2B;
-      border: none;
+      color: #33706B;
       margin-left: auto;
       background-color: transparent;
       display: none; }
+      section#quiz #button #last p {
+        border-bottom: 2px solid #33706B; }
     section#quiz #button #newsletter {
       color: #162D2B;
       border: none;
@@ -577,18 +608,20 @@ section#travel {
         font-size: 16px; }
       section#travel div.travel-container div.travel-text p:nth-child(7) {
         margin-bottom: 48px; }
-      section#travel div.travel-container div.travel-text div:nth-child(8) a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF;
-        background: #36706B;
-        border-radius: 32px;
-        width: 279px;
-        height: 56px; }
-      section#travel div.travel-container div.travel-text div:nth-child(8) a:hover {
-        background: #093929;
-        transition: 300ms; }
+      section#travel div.travel-container div.travel-text div:nth-child(8) {
+        text-align: -webkit-right; }
+        section#travel div.travel-container div.travel-text div:nth-child(8) a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #FFFFFF;
+          background: #36706B;
+          border-radius: 32px;
+          width: 279px;
+          height: 56px; }
+        section#travel div.travel-container div.travel-text div:nth-child(8) a:hover {
+          background: #F8961E;
+          transition: 300ms; }
 
 #ccm {
   padding-top: 150px;
@@ -604,7 +637,7 @@ section#travel {
   .container-title-concept svg:first-child {
     position: absolute;
     left: 40%;
-    bottom: 80px; }
+    bottom: 70px; }
   .container-title-concept div {
     width: fit-content; }
 
@@ -751,13 +784,13 @@ section#portraits {
         section#portraits div.farmer-container div.card-farmer div.card-farmer-text p:nth-child(2) {
           font-style: normal;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 19px;
           margin-bottom: 18px; }
         section#portraits div.farmer-container div.card-farmer div.card-farmer-text p:nth-child(3) {
           font-family: 'Raleway', sans-serif;
           font-weight: 300;
           font-size: 16px;
-          margin-bottom: 6px; }
+          margin-bottom: 26px; }
         section#portraits div.farmer-container div.card-farmer div.card-farmer-text div:last-child a {
           color: #FFFFFF;
           margin-right: 8px; }
@@ -765,7 +798,7 @@ section#portraits {
           color: #F8961E; }
     section#portraits div.farmer-container svg.circle-bottom {
       position: absolute;
-      bottom: -60px;
+      bottom: -40px;
       right: 60%;
       z-index: -1 !important; }
     section#portraits div.farmer-container svg.circle-right {
@@ -801,9 +834,9 @@ footer {
         font-size: 20px;
         margin-bottom: 50px; }
       footer div.footer-container > article a {
-        font-family: "UberhandTextPro";
+        font-family: 'Raleway';
         font-style: normal;
-        font-weight: 450;
+        font-weight: 700;
         font-size: 16px;
         margin-top: 16px;
         color: #FFFFFF;
@@ -922,8 +955,16 @@ footer {
       font-style: normal;
       font-weight: 400;
       font-size: 36px; }
-      header h1 div svg {
-        display: none; }
+    header #headtitle {
+      width: 500px; }
+      header #headtitle h1 svg:first-child {
+        top: -32px;
+        right: 11%;
+        width: 200px; }
+      header #headtitle h1 svg:last-child {
+        width: 80px;
+        bottom: -5;
+        right: 26px; }
     header p:after, header h1:after {
       display: none; }
     header div#actions {
@@ -945,6 +986,8 @@ footer {
       margin-bottom: 48px; }
     section#value div:last-child article:last-child {
       margin-bottom: 0; }
+  section#value:after {
+    display: none; }
 
   section#travel div.travel-container {
     flex-direction: column;
@@ -1072,8 +1115,6 @@ footer {
         text-align: center;
         display: none;
         margin-bottom: 50px; }
-    section#quiz svg {
-      display: none; }
 
   footer {
     display: flex;
@@ -1095,8 +1136,17 @@ footer {
 
   footer::after {
     display: none; } }
+@media (max-width: 620px) {
+  header #headcontainer:after {
+    display: none !important; }
+  header #headtitle {
+    width: 300px; }
+    header #headtitle h1 svg:first-child {
+      top: 10px;
+      right: 25%; } }
 @media (max-width: 414px) {
   header div.headmain div#headcontainer div#headtitle {
+    width: 200px;
     margin-bottom: 56px; }
     header div.headmain div#headcontainer div#headtitle h1 {
       font-weight: 400;

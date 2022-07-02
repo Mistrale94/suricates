@@ -14,7 +14,7 @@ var dateList = [];
 dateList = [{
     "question_number": 1,
     "title": "Quelle destination vous inspire pour votre prochain voyage ?",
-    "option": ["A la Montagne", "A la Mer", "En Ville", "En Forêt"],
+    "option": ["La Montagne", "La Mer", "La Ville", "La Forêt"],
     "value" : [4,2,1,3],
 },
  {
@@ -32,13 +32,13 @@ dateList = [{
 {
 "question_number": 4,
 "title": "Quel plat est le plus inspirant ?",
-"option": ["Un brunch", "Un barbecue des familles", "Un bon plateau de fruit de mer","Une raclette"],
+"option": ["Un brunch", "Un barbecue en famille", "Un bon plateau de fruits de mer","Une raclette"],
 "value" : [1,3,2,4],
 },
 {
 "question_number": 5,
 "title": "Quel est le légume que vous aimez le moins ? ",
-"option": ["Du céleri", "Du navet", "Une asperge","Des épinards"],
+"option": ["Le céleri", "Le navet", "Les asperges","Les épinards"],
 "value" : [3,1,2,4],
 }
 
