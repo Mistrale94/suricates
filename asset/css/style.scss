@@ -1191,6 +1191,54 @@ footer{
             }
         }
         
+        #footnews{
+            margin-left: 184px;
+            width: 600px;
+            h1{
+                font-size: 20px;
+                    margin-bottom: 50px;
+            }
+
+            #mc_embed_signup
+            {
+                #mc_embed_signup_scroll{
+                    width: 600px;
+                    .mc-field-group{
+                        width: 80%;
+                        #mce-EMAIL{
+                            font-family: "Raleway", sans-serif;
+                            margin-top: 20px;
+                            padding: 20px 15px;
+                            width: 97%;
+                            box-sizing: border-box;
+                            border: 1px solid var(--main-color-vert50);
+                            border-radius: 8px;
+                            color: #8C8D8C;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                #mc-embedded-subscribe{
+                font-family: "Raleway", sans-serif;
+                color: #33706B;
+                background: white;
+                padding: 10px 20px;
+                border: 1px solid var(--main-color-vert50);
+                border-radius: 8px;
+                font-weight: 600;
+                margin-top: 20px;
+                transition: 300ms;
+                }
+                #mc-embedded-subscribe:hover{
+                    color: white;
+                    background: #33706B;
+                    }
+            }
+            
+            
+            
+        }
     }
     &>p:last-child{
         text-align: center;
