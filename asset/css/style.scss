@@ -641,7 +641,6 @@ section#quiz{
     }
 
     #popup{
-        //position:absolute;
         display: none;
         position: fixed;
         //display: flex;
@@ -652,16 +651,6 @@ section#quiz{
         height: 100%;
         background-color: rgba(33, 41, 52, 0.75);
         z-index: 999;
-
-        strong{
-            position: relative;
-            div{
-                position: absolute;
-                top: -35px;
-                left: 40px;
-                display: inline-block;
-            }
-        }
 
         #popup_partager,#popup_newsletter{
 
@@ -695,6 +684,10 @@ section#quiz{
              }
              .lien{
                 padding: 0 60px;
+               
+                a{
+                    color: #244C49;
+                }
              }
              
              #close{
@@ -718,6 +711,8 @@ section#quiz{
                 button{
                     background-color: transparent;
                     border: none;
+                    cursor: pointer;
+
                 }
                 input{
                     border: none;
@@ -731,6 +726,20 @@ section#quiz{
                     outline: none;
                 }
             }
+            
+        }
+        #popup_partager{
+
+            strong{
+                position: relative;
+                div{
+                    position: absolute;
+                    top: -45px;
+                    left: 90px;
+                    display: inline-block;
+                }
+            }
+    
             
         }
         #popup_newsletter{
@@ -791,6 +800,17 @@ section#quiz{
                 display: block;
                 border: none;
                 margin-left: auto;
+            }
+
+
+            strong{
+                position: relative;
+                div{
+                    position: absolute;
+                    top: -45px;
+                    left: 37px;
+                    display: inline-block;
+                }
             }
         }
      }
