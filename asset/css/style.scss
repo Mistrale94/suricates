@@ -47,21 +47,6 @@ body.dark{
     section#value{
         background-color: #333333;
 
-        div.value-title-container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            div.value-title{
-                position: relative;
-
-                svg:first-child{
-                    position: absolute;
-                    right: -20%;
-                    top: -35px;
-                }
-            }
-        }
         div{
             article{
                 background-color: #191A19;
@@ -389,7 +374,21 @@ header{
         padding: 100px;
         margin-bottom: 112px;
         
-        
+        div.value-title-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div.value-title{
+                position: relative;
+
+                svg:first-child{
+                    position: absolute;
+                    right: -20%;
+                    top: -35px;
+                }
+            }
+        }
         div:first-child{
              h1{
                 display: flex;
@@ -554,6 +553,11 @@ section#quiz{
                 margin-left: 10px;
             }
         }
+        .checked{
+            color: #FFFFFF;
+            background-color:var(--main-color-vert50);
+        }
+
     }
 
     #button{
@@ -587,6 +591,7 @@ section#quiz{
             margin-left: auto;
             background-color: transparent;
             display: none;
+            border: none;
 
             p{
                 border-bottom: 2px solid #33706B;
@@ -632,7 +637,6 @@ section#quiz{
     }
 
     #popup{
-        //position:absolute;
         display: none;
         position: fixed;
         //display: flex;
@@ -643,16 +647,6 @@ section#quiz{
         height: 100%;
         background-color: rgba(33, 41, 52, 0.75);
         z-index: 999;
-
-        strong{
-            position: relative;
-            div{
-                position: absolute;
-                top: -35px;
-                left: 40px;
-                display: inline-block;
-            }
-        }
 
         #popup_partager,#popup_newsletter{
 
@@ -686,6 +680,10 @@ section#quiz{
              }
              .lien{
                 padding: 0 60px;
+               
+                a{
+                    color: #244C49;
+                }
              }
              
              #close{
@@ -709,6 +707,8 @@ section#quiz{
                 button{
                     background-color: transparent;
                     border: none;
+                    cursor: pointer;
+
                 }
                 input{
                     border: none;
@@ -722,6 +722,20 @@ section#quiz{
                     outline: none;
                 }
             }
+            
+        }
+        #popup_partager{
+
+            strong{
+                position: relative;
+                div{
+                    position: absolute;
+                    top: -45px;
+                    left: 90px;
+                    display: inline-block;
+                }
+            }
+    
             
         }
         #popup_newsletter{
@@ -782,6 +796,17 @@ section#quiz{
                 display: block;
                 border: none;
                 margin-left: auto;
+            }
+
+
+            strong{
+                position: relative;
+                div{
+                    position: absolute;
+                    top: -45px;
+                    left: 37px;
+                    display: inline-block;
+                }
             }
         }
      }
