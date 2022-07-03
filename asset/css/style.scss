@@ -1606,11 +1606,6 @@ footer{
                    background-color: var(--main-color-vert00);
                    width: 400px;
                    display: flex;
-                   p{
-                       text-align: center;
-                       color: var(--main-color-vert50);
-                       padding: 15px;
-                   }
                }
                
            }
@@ -1668,6 +1663,34 @@ footer{
             }
         
         }
+        #popup{
+            #popup_partager{
+                strong{
+                    position: relative;
+                    div{
+                        position: absolute;
+                        top: -50px;
+                        left: 43px;
+                        display: inline-block;
+                    }
+                }
+        
+                
+            }
+
+            #popup_newsletter{
+                strong{
+                    position: relative;
+                    div{
+                        position: absolute;
+                        top: -45px;
+                        left: 7px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        
 
     }
 
@@ -1895,6 +1918,28 @@ footer{
                 }
             }
         }
+        #popup{
+            display: flex;
+            #popup_newsletter{
+                display: flex;
+            }
+            #popup_partager,#popup_newsletter{
+
+                width: 340px;
+                height: 527px;
+                padding: 100px 50px;
+                #copie{
+                    width: 250px;
+                    padding: 1px;
+                    input{
+                         padding: 10px;
+                    }
+                }
+            }
+           
+        }
+
+
     }
     section#portraits{
         

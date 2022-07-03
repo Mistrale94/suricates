@@ -1544,11 +1544,6 @@ footer #back_top {
     width: 400px;
     display: flex;
   }
-  section#quiz #popup #popup_partager #copie p, section#quiz #popup #popup_newsletter #copie p {
-    text-align: center;
-    color: var(--main-color-vert50);
-    padding: 15px;
-  }
   section#portraits {
     padding: 112px 0 64px 0;
   }
@@ -1585,6 +1580,24 @@ footer #back_top {
     text-align: center;
     display: none;
     margin-bottom: 50px;
+  }
+  section#quiz #popup #popup_partager strong {
+    position: relative;
+  }
+  section#quiz #popup #popup_partager strong div {
+    position: absolute;
+    top: -50px;
+    left: 43px;
+    display: inline-block;
+  }
+  section#quiz #popup #popup_newsletter strong {
+    position: relative;
+  }
+  section#quiz #popup #popup_newsletter strong div {
+    position: absolute;
+    top: -45px;
+    left: 7px;
+    display: inline-block;
   }
   footer {
     display: flex;
@@ -1756,6 +1769,24 @@ footer #back_top {
   }
   section#quiz div#resultat figure img {
     width: 100%;
+  }
+  section#quiz #popup {
+    display: flex;
+  }
+  section#quiz #popup #popup_newsletter {
+    display: flex;
+  }
+  section#quiz #popup #popup_partager, section#quiz #popup #popup_newsletter {
+    width: 340px;
+    height: 527px;
+    padding: 100px 50px;
+  }
+  section#quiz #popup #popup_partager #copie, section#quiz #popup #popup_newsletter #copie {
+    width: 250px;
+    padding: 1px;
+  }
+  section#quiz #popup #popup_partager #copie input, section#quiz #popup #popup_newsletter #copie input {
+    padding: 10px;
   }
   section#portraits div.title-farmer h1 {
     font-weight: 400;
