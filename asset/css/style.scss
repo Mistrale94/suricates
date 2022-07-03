@@ -1030,25 +1030,22 @@ section#travel{
     #spacer{
         width: 100%;
         height: 300px;
-
-        svg:nth-child(1){
-            position: absolute;
-            top: 450px;
-            right: -976px;
-            width: 200px;
-            height: 400px;
-        }
-
-        svg:nth-child(2){
-            position: absolute;
-            top: 1650px;
-            right: 650px;
-            width: 200px;
-            height: 400px;
-        }
     }
    
-
+    svg#left{
+        position: absolute;
+        top: 1650px;
+        right: 650px;
+        width: 200px;
+        height: 400px;
+    }
+    svg#right{
+        position: absolute;
+        top: 450px;
+        right: -20%;
+        width: 200px;
+        height: 400px;
+    }
     #rightconcept{
         display: flex;
         justify-content: space-between;
@@ -1060,7 +1057,7 @@ section#travel{
 
         #spacer{
             width: 100%;
-            height: 200px;
+            height: 200px; 
         }
 
     }
@@ -1357,9 +1354,21 @@ footer{
 
         div#leftconcept{
             margin-left: 50px;
+
+            div#spacer{
+                svg#left{
+                    left: -20%;
+                }
+            }
         }
         div#rightconcept{
             margin-right: 50px;
+
+            div#spacer{
+                svg#right{
+                    right: -30%;
+                }
+            }
         }
     }
 }
@@ -1393,7 +1402,9 @@ footer{
             font-size: 36px;
 
         }
-
+        div#headcontainer:after{
+            display: none;
+        }
         #headtitle{
             width: 500px;
             h1{
@@ -1718,9 +1729,9 @@ footer{
     header{
         div.headmain{
             div#headcontainer{
-               div#headtitle{
-                width: 200px;
+                div#headtitle{
                     margin-bottom: 56px;
+
                     h1{
                         font-weight: 400;
                         font-size: 36px;
@@ -1772,6 +1783,14 @@ footer{
             }
             p{
                 width: 350px;
+            }
+        }
+        div.value-title-container{
+            div.value-title{
+                svg:first-child{
+                    right: -35%;
+                    top: -45px;
+                }
             }
         }
     }
@@ -1915,6 +1934,11 @@ footer{
         }
         div.footer-container{
             div{
+                width: 100%;
+
+                article:nth-child(1){
+                    margin-right: 0;
+                }
                 article:nth-child(1), article:nth-child(2){
                     h1{
                         font-weight: 400;
