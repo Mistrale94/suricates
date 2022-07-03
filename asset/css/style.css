@@ -343,18 +343,6 @@ section#quiz {
     font-weight: 300; }
   section#quiz p {
     font-size: 16px; }
-  section#quiz p:hover::after {
-    width: 50%;
-    background: #36706B; }
-  section#quiz p::after {
-    content: '';
-    display: block;
-    margin: auto;
-    margin-top: 2px;
-    height: 2px;
-    width: 0;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease; }
   section#quiz article {
     display: flex;
     justify-content: space-between;
@@ -400,7 +388,9 @@ section#quiz {
       border-radius: 30px;
       display: block;
       border: none;
-      margin-left: auto; }
+      margin-left: auto;
+      font-weight: 700;
+      font-size: 16px; }
     section#quiz #button button:hover {
       cursor: pointer; }
     section#quiz #button button#next:hover {
@@ -409,12 +399,16 @@ section#quiz {
     section#quiz #button #finir {
       display: none; }
     section#quiz #button #last {
+      border: none;
       color: #33706B;
       margin-left: auto;
       background-color: transparent;
       display: none; }
       section#quiz #button #last p {
-        border-bottom: 2px solid #33706B; }
+        border-bottom: 2px solid #33706B;
+        height: 25px;
+        font-weight: 700;
+        font-size: 16px; }
     section#quiz #button #newsletter {
       color: #162D2B;
       border: none;
@@ -776,7 +770,7 @@ section#portraits {
         padding: 24px 39px; }
         section#portraits div.farmer-container div.card-farmer div.card-farmer-text h3 {
           font-size: 36px;
-          font-family: 'Amithen';
+          font-family: 'Amithen', sans-serif;
           font-weight: 400;
           font-style: normal;
           color: #F8961E;
@@ -893,6 +887,7 @@ footer {
             font-size: 16px; }
       footer div.footer-container #footnews #mc_embed_signup #mc-embedded-subscribe {
         font-family: "Raleway", sans-serif;
+        cursor: pointer;
         color: #33706B;
         background: white;
         padding: 10px 20px;

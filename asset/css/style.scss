@@ -510,20 +510,6 @@ section#quiz{
     p{
         font-size: 16px;
     }
-    p:hover::after{
-        width: 50%;
-        background: #36706B;
-    }
-    p::after{
-        content: '';
-        display: block;
-        margin: auto;
-        margin-top: 2px;
-        height: 2px;
-        width: 0;
-        background: transparent;
-        transition: width .5s ease, background-color .5s ease;
-    }
     article{
         display: flex;
         justify-content: space-between;
@@ -582,6 +568,8 @@ section#quiz{
             display: block;
             border: none;
             margin-left: auto;
+            font-weight: 700;
+            font-size: 16px;
         }
         button:hover{
             cursor: pointer;
@@ -594,7 +582,7 @@ section#quiz{
             display : none;
         }
         #last{
-            
+            border: none;
             color: #33706B;
             margin-left: auto;
             background-color: transparent;
@@ -602,6 +590,9 @@ section#quiz{
 
             p{
                 border-bottom: 2px solid #33706B;
+                height: 25px;
+                font-weight: 700;
+                font-size: 16px;
             }
         }
         #newsletter{
@@ -1098,7 +1089,7 @@ section#portraits{
 
                 h3{
                     font-size: 36px;
-                    font-family: 'Amithen';
+                    font-family: 'Amithen', sans-serif;
                     font-weight: 400;
                     font-style: normal;
                     color: #F8961E;
@@ -1265,6 +1256,7 @@ footer{
 
                 #mc-embedded-subscribe{
                 font-family: "Raleway", sans-serif;
+                cursor: pointer;
                 color: #33706B;
                 background: white;
                 padding: 10px 20px;
