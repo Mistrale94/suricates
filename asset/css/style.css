@@ -553,6 +553,11 @@ section#quiz form#option div span {
   margin-left: 10px;
 }
 
+section#quiz form#option .checked {
+  color: #FFFFFF;
+  background-color: var(--main-color-vert50);
+}
+
 section#quiz #button {
   display: flex;
   flex-direction: row;
@@ -586,6 +591,7 @@ section#quiz #button #last {
   margin-left: auto;
   background-color: transparent;
   display: none;
+  border: none;
 }
 
 section#quiz #button #last p {
