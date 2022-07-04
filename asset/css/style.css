@@ -219,7 +219,9 @@ header #actions {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 32px; }
+    margin-left: 32px;
+    font-weight: 700;
+    font-size: 16px; }
   header #actions #button:hover {
     background: #F8961E; }
   header #actions:after {
@@ -626,7 +628,9 @@ section#travel {
           background: #36706B;
           border-radius: 32px;
           width: 279px;
-          height: 56px; }
+          height: 56px;
+          font-weight: 700;
+          font-size: 16px; }
         section#travel div.travel-container div.travel-text div:nth-child(8) a:hover {
           background: #F8961E;
           transition: 300ms; }
@@ -895,7 +899,7 @@ footer {
             padding: 20px 15px;
             width: 97%;
             box-sizing: border-box;
-            border: 1px solid var(--main-color-vert50);
+            border: none;
             border-radius: 8px;
             color: #8C8D8C;
             font-size: 16px; }
@@ -905,7 +909,7 @@ footer {
         color: #33706B;
         background: white;
         padding: 10px 20px;
-        border: 1px solid var(--main-color-vert50);
+        border: none;
         border-radius: 8px;
         font-weight: 600;
         margin-top: 20px;

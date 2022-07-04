@@ -334,6 +334,8 @@ header{
             justify-content: center;
             align-items: center;
             margin-left: 32px;
+            font-weight: 700;
+            font-size: 16px;
 
         }
 
@@ -900,6 +902,8 @@ section#travel{
                     border-radius: 32px;
                     width: 279px;
                     height: 56px;
+                    font-weight: 700;
+                    font-size: 16px;
                 }
                 a:hover{
                     background: #F8961E;
@@ -1268,7 +1272,7 @@ footer{
                             padding: 20px 15px;
                             width: 97%;
                             box-sizing: border-box;
-                            border: 1px solid var(--main-color-vert50);
+                            border: none;
                             border-radius: 8px;
                             color: #8C8D8C;
                             font-size: 16px;
@@ -1282,7 +1286,7 @@ footer{
                 color: #33706B;
                 background: white;
                 padding: 10px 20px;
-                border: 1px solid var(--main-color-vert50);
+                border: none;
                 border-radius: 8px;
                 font-weight: 600;
                 margin-top: 20px;
