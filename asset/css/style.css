@@ -55,6 +55,18 @@ body.light {
   color: #191A19; }
   body.light header nav {
     background-color: #FFFFFF; }
+  body.light header h1 {
+    color: #191A19; }
+  body.light #value div:first-child h1 {
+    color: #191A19; }
+  body.light #travel div.travel-title h1 {
+    color: #191A19; }
+  body.light #ccm {
+    color: #191A19; }
+  body.light #quiz h1 {
+    color: #191A19; }
+  body.light #portraits div:first-child h1 {
+    color: #191A19; }
 
 :root {
   --main-color-vert100:#162D2B;
@@ -88,7 +100,10 @@ header nav {
       header nav ul li a {
         text-decoration: none;
         color: #191A19;
-        transition: 300ms; }
+        transition: 300ms;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.03em; }
       header nav ul li a:hover::after {
         width: 50%;
         background: #36706B; }
@@ -154,7 +169,8 @@ header h1 {
   text-align: center;
   font-size: 64px;
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  letter-spacing: -0.03em; }
 header div#headcontainer:after {
   position: absolute;
   top: 150px;
@@ -198,8 +214,8 @@ header #headsubtitle {
   font-family: "Raleway", sans-serif;
   text-align: center;
   width: 80%;
+  font-weight: 500;
   font-size: 16px;
-  font-weight: 300;
   padding: 50px; }
 header #actions {
   font-family: "Raleway", sans-serif;
@@ -262,6 +278,7 @@ header #actions {
     font-style: normal;
     font-weight: 400;
     font-size: 56px;
+    letter-spacing: -0.03em;
     text-align: center; }
     #value div:first-child h1 strong:first-child {
       position: relative; }
@@ -331,6 +348,7 @@ section#quiz {
     font-size: 56px;
     font-style: normal;
     font-weight: 400;
+    letter-spacing: -0.03em;
     text-align: center;
     margin-bottom: 64px; }
     section#quiz h1 strong {
@@ -571,9 +589,10 @@ section#travel {
     section#travel div.travel-title svg:first-child {
       position: absolute;
       top: -30px;
-      right: 140px; }
+      right: 130px; }
     section#travel div.travel-title h1 {
       font-size: 56px;
+      letter-spacing: -0.03em;
       font-style: normal;
       font-weight: 400;
       text-transform: capitalize; }
@@ -639,6 +658,7 @@ section#travel {
   padding-top: 150px;
   text-align: center;
   font-size: 56px;
+  letter-spacing: -0.03em;
   font-style: normal;
   font-weight: 400; }
 
@@ -648,7 +668,7 @@ section#travel {
   position: relative; }
   .container-title-concept svg:first-child {
     position: absolute;
-    left: 40%;
+    left: 42.5%;
     bottom: 70px; }
   .container-title-concept div {
     width: fit-content; }
@@ -762,7 +782,8 @@ section#portraits {
     section#portraits div:first-child h1 {
       font-size: 56px;
       font-style: normal;
-      font-weight: 400; }
+      font-weight: 400;
+      letter-spacing: -0.03em; }
     section#portraits div:first-child svg:nth-child(3) {
       position: absolute;
       right: -100px; }
@@ -824,6 +845,7 @@ footer {
   padding: 100px; }
   footer h1 {
     font-style: normal;
+    letter-spacing: -0.03em;
     font-weight: 400;
     font-size: 56px; }
   footer > p {

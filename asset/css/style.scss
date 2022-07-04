@@ -103,6 +103,38 @@ body.light{
         nav{
             background-color: #FFFFFF;
         }
+        h1{
+            color: #191A19;
+        }
+    }
+    #value{
+        div:first-child{
+            h1{
+                color: #191A19;
+            }
+        }
+    }
+    #travel{
+        div.travel-title{
+            h1{
+                color: #191A19;
+            }
+        }
+    }
+    #ccm{
+        color: #191A19;
+    }
+    #quiz{
+        h1{
+            color: #191A19;
+        }
+    }
+    #portraits{
+        div:first-child{
+            h1{
+                color: #191A19
+            }
+        }
     }
 }
 
@@ -151,6 +183,9 @@ header{
                     text-decoration: none;
                     color: #191A19;
                     transition: 300ms;
+                    font-weight: 500;
+                    font-size: 16px;
+                    letter-spacing: -0.03em;
                 }
                 a:hover::after{
                     width: 50%;
@@ -249,6 +284,7 @@ header{
         font-size: 64px;
         font-style: normal;
         font-weight: 400;
+        letter-spacing: -0.03em;
     }
 
     div#headcontainer:after{
@@ -306,8 +342,8 @@ header{
         font-family: "Raleway", sans-serif;
         text-align: center;
         width: 80%;
+        font-weight: 500;
         font-size: 16px;
-        font-weight: 300;
         padding: 50px;
 
 
@@ -398,6 +434,7 @@ header{
                 font-style: normal;
                 font-weight: 400;
                 font-size: 56px;
+                letter-spacing: -0.03em;
                 text-align: center;
                 strong:first-child{
                     position: relative;
@@ -487,6 +524,7 @@ section#quiz{
         font-size: 56px;
         font-style: normal;
         font-weight: 400;
+        letter-spacing: -0.03em;
         text-align: center;
         margin-bottom: 64px;
         strong{
@@ -829,10 +867,11 @@ section#travel{
         svg:first-child{
             position: absolute;
             top: -30px;
-            right: 140px;
+            right: 130px;
         }
         h1{
             font-size: 56px;
+            letter-spacing: -0.03em;
             font-style: normal;
             font-weight: 400;
             text-transform: capitalize;
@@ -918,6 +957,7 @@ section#travel{
     padding-top: 150px;
     text-align: center;
     font-size: 56px;
+    letter-spacing: -0.03em;
     font-style: normal;
     font-weight: 400;
 }
@@ -929,7 +969,7 @@ section#travel{
 
     svg:first-child{
         position: absolute;
-        left: 40%;
+        left: 42.5%;
         bottom: 70px;
     }
     div{
@@ -1082,6 +1122,7 @@ section#portraits{
             font-size: 56px;
             font-style: normal;
             font-weight: 400;
+            letter-spacing: -0.03em;
         }
         svg:nth-child(3){
             position: absolute;
@@ -1168,6 +1209,7 @@ footer{
 
     h1{
         font-style: normal;
+        letter-spacing: -0.03em;
         font-weight: 400;
         font-size: 56px;
     }
