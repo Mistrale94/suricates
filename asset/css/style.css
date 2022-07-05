@@ -361,6 +361,8 @@ section#quiz {
   section#quiz div#question article p {
     font-style: normal;
     font-weight: 300; }
+  section#quiz button#newsletter p {
+    border-bottom: 2px solid #33706B; }
   section#quiz p {
     font-size: 16px; }
   section#quiz article {
