@@ -362,7 +362,8 @@ section#quiz {
     font-style: normal;
     font-weight: 300; }
   section#quiz button#newsletter p {
-    border-bottom: 2px solid #33706B; }
+    border-bottom: 2px solid #33706B;
+    height: 25px; }
   section#quiz p {
     font-size: 16px; }
   section#quiz article {
