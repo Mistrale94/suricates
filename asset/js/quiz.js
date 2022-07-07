@@ -73,12 +73,13 @@ var reponseList =[];
 
 
 inputQuiz(0);
-
+changerClass();
 
 function next(){
   var radio = document.getElementsByName("option");
   var check = 0;
 
+  
   for(let i=0; i<4; i++){
 
     if(radio[i].checked){
@@ -177,6 +178,25 @@ function finir(){
 }
 function inputResulta(num){
 
+  var option = document.getElementById("option").getElementsByTagName("div")
+  console.log("num=",option.length)
+
+for(let i=0; i<option.length;i++){
+  option[i].addEventListener('click',function(){
+    console.log("option=",i);
+    console.log("option=",option[i]);
+    //this.style = "background-color: #093929;"
+
+    for(let k=0; k<option.length; k++){
+      option[k].removeAttribute("class");
+    }
+    
+    this.setAttribute("class","checked");
+
+
+  })
+}
+
   document.querySelector('#resultat p').innerHTML = `${reponsesFinales[num].title}`;
   document.querySelector('#resultat img').src= `asset/image/${reponsesFinales[num].image}.svg`;
   document.querySelector('#resultat img').alt= `${reponsesFinales[num].image}`;
@@ -225,14 +245,12 @@ function inputQuiz(j){
 
       h+=`
       <label for="radio${i}">
-      <div>
+      <div id="coca">
       <input type="radio" name="option" id="radio${i}" checked value="${dateList[alea[j]].value[i]}"> 
       <span>${dateList[alea[j]].option[i]}</span>
       </div>
       </label>
       `;
-
-      
     }
     else{
 
@@ -248,8 +266,10 @@ function inputQuiz(j){
 
 
     }
+
   }
   document.getElementById("option").innerHTML = h;
+  changerClass();
 
 }
 
@@ -279,4 +299,31 @@ function copy(){
 
   obj.select();
   document.execCommand("copy");
+}
+
+function changerClass(){
+
+  var option = document.getElementById("option").getElementsByTagName("div");
+
+
+  for(let i=0; i<option.length;i++){
+      if(dateList[alea[j]].value[i] == reponseList[j]){
+        option[i].setAttribute("class","checked");
+      }
+    
+
+      option[i].addEventListener('click',function(){
+
+      for(let k=0; k<option.length; k++){
+        option[k].removeAttribute("class");
+      }
+
+    
+      this.setAttribute("class","checked");
+
+
+  })
+}
+
+
 }

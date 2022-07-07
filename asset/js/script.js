@@ -18,9 +18,9 @@ function btntoggle(){
 
         logo.src = "asset/image/logo.png";
         burger.src = "asset/image/Menu.png";
-        picto.src = "asset/image/Illu Valeur.png";
-        picto2.src = "asset/image/Illu Valeur (1).png";
-        picto3.src = "asset/image/Illu Valeur (2).png";
+        picto.src = "asset/image/icones1.png";
+        picto2.src = "asset/image/icones2.png";
+        picto3.src = "asset/image/icones3.png";
 
     }else if (body.classList.contains('light')){
         body.classList.add('dark')
@@ -30,9 +30,9 @@ function btntoggle(){
 
         logo.src = "asset/image/logo-white.png";
         burger.src = "asset/image/Menu (1).png";
-        picto.src = "asset/image/Illu Valeur (3).png";
-        picto2.src = "asset/image/Illu Valeur (4).png";
-        picto3.src = "asset/image/Illu Valeur (5).png";
+        picto.src = "asset/image/icones1-white.png";
+        picto2.src = "asset/image/icones2-white.png";
+        picto3.src = "asset/image/icones3-white.png";
 
     }
 
