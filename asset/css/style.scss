@@ -415,11 +415,7 @@ header{
     display: flex;
     position: relative;
 
-    #svgwho{
-        position: absolute;
-        top: 120px;
-        right: 870px;
-    }
+   
 
     #leftwho{
         display: flex;
@@ -437,7 +433,9 @@ header{
                 width: 70%;
             }
         }
+        
     }
+   
     #rightwho{
         display: flex;
         justify-content: center;
@@ -447,28 +445,43 @@ header{
         height: 600px;
         position: relative;
 
-        #svgfirst{
-            position: absolute;
-            width: 285px;
-            height: 272px;
-            bottom: -150px;
-            right: 350px;
-        }
+        
 
         div{
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
             flex-wrap: wrap;
-            width: 60%;
-            height: 250px;
+            width: 100%;
+            height: 400px;
             font-size: 16px;
+            position: relative;
+
+            #svgwho{
+                position: absolute;
+                top: 30px;
+                left: -35px;
+            }
+
             h1{
-                font-size: 56px;
+                font-size: 50px;
+                padding: 30px 0px;
             }
 
             p{
-                padding-right: 150px;
+                width: 400px;
+                padding: 30px 0px;
+                position: relative;
+
+                #svgfirst{
+                    position: absolute;
+                    width: 265px;
+                    height: 252px;
+                    top: 150px;
+                    right: -70px;
+                }
+
             }
 
             div#logowho{
@@ -498,7 +511,7 @@ header{
             align-items: center;
             div:nth-child(1){
                 font-size: 80px;
-                width: 30%;
+                width: 170px;
                 height: 200px;
                 display: flex;
                 justify-content: center;
@@ -506,7 +519,7 @@ header{
             }
             div:nth-child(2){
                 font-size: 80px;
-                width: 15%;
+                width: 100px;
                 height: 200px;
                 display: flex;
                 justify-content: center;
@@ -514,7 +527,7 @@ header{
             }
             div:nth-child(3){
                 font-size: 80px;
-                width: 15%;
+                width: 100px;
                 height: 200px;
                 display: flex;
                 justify-content: flex-start;
@@ -1627,6 +1640,43 @@ footer{
         }
         
     }
+
+    #who{
+        flex-direction: column;
+        height: 1300px;
+
+
+        #leftwho{
+            width: 100%;
+        }
+
+        #rightwho{
+            width: 100%;
+            margin: 0;
+            div{
+                align-items: center;
+                #svgwho{
+                    left: 175px;
+                }
+
+                h1{
+                    svg{
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                p{
+                    #svgfirst{
+                        right: 130px;
+                        width: 165px;
+                        height: 162px;
+                    }
+                }
+            }
+        }
+    }
+
     section#value{
         div:first-child{
             p{
