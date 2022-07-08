@@ -478,8 +478,8 @@ header{
                     position: absolute;
                     width: 265px;
                     height: 252px;
-                    top: 150px;
-                    right: -70px;
+                    top: 90px;
+                    right: -340px;
                 }
 
             }
@@ -496,46 +496,6 @@ header{
         }
     }
 }
-
-    #explain1{
-        width: 100%;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        #containexplain{
-            width: 40%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            div:nth-child(1){
-                font-size: 80px;
-                width: 170px;
-                height: 200px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            div:nth-child(2){
-                font-size: 80px;
-                width: 100px;
-                height: 200px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            div:nth-child(3){
-                font-size: 80px;
-                width: 100px;
-                height: 200px;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-            }
-        }
-
-    }
 
     #explain2{
         width: 100%;
@@ -1643,7 +1603,7 @@ footer{
 
     #who{
         flex-direction: column;
-        height: 1300px;
+        height: 1100px;
 
 
         #leftwho{
@@ -1653,12 +1613,17 @@ footer{
         #rightwho{
             width: 100%;
             margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             div{
-                align-items: center;
+                width: 70%;
                 #svgwho{
-                    left: 175px;
+                    left: -35px;
                 }
-
+                #logowho{
+                    width: 22%;
+                }
                 h1{
                     svg{
                         top: 0;
@@ -1668,9 +1633,10 @@ footer{
 
                 p{
                     #svgfirst{
-                        right: 130px;
-                        width: 165px;
-                        height: 162px;
+                        top: 60px;
+                        right: -140px;
+                        width: 195px;
+                        height: 192px;
                     }
                 }
             }
@@ -1979,6 +1945,44 @@ footer{
                 }
             }
         }
+    }
+
+    #who{
+        height: 650px;
+
+        #leftwho{
+            height: 400px;
+        }
+
+        #rightwho{
+            height: 400px;
+            div{
+                width: 80%;
+                #svgwho{
+                    display: none;
+                }
+                h1{
+                    font-size: 29px;
+                }
+                p{
+                    width: 350px;
+                }
+                #svgfirst{
+                    display: none;
+                }
+            }
+        }
+
+    }
+    #explain2{
+        height: 500px;
+        #imgcontain2{
+            height: 400px;
+            width: 100%;
+            border-radius: 0;
+
+        }
+       
     }
     
 }
